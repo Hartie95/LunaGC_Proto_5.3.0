@@ -575,7 +575,7 @@ message CBICACEFIID {
 
 // CmdId: - 
 message MaterialDeleteInfo {
-	oneof EIOGMCEKJML {
+	oneof delete_info {
 		CountDownDelete count_down_delete = 2;
 		DateTimeDelete date_delete = 3;
 		DelayWeekCountDownDelete delay_week_count_down_delete = 4;
@@ -583,18 +583,18 @@ message MaterialDeleteInfo {
 	bool has_delete_config = 1;
 	// CmdId: - 
 	message CountDownDelete {
-		map<uint32, uint32> GFKFKFOFFKP = 1;
-		uint32 HKCBKJJAIBL = 2;
+		map<uint32, uint32> delete_time_num_map = 1;
+		uint32 config_count_down_time = 2;
 	}
 	// CmdId: - 
 	message DateTimeDelete {
-		uint32 DPIEIJPDLLG = 1;
+		uint32 delete_time = 1;
 	}
 	// CmdId: - 
 	message DelayWeekCountDownDelete {
-		map<uint32, uint32> GFKFKFOFFKP = 1;
-		uint32 FCIALOGGDOC = 2;
-		uint32 HKCBKJJAIBL = 3;
+		map<uint32, uint32> delete_time_num_map = 1;
+		uint32 config_delay_week = 2;
+		uint32 config_count_down_time = 3;
 	}
 }
 
@@ -2408,7 +2408,7 @@ message EntityClientData {
 
 // CmdId: 8178 
 message MultistagePlaySettleNotify {
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 1203;
 		InBattleMechanicusSettleInfo mechanicus_settle_info = 1804;
 		InBattleChessSettleInfo chess_settle_info = 1994;
@@ -3348,7 +3348,7 @@ message LDFLGFJFJAJ {
 	map<uint32, JFKAHOKBLOM> AJAMDMFEFEL = 9;
 	repeated uint32 DMODOPHGGNC = 4;
 	repeated CIGBFFKOJBE avatar_list = 14;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		FJFIPAKMKKB ugc_team_info = 917;
 	}
 	uint32 dungeon_id = 2;
@@ -4145,115 +4145,115 @@ message OJIDIMONNNE {
 }
 
 enum MotionState {
-	MotionState_MOTION_NONE = 0;
-	MotionState_MOTION_RESET = 1;
-	MotionState_MOTION_STANDBY = 2;
-	MotionState_MOTION_STANDBY_MOVE = 3;
-	MotionState_MOTION_WALK = 4;
-	MotionState_MOTION_RUN = 5;
-	MotionState_MOTION_DASH = 6;
-	MotionState_MOTION_CLIMB = 7;
-	MotionState_MOTION_CLIMB_JUMP = 8;
-	MotionState_MOTION_STANDBY_TO_CLIMB = 9;
-	MotionState_MOTION_FIGHT = 10;
-	MotionState_MOTION_JUMP = 11;
-	MotionState_MOTION_DROP = 12;
-	MotionState_MOTION_FLY = 13;
-	MotionState_MOTION_SWIM_MOVE = 14;
-	MotionState_MOTION_SWIM_IDLE = 15;
-	MotionState_MOTION_SWIM_DASH = 16;
-	MotionState_MOTION_SWIM_JUMP = 17;
-	MotionState_MOTION_SLIP = 18;
-	MotionState_MOTION_GO_UPSTAIRS = 19;
-	MotionState_MOTION_FALL_ON_GROUND = 20;
-	MotionState_MOTION_JUMP_UP_WALL_FOR_STANDBY = 21;
-	MotionState_MOTION_JUMP_OFF_WALL = 22;
-	MotionState_MOTION_POWERED_FLY = 23;
-	MotionState_MOTION_LADDER_IDLE = 24;
-	MotionState_MOTION_LADDER_MOVE = 25;
-	MotionState_MOTION_LADDER_SLIP = 26;
-	MotionState_MOTION_STANDBY_TO_LADDER = 27;
-	MotionState_MOTION_LADDER_TO_STANDBY = 28;
-	MotionState_MOTION_DANGER_STANDBY = 29;
-	MotionState_MOTION_DANGER_STANDBY_MOVE = 30;
-	MotionState_MOTION_DANGER_WALK = 31;
-	MotionState_MOTION_DANGER_RUN = 32;
-	MotionState_MOTION_DANGER_DASH = 33;
-	MotionState_MOTION_CROUCH_IDLE = 34;
-	MotionState_MOTION_CROUCH_MOVE = 35;
-	MotionState_MOTION_CROUCH_ROLL = 36;
-	MotionState_MOTION_NOTIFY = 37;
-	MotionState_MOTION_LAND_SPEED = 38;
-	MotionState_MOTION_MOVE_FAIL_ACK = 39;
-	MotionState_MOTION_WATERFALL = 40;
-	MotionState_MOTION_DASH_BEFORE_SHAKE = 41;
-	MotionState_MOTION_SIT_IDLE = 42;
-	MotionState_MOTION_FORCE_SET_POS = 43;
-	MotionState_MOTION_QUEST_FORCE_DRAG = 44;
-	MotionState_MOTION_FOLLOW_ROUTE = 45;
-	MotionState_MOTION_SKIFF_BOARDING = 46;
-	MotionState_MOTION_SKIFF_NORMAL = 47;
-	MotionState_MOTION_SKIFF_DASH = 48;
-	MotionState_MOTION_SKIFF_POWERED_DASH = 49;
-	MotionState_MOTION_DESTROY_VEHICLE = 50;
-	MotionState_MOTION_FLY_IDLE = 51;
-	MotionState_MOTION_FLY_SLOW = 52;
-	MotionState_MOTION_FLY_FAST = 53;
-	MotionState_MOTION_AIM_MOVE = 54;
-	MotionState_MOTION_AIR_COMPENSATION = 55;
-	MotionState_MOTION_SORUSH_NORMAL = 56;
-	MotionState_MOTION_ROLLER_COASTER = 57;
-	MotionState_MOTION_DIVE_IDLE = 58;
-	MotionState_MOTION_DIVE_MOVE = 59;
-	MotionState_MOTION_DIVE_DASH = 60;
-	MotionState_MOTION_DIVE_DOLPHINE = 61;
-	MotionState_MOTION_DEBUG = 62;
-	MotionState_MOTION_OCEAN_CURRENT = 63;
-	MotionState_MOTION_DIVE_SWIM_MOVE = 64;
-	MotionState_MOTION_DIVE_SWIM_IDLE = 65;
-	MotionState_MOTION_DIVE_SWIM_DASH = 66;
-	MotionState_MOTION_ARC_LIGHT = 67;
-	MotionState_MOTION_ARC_LIGHT_SAFE = 68;
-	MotionState_MOTION_VEHICLE_STANDBY = 69;
-	MotionState_MOTION_VEHICLE_RUN = 70;
-	MotionState_MOTION_VEHICLE_DASH = 71;
-	MotionState_MOTION_VEHICLE_CLIMB = 72;
-	MotionState_MOTION_VEHICLE_CLIMB_JUMP = 73;
-	MotionState_MOTION_VEHICLE_STANDBY_TO_CLIMB = 74;
-	MotionState_MOTION_VEHICLE_FIGHT = 75;
-	MotionState_MOTION_VEHICLE_JUMP = 76;
-	MotionState_MOTION_VEHICLE_DROP = 77;
-	MotionState_MOTION_VEHICLE_FLY = 78;
-	MotionState_MOTION_VEHICLE_SWIM_MOVE = 79;
-	MotionState_MOTION_VEHICLE_SWIM_IDLE = 80;
-	MotionState_MOTION_VEHICLE_SWIM_DASH = 81;
-	MotionState_MOTION_VEHICLE_SLIP = 82;
-	MotionState_MOTION_VEHICLE_GO_UPSTAIRS = 83;
-	MotionState_MOTION_VEHICLE_FALL_ON_GROUND = 84;
-	MotionState_MOTION_VEHICLE_JUMP_OFF_WALL = 85;
-	MotionState_MOTION_VEHICLE_POWERED_FLY = 86;
-	MotionState_MOTION_VEHICLE_DANGER_STANDBY = 87;
-	MotionState_MOTION_VEHICLE_DANGER_RUN = 88;
-	MotionState_MOTION_VEHICLE_DANGER_DASH = 89;
-	MotionState_MOTION_VEHICLE_NOTIFY = 90;
-	MotionState_MOTION_VEHICLE_LAND_SPEED = 91;
-	MotionState_MOTION_VEHICLE_DASH_BEFORE_SHAKE = 92;
-	MotionState_MOTION_VEHICLE_QUEST_FORCE_DRAG = 93;
-	MotionState_MOTION_VEHICLE_FOLLOW_ROUTE = 94;
-	MotionState_MOTION_VEHICLE_FLY_IDLE = 95;
-	MotionState_MOTION_VEHICLE_FLY_SLOW = 96;
-	MotionState_MOTION_VEHICLE_FLY_FAST = 97;
-	MotionState_MOTION_VEHICLE_AIR_COMPENSATION = 98;
-	MotionState_MOTION_VEHICLE_ARC_LIGHT = 99;
-	MotionState_MOTION_VEHICLE_ARC_LIGHT_SAFE = 100;
-	MotionState_MOTION_VEHICLE_DANGER_SWIM_MOVE = 101;
-	MotionState_MOTION_VEHICLE_DANGER_SWIM_IDLE = 102;
-	MotionState_MOTION_VEHICLE_DANGER_SWIM_DASH = 103;
-	MotionState_MOTION_FOLLOW_CURVE_ROUTE = 104;
-	MotionState_MOTION_VEHICLE_FOLLOW_CURVE_ROUTE = 105;
-	MotionState_MOTION_NATSAURUS_NORMAL = 106;
-	MotionState_MOTION_NATSAURUS_ENTERING = 107;
-	MotionState_MOTION_NUM = 108;
+	MOTION_STATE_NONE = 0;
+	MOTION_STATE_RESET = 1;
+	MOTION_STATE_STANDBY = 2;
+	MOTION_STATE_STANDBY_MOVE = 3;
+	MOTION_STATE_WALK = 4;
+	MOTION_STATE_RUN = 5;
+	MOTION_STATE_DASH = 6;
+	MOTION_STATE_CLIMB = 7;
+	MOTION_STATE_CLIMB_JUMP = 8;
+	MOTION_STATE_STANDBY_TO_CLIMB = 9;
+	MOTION_STATE_FIGHT = 10;
+	MOTION_STATE_JUMP = 11;
+	MOTION_STATE_DROP = 12;
+	MOTION_STATE_FLY = 13;
+	MOTION_STATE_SWIM_MOVE = 14;
+	MOTION_STATE_SWIM_IDLE = 15;
+	MOTION_STATE_SWIM_DASH = 16;
+	MOTION_STATE_SWIM_JUMP = 17;
+	MOTION_STATE_SLIP = 18;
+	MOTION_STATE_GO_UPSTAIRS = 19;
+	MOTION_STATE_FALL_ON_GROUND = 20;
+	MOTION_STATE_JUMP_UP_WALL_FOR_STANDBY = 21;
+	MOTION_STATE_JUMP_OFF_WALL = 22;
+	MOTION_STATE_POWERED_FLY = 23;
+	MOTION_STATE_LADDER_IDLE = 24;
+	MOTION_STATE_LADDER_MOVE = 25;
+	MOTION_STATE_LADDER_SLIP = 26;
+	MOTION_STATE_STANDBY_TO_LADDER = 27;
+	MOTION_STATE_LADDER_TO_STANDBY = 28;
+	MOTION_STATE_DANGER_STANDBY = 29;
+	MOTION_STATE_DANGER_STANDBY_MOVE = 30;
+	MOTION_STATE_DANGER_WALK = 31;
+	MOTION_STATE_DANGER_RUN = 32;
+	MOTION_STATE_DANGER_DASH = 33;
+	MOTION_STATE_CROUCH_IDLE = 34;
+	MOTION_STATE_CROUCH_MOVE = 35;
+	MOTION_STATE_CROUCH_ROLL = 36;
+	MOTION_STATE_NOTIFY = 37;
+	MOTION_STATE_LAND_SPEED = 38;
+	MOTION_STATE_MOVE_FAIL_ACK = 39;
+	MOTION_STATE_WATERFALL = 40;
+	MOTION_STATE_DASH_BEFORE_SHAKE = 41;
+	MOTION_STATE_SIT_IDLE = 42;
+	MOTION_STATE_FORCE_SET_POS = 43;
+	MOTION_STATE_QUEST_FORCE_DRAG = 44;
+	MOTION_STATE_FOLLOW_ROUTE = 45;
+	MOTION_STATE_SKIFF_BOARDING = 46;
+	MOTION_STATE_SKIFF_NORMAL = 47;
+	MOTION_STATE_SKIFF_DASH = 48;
+	MOTION_STATE_SKIFF_POWERED_DASH = 49;
+	MOTION_STATE_DESTROY_VEHICLE = 50;
+	MOTION_STATE_FLY_IDLE = 51;
+	MOTION_STATE_FLY_SLOW = 52;
+	MOTION_STATE_FLY_FAST = 53;
+	MOTION_STATE_AIM_MOVE = 54;
+	MOTION_STATE_AIR_COMPENSATION = 55;
+	MOTION_STATE_SORUSH_NORMAL = 56;
+	MOTION_STATE_ROLLER_COASTER = 57;
+	MOTION_STATE_DIVE_IDLE = 58;
+	MOTION_STATE_DIVE_MOVE = 59;
+	MOTION_STATE_DIVE_DASH = 60;
+	MOTION_STATE_DIVE_DOLPHINE = 61;
+	MOTION_STATE_DEBUG = 62;
+	MOTION_STATE_OCEAN_CURRENT = 63;
+	MOTION_STATE_DIVE_SWIM_MOVE = 64;
+	MOTION_STATE_DIVE_SWIM_IDLE = 65;
+	MOTION_STATE_DIVE_SWIM_DASH = 66;
+	MOTION_STATE_ARC_LIGHT = 67;
+	MOTION_STATE_ARC_LIGHT_SAFE = 68;
+	MOTION_STATE_VEHICLE_STANDBY = 69;
+	MOTION_STATE_VEHICLE_RUN = 70;
+	MOTION_STATE_VEHICLE_DASH = 71;
+	MOTION_STATE_VEHICLE_CLIMB = 72;
+	MOTION_STATE_VEHICLE_CLIMB_JUMP = 73;
+	MOTION_STATE_VEHICLE_STANDBY_TO_CLIMB = 74;
+	MOTION_STATE_VEHICLE_FIGHT = 75;
+	MOTION_STATE_VEHICLE_JUMP = 76;
+	MOTION_STATE_VEHICLE_DROP = 77;
+	MOTION_STATE_VEHICLE_FLY = 78;
+	MOTION_STATE_VEHICLE_SWIM_MOVE = 79;
+	MOTION_STATE_VEHICLE_SWIM_IDLE = 80;
+	MOTION_STATE_VEHICLE_SWIM_DASH = 81;
+	MOTION_STATE_VEHICLE_SLIP = 82;
+	MOTION_STATE_VEHICLE_GO_UPSTAIRS = 83;
+	MOTION_STATE_VEHICLE_FALL_ON_GROUND = 84;
+	MOTION_STATE_VEHICLE_JUMP_OFF_WALL = 85;
+	MOTION_STATE_VEHICLE_POWERED_FLY = 86;
+	MOTION_STATE_VEHICLE_DANGER_STANDBY = 87;
+	MOTION_STATE_VEHICLE_DANGER_RUN = 88;
+	MOTION_STATE_VEHICLE_DANGER_DASH = 89;
+	MOTION_STATE_VEHICLE_NOTIFY = 90;
+	MOTION_STATE_VEHICLE_LAND_SPEED = 91;
+	MOTION_STATE_VEHICLE_DASH_BEFORE_SHAKE = 92;
+	MOTION_STATE_VEHICLE_QUEST_FORCE_DRAG = 93;
+	MOTION_STATE_VEHICLE_FOLLOW_ROUTE = 94;
+	MOTION_STATE_VEHICLE_FLY_IDLE = 95;
+	MOTION_STATE_VEHICLE_FLY_SLOW = 96;
+	MOTION_STATE_VEHICLE_FLY_FAST = 97;
+	MOTION_STATE_VEHICLE_AIR_COMPENSATION = 98;
+	MOTION_STATE_VEHICLE_ARC_LIGHT = 99;
+	MOTION_STATE_VEHICLE_ARC_LIGHT_SAFE = 100;
+	MOTION_STATE_VEHICLE_DANGER_SWIM_MOVE = 101;
+	MOTION_STATE_VEHICLE_DANGER_SWIM_IDLE = 102;
+	MOTION_STATE_VEHICLE_DANGER_SWIM_DASH = 103;
+	MOTION_STATE_FOLLOW_CURVE_ROUTE = 104;
+	MOTION_STATE_VEHICLE_FOLLOW_CURVE_ROUTE = 105;
+	MOTION_STATE_NATSAURUS_NORMAL = 106;
+	MOTION_STATE_NATSAURUS_ENTERING = 107;
+	MOTION_STATE_NUM = 108;
 }
 
 // CmdId: - 
@@ -4316,7 +4316,7 @@ message HPBKHBNKLKO {
 
 // CmdId: - 
 message EOLEKEMIPIL {
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		DGENDFIOBEK avatar_result = 144;
 		IGBOONLGPAI avatar_available_count_result = 475;
 		ICIHIABGIIN card_result = 1329;
@@ -4436,7 +4436,7 @@ message BOJFMFFEIPK {
 
 // CmdId: - 
 message PropValue {
-	oneof KNIDDPKDMIH {
+	oneof value {
 		int64 ival = 2;
 		float fval = 3;
 	}
@@ -5662,7 +5662,7 @@ message CrystalLinkDungeonAvatarInfo {
 }
 
 // CmdId: - 
-message BMBGBOGBDAP {
+message Furniture {
 	uint32 count = 1;
 }
 
@@ -5848,7 +5848,7 @@ message KFNHGHJIJJJ {
 
 // CmdId: 29159 
 message DOBGCPMEJED {
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		uint32 bgm_id = 214;
 		bool is_show_detail_build = 1060;
 		bool is_show_brief_card_event_case = 1442;
@@ -8437,7 +8437,7 @@ message GalleryStartNotify {
 	uint32 end_time = 5;
 	uint32 CLIAKIMDCJI = 1;
 	uint32 owner_uid = 12;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		ElectroherculesStartParam electrohercules_start_param = 6;
 		GalleryFlowerStartParam flower_start_param = 15;
 	}
@@ -8508,7 +8508,7 @@ message JCMFODPJJGB {
 // CmdId: - 
 message HGOFBHLMNLH {
 	repeated uint32 EGHCNIIGJHF = 13;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		JOHNDKGNGMA order_info = 4;
 		NLPGEGFOBEL exam_info = 14;
 	}
@@ -8729,7 +8729,7 @@ message KNCKINDJOHG {
 }
 
 // CmdId: - 
-message DLJLDLBJPIA {
+message FetterData {
 	repeated uint32 JNLBOMPONJC = 3;
 	uint32 fetter_id = 1;
 	uint32 fetter_state = 2;
@@ -9184,7 +9184,7 @@ message BBDABLILHGI {
 
 // CmdId: - 
 message AbilityString {
-	oneof DKMEIKCHLNP {
+	oneof type {
 		string str = 1;
 		uint32 hash = 2;
 	}
@@ -9287,7 +9287,7 @@ message PerformOperationNotify {
 message TrialAvatarInfo {
 	repeated Item trial_equip_list = 2;
 	TrialAvatarGrantRecord grant_record = 3;
-	uint32 MAFAALLEIMN = 1;
+	uint32 trial_avatar_id = 1;
 }
 
 // CmdId: 7006 
@@ -9644,11 +9644,11 @@ message OLNLAGJGNHE {
 }
 
 // CmdId: - 
-message FNLOPFLCFCA {
+message Equip {
 	bool is_locked = 3;
-	oneof PJHLFOAAKPO {
-		DJMLJPMAFCK reliquary = 1;
-		OGCMONIPCKL weapon = 2;
+	oneof detail {
+		Reliquary reliquary = 1;
+		Weapon weapon = 2;
 	}
 }
 
@@ -9716,7 +9716,7 @@ message FleurFairMinigameInfo {
 	bool is_open = 4;
 	uint32 minigame_id = 15;
 	uint32 MIGIBHJGMFJ = 14;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		FleurFairMusicGameInfo music_info = 6;
 		FleurFairBalloonInfo balloon_info = 11;
 		FleurFairFallInfo fall_info = 13;
@@ -10910,7 +10910,7 @@ message JFDANEAJDGH {
 // CmdId: - 
 message CIGBFFKOJBE {
 	AvatarInfo avatar_info = 7;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		ANJANOBJGPJ ugc_avatar_info = 1454;
 	}
 	uint32 player_uid = 15;
@@ -11533,7 +11533,7 @@ message SocialDetail {
 	bool is_mp_mode_available = 12;
 	bool is_show_avatar = 21;
 	bool is_in_blacklist = 15;
-	FAFJBDCBCOE AIIHHACPFDO = 36;
+	FAFJBDCBCOE data_version = 36;
 	uint32 HDNMLJGPLFG = 34;
 	uint32 level = 3;
 	uint32 tower_floor_index = 19;
@@ -12739,7 +12739,7 @@ message GKPLHJKJPJP {
 	uint32 PFJGOLDDDAF = 3;
 	uint32 group_id = 8;
 	uint32 play_index = 15;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		CoinCollectStageInfo coin_collect_info = 63;
 		JCMFODPJJGB cooperate_challenge_info = 190;
 		CharAmusementInfo char_amusement_info = 200;
@@ -12919,7 +12919,7 @@ message AsterLittleInfoNotify {
 
 // CmdId: 22339 
 message PJDKPKJPEIK {
-	uint32 MLGOEGFCGEB = 14;
+	uint32 item_num = 14;
 	int32 retcode = 4;
 	uint32 item_id = 3;
 }
@@ -13074,7 +13074,7 @@ message KLLGKDEDHAJ {
 message DungeonChallengeFinishNotify {
 	map<uint32, StrengthenPointData> strengthen_point_data_map = 8;
 	uint32 EJNHNAELONL = 6;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		PotionDungeonResultInfo potion_dungeon_result_info = 465;
 		ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 831;
 		EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 929;
@@ -13485,7 +13485,7 @@ message FKGBDBKHKNL {
 
 // CmdId: - 
 message BLPEFKMNCBG {
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		uint32 rent_avatar_id = 6;
 		uint32 trial_config_id = 11;
 		uint32 avatar_id = 15;
@@ -14663,7 +14663,7 @@ message SceneMonsterInfo {
 	uint32 block_id = 13;
 	uint32 owner_entity_id = 8;
 	uint32 summoned_tag = 9;
-	oneof ACLBEDGFOBL {
+	oneof content {
 		SceneFishInfo fish_info = 50;
 		FishtankFishInfo fishtank_fish_info = 51;
 	}
@@ -15553,7 +15553,7 @@ message PDOHCLKHDOF {
 // CmdId: - 
 message CJOLCKMCPJC {
 	uint32 item_id = 8;
-	uint32 MLGOEGFCGEB = 15;
+	uint32 item_num = 15;
 }
 
 // CmdId: - 
@@ -15750,7 +15750,7 @@ message PECPNAGJCNP {
 // CmdId: - 
 message GKMGCFCAHEM {
 	uint32 level_id = 7;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		PJFAMMPGDEM effigy_challenge_v5_detail = 1568;
 	}
 }
@@ -16091,7 +16091,7 @@ message AvatarEnterSceneInfo {
 
 // CmdId: - 
 message EKJKADLOENH {
-	repeated LDAFMPEFDMI EGOJKIMHIFE = 7;
+	repeated LDAFMPEFDMI data_list = 7;
 }
 
 // CmdId: - 
@@ -16995,7 +16995,7 @@ message DOOKKBABEAJ {
 }
 
 // CmdId: - 
-message DJMLJPMAFCK {
+message Reliquary {
 	repeated uint32 JLCFLCOKCFM = 5;
 	uint32 promote_level = 3;
 	uint32 level = 1;
@@ -17214,7 +17214,7 @@ message EvtAnimatorParameterNotify {
 message HCOGLBNGKJP {
 	int32 retcode = 11;
 	uint32 avatar_id = 3;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		JHIFFCHFFCF element_reliquary_set_response = 741;
 		DLFCKAHMONE skill_response = 810;
 		CECLHNIFCBJ element_reliquary_response = 1131;
@@ -17618,7 +17618,7 @@ message AvatarFetterInfo {
 	repeated uint32 rewarded_fetter_level_list = 5;
 	repeated uint32 open_id_list = 3;
 	repeated uint32 finish_id_list = 4;
-	repeated DLJLDLBJPIA fetter_list = 6;
+	repeated FetterData fetter_list = 6;
 	uint32 exp_level = 2;
 	uint32 exp_number = 1;
 }
@@ -18712,7 +18712,7 @@ message BONCKEMLPEA {
 	bool HPLEKBMEGOO = 13;
 	uint32 CAOEHLIFGNO = 11;
 	MONGGJDMKDK reason = 9;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		NMMCGACJIMF arena_settle = 596;
 		EEOLHKKFGBF auto_battle_card_activity_settle = 1453;
 		KBLBIBCJPMK pve_activity_settle = 1646;
@@ -18900,7 +18900,7 @@ message MDGMKJMJPKG {
 	uint32 HDGOMKNMKPC = 14;
 	// CmdId: - 
 	message EPOPNFGNPCK {
-		oneof PJHLFOAAKPO {
+		oneof detail {
 			uint32 mist_trial_avatar_id = 3;
 			uint64 formal_avatar_guid = 7;
 		}
@@ -19035,7 +19035,7 @@ message DungeonSettleNotify {
 	bool is_success = 7;
 	uint32 use_time = 14;
 	uint32 close_time = 12;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 41;
 		GOPLNNKDEMD badget_battle_settle_info = 184;
 		EPCNHGILFME summer_time_v2_dungeon_settle_info = 225;
@@ -19359,7 +19359,7 @@ message SceneGadgetInfo {
 	uint32 owner_entity_id = 4;
 	bool is_show_cutscene = 8;
 	bool is_enable_interact = 10;
-	oneof ACLBEDGFOBL {
+	oneof content {
 		GatherGadgetInfo gather_gadget = 13;
 		WorktopInfo worktop = 14;
 		ClientGadgetInfo client_gadget = 15;
@@ -19367,7 +19367,7 @@ message SceneGadgetInfo {
 		AbilityGadgetInfo ability_gadget = 18;
 		StatueGadgetInfo statue_gadget = 19;
 		BossChestInfo boss_chest = 20;
-		EBGBNKOEBJE blossom_chest = 41;
+		BlossomChestInfo blossom_chest = 41;
 		MpPlayRewardInfo mp_play_reward = 42;
 		GadgetGeneralRewardInfo general_reward = 43;
 		OfferingInfo offering_info = 44;
@@ -19381,7 +19381,7 @@ message SceneGadgetInfo {
 		NightCrowGadgetInfo night_crow_gadget_info = 62;
 		DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;
 		CoinCollectOperatorInfo coin_collect_operator_info = 64;
-		PIFFFLMNLGO trifle_gadget = 67;
+		TrifleGadget trifle_gadget = 67;
 	}
 }
 
@@ -19449,7 +19449,7 @@ message GGKMJGPKOFO {
 }
 
 // CmdId: - 
-message PIFFFLMNLGO {
+message TrifleGadget {
 	Item item = 1;
 	uint32 LOEDJGCKDMP = 2;
 }
@@ -19604,12 +19604,12 @@ message RoutePoint {
 	Vector position = 1;
 	bool has_reach_event = 3;
 	INPOKOICJPL point_type = 24;
-	oneof LBADLPNDEGN {
+	oneof move_params {
 		float velocity = 11;
 		float time = 12;
 	}
 	float arrive_range = 2;
-	oneof COOKLKKOMKA {
+	oneof rotate_params {
 		Vector rotation = 21;
 		MathQuaternion rotation_speed = 22;
 		MathQuaternion axis_speed = 23;
@@ -19825,7 +19825,7 @@ message IFNPHDDLENM {
 // CmdId: 22913 
 message IIJBJEIBMDP {
 	FLPOFEIKFHJ NKICJMCKEFF = 5;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		uint32 exam_id = 6;
 		CENPICPGIPP template_potion_info = 15;
 	}
@@ -20146,7 +20146,7 @@ message JIDFOBGENPI {
 }
 
 // CmdId: - 
-message OGCMONIPCKL {
+message Weapon {
 	map<uint32, uint32> affix_map = 4;
 	uint32 promote_level = 3;
 	bool JHPLJPIFMBM = 5;
@@ -20586,7 +20586,7 @@ message OLEEBKJLOIB {
 	repeated uint32 DKKGKEPOFKL = 12;
 	string name = 3;
 	uint32 target_score = 4;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		IKDGIIOHIFE normal = 1207;
 		LKLBNJEEDLI countdown = 1457;
 		EOOLAHEKFKD timer = 1902;
@@ -20853,7 +20853,7 @@ message HNCMBOIBHCA {
 
 // CmdId: - 
 message DLIAFGGCJHJ {
-	repeated uint32 EGOJKIMHIFE = 12;
+	repeated uint32 data_list = 12;
 	uint32 IIGMLEGNANH = 13;
 }
 
@@ -22085,7 +22085,7 @@ message ChatInfo {
 	uint32 platform_type = 10;
 	uint32 KIIKKMJHJGL = 15;
 	uint32 EKHKBILNFKO = 1;
-	oneof ACLBEDGFOBL {
+	oneof content {
 		SystemHint system_hint = 411;
 		uint32 icon = 1438;
 		string text = 1447;
@@ -22165,7 +22165,7 @@ message JHFNABHEDGB {
 	FGHFLOJAJPA OCAEJPMJMHP = 12;
 	uint32 level_id = 13;
 	uint32 cost_time = 14;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		LOLDMCLPEAE catcafe_info = 30;
 		OIALJBAKPCC ceremony_doodle_info = 338;
 		KMEDCCOAOHE bird_ball_client_info = 498;
@@ -22972,7 +22972,7 @@ message FJEBLCJFOLL {
 // CmdId: - 
 message PDAHGAMGEMI {
 	uint32 group_id = 11;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		EENDACKMNHH balloon_gallery_info = 833;
 		BILICMKCPMI seek_furniture_gallery_info = 1589;
 		IGJEHNPIDPO stake_play_info = 1814;
@@ -24563,7 +24563,7 @@ message PDLJNPAIAKG {
 // CmdId: 28692 
 message PrivateChatReq {
 	uint32 target_uid = 7;
-	oneof ACLBEDGFOBL {
+	oneof content {
 		uint32 icon = 9;
 		string text = 14;
 	}
@@ -26069,9 +26069,9 @@ message MBKIOMFCPBP {
 
 // CmdId: - 
 message ShowEquip {
-	oneof PJHLFOAAKPO {
-		DJMLJPMAFCK reliquary = 2;
-		OGCMONIPCKL weapon = 3;
+	oneof detail {
+		Reliquary reliquary = 2;
+		Weapon weapon = 3;
 	}
 	uint32 item_id = 1;
 }
@@ -27116,7 +27116,7 @@ message OKAHCEPBFML {
 // CmdId: 1512 
 message NKEIBBBNPMJ {
 	Vector pos = 7;
-	uint32 MLGOEGFCGEB = 13;
+	uint32 item_num = 13;
 	int32 param = 6;
 	uint32 item_id = 10;
 }
@@ -27413,7 +27413,7 @@ message IIEIJBBHGIL {
 
 // CmdId: 750 
 message SceneDestroyEntityReq {
-	uint32 MLGOEGFCGEB = 3;
+	uint32 item_num = 3;
 	uint32 scene_id = 2;
 	uint32 area_id = 4;
 }
@@ -27750,7 +27750,7 @@ message CONJIAPDJNK {
 
 // CmdId: 3260 
 message AHMPIPKDGPF {
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		uint32 red_point = 152;
 		bool is_show_detail_build = 520;
 		bool is_show_animation = 779;
@@ -27867,7 +27867,7 @@ message ActivityInfo {
 	repeated ActivityWatcherInfo watcher_info_list = 3;
 	repeated uint32 IOFIKNBFOHI = 13;
 	uint32 begin_time = 9;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		SeaLampActivityDetailInfo sam_lamp_info = 5;
 		SalesmanActivityDetailInfo salesman_info = 7;
 		CrucibleActivityDetailInfo crucible_info = 8;
@@ -28460,7 +28460,7 @@ message OKHJDLOPHMO {
 // CmdId: - 
 message HEPEFCNNHLO {
 	bool OMMDCGNLJDA = 13;
-	oneof KNIDDPKDMIH {
+	oneof value {
 		DEDFCJGDFHL effigy_challenge_v5_social_info = 1676;
 	}
 }
@@ -28531,7 +28531,7 @@ message AKHPAEMICAC {
 // CmdId: 1423 
 message MNFPEMMAHMA {
 	uint32 avatar_id = 8;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		DNIEDAJJEFE element_reliquary_set_request = 91;
 		NBGBCBFAHKL element_reliquary_request = 101;
 		FJOJAJPHIEH weapon_request = 174;
@@ -28771,7 +28771,7 @@ message BlockInfo {
 	bytes bin_data = 3;
 	bool is_dirty = 4;
 	uint32 block_id = 1;
-	uint32 AIIHHACPFDO = 2;
+	uint32 data_version = 2;
 }
 
 // CmdId: 5505 
@@ -29684,7 +29684,7 @@ message PlayerOfferingData {
 	bool is_first_interact = 4;
 	bool is_new_max_level = 11;
 	uint32 level = 14;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		OfferingPariDetailData offering_pari_detail_data = 23;
 	}
 }
@@ -31016,7 +31016,7 @@ message NGOFAENCGMO {
 	int32 retcode = 14;
 	FGHFLOJAJPA OCAEJPMJMHP = 8;
 	uint32 cost_time = 9;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		DJECELKNKKO bird_ball_info = 35;
 		OIALJBAKPCC ceremony_doodle_info = 163;
 		LNIMPHAOPGH fairy_tales_flyppy_hat_info = 684;
@@ -31269,7 +31269,7 @@ message NIHHGOECOJG {
 
 // CmdId: - 
 message KGGKPOCFDNO {
-	uint32 MLGOEGFCGEB = 11;
+	uint32 item_num = 11;
 	uint32 item_id = 12;
 }
 
@@ -32059,7 +32059,7 @@ message BDGHEMHCPMJ {
 	bool OMFPIPOBAIE = 9;
 	uint32 schedule_id = 5;
 	uint32 end_time = 12;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		IMLDFLODDPD bonus_info = 4;
 	}
 	uint32 activity_id = 2;
@@ -32323,12 +32323,12 @@ message FENEGBBFAPC {
 // CmdId: - 
 message AbilityMixinRecoverInfo {
 	BreakoutSnapShot breakout_snap_shot = 7;
-	repeated uint32 EGOJKIMHIFE = 4;
+	repeated uint32 data_list = 4;
 	repeated MassivePropSyncInfo massive_prop_list = 6;
 	LAMOMNEEAPK OMPAHPEAMOI = 8;
 	uint32 local_id = 3;
 	bool is_serverbuff_modifier = 5;
-	oneof JAPJNHODHMH {
+	oneof Source {
 		uint32 instanced_ability_id = 1;
 		uint32 instanced_modifier_id = 2;
 	}
@@ -33234,7 +33234,7 @@ message KBCPGJELEIL {
 	bytes HIKLFCHOBEE = 12;
 	IPJFBADHKDJ region_info = 3;
 	bytes MEFOMPJHDII = 11;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		FIHNGJALLDN force_udpate = 4;
 		StopServerInfo stop_server = 5;
 	}
@@ -33485,7 +33485,7 @@ message FIKJAOGKIGJ {
 
 // CmdId: 7336 
 message LBBBAKFGFHI {
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		FleurFairGallerySettleInfo gallery_settle_info = 7;
 		CPPLMFFPBIG boss_settle_info = 12;
 	}
@@ -34221,7 +34221,7 @@ message PCFLOGCLIMC {
 message EquipParam {
 	uint32 promote_level = 4;
 	uint32 item_id = 1;
-	uint32 MLGOEGFCGEB = 2;
+	uint32 item_num = 2;
 	uint32 item_level = 3;
 }
 
@@ -34410,7 +34410,7 @@ message FCFGBNGHBAJ {
 // CmdId: 5123 
 message ABOLPMAFDOG {
 	Vector pos = 3;
-	uint32 MLGOEGFCGEB = 15;
+	uint32 item_num = 15;
 	int32 param = 14;
 	uint32 item_id = 12;
 }
@@ -34955,7 +34955,7 @@ message BKMBCJKCNHJ {
 message FPNLJIEJKCD {
 	uint64 guid = 13;
 	uint32 HKHPPBDAIJP = 5;
-	uint32 MAFAALLEIMN = 9;
+	uint32 trial_avatar_id = 9;
 }
 
 // CmdId: 2057 
@@ -35250,10 +35250,10 @@ message IIAOJKPCABM {
 message Item {
 	uint64 guid = 2;
 	uint32 item_id = 1;
-	oneof PJHLFOAAKPO {
+	oneof detail {
 		Material material = 5;
-		FNLOPFLCFCA equip = 6;
-		BMBGBOGBDAP furniture = 7;
+		Equip equip = 6;
+		Furniture furniture = 7;
 	}
 }
 
@@ -35349,7 +35349,7 @@ message TeamEnterSceneInfo {
 }
 
 // CmdId: - 
-message EBGBNKOEBJE {
+message BlossomChestInfo {
 	repeated uint32 remain_uid_list = 3;
 	repeated uint32 qualify_uid_list = 2;
 	uint32 blossom_refresh_type = 5;
@@ -35901,7 +35901,7 @@ message HomePlantInfoNotify {
 
 // CmdId: 6241 
 message BlossomChestInfoNotify {
-	EBGBNKOEBJE blossom_chest_info = 3;
+	BlossomChestInfo blossom_chest_info = 3;
 	uint32 entity_id = 7;
 }
 
