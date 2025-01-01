@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "RoutePoint.proto";
+
+message MonsterRoute {
+	repeated RoutePoint route_points = 1;
+	bool ANIGKNIBBFJ = 6;
+	bool KODMOHACLFC = 5;
+	float arrive_range = 4;
+	uint32 speed_level = 2;
+	uint32 route_type = 3;
+}

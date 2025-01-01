@@ -1,0 +1,46 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "StopServerInfo.proto";
+
+message GetPlayerTokenRsp {
+	string ONFFCAPPIAF = 44;
+	string token = 11;
+	StopServerInfo stop_server = 1794;
+	string secret_key = 15;
+	bytes security_cmd_buffer = 4;
+	string server_rand_key = 1339;
+	string game_biz = 1420;
+	string birthday = 1690;
+	string GDDJDCHCPJP = 394;
+	repeated uint32 finish_collection_id_list = 1632;
+	string NIMPDPHCAGJ = 6;
+	string ADDELLGIEED = 1608;
+	bytes extra_bin_data = 14;
+	string psn_id = 604;
+	string sign = 682;
+	string client_version_random_key = 926;
+	string account_uid = 9;
+	string client_ip_str = 1172;
+	string country_code = 2015;
+	uint32 key_id = 280;
+	uint32 channel_id = 2025;
+	uint32 AKNBDKBHCJN = 566;
+	uint32 JPNLFEOOLBK = 860;
+	uint32 OKDLJNAPHCD = 848;
+	uint32 GIIBFMKMOBO = 597;
+	uint32 FNBMKJMDJFF = 13;
+	uint32 KBHOKKNMHIP = 7;
+	uint32 PBLNBBEHBLA = 1237;
+	uint32 IBJEKDGNGGO = 10;
+	bool LFDJCFDEIBA = 127;
+	bool is_guest = 5;
+	bool is_proficient_player = 1;
+	uint32 tag = 1341;
+	uint64 secret_key_seed = 2;
+	int32 retcode = 8;
+	uint32 platform_type = 3;
+	uint32 uid = 12;
+	bool GBHHJBEFPOI = 1271;
+	bool JOFPFJJHCJA = 1805;
+}

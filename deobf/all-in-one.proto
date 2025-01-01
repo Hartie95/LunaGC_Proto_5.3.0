@@ -651,7 +651,7 @@ message CoinCollectPlayerInfo {
 }
 
 // CmdId: 20505 
-message ScenePlayerInfoNotify {
+message IIJNICIJFBA {
 }
 
 // CmdId: 25241 
@@ -1099,7 +1099,7 @@ message MGGOLJKKGDN {
 // CmdId: - 
 message AvatarSkillInfo {
 	repeated uint32 full_cd_time_list = 2;
-	uint32 cond_index_list = 3;
+	uint32 max_charge_count = 3;
 	uint32 pass_cd_time = 1;
 }
 
@@ -4399,7 +4399,7 @@ message JLNMPAKLIMP {
 // CmdId: 25329 
 message GetAuthkeyRsp {
 	string GDDJDCHCPJP = 7;
-	string NFBJPHJKOPA = 6;
+	string game_biz = 6;
 	string ONFFCAPPIAF = 12;
 	uint32 PBLNBBEHBLA = 10;
 	int32 retcode = 9;
@@ -5156,9 +5156,9 @@ message FHNFCNPODLN {
 }
 
 // CmdId: 9969 
-message IFBECGEBBFN {
-	uint32 FDGJKLFGCEB = 2;
-	uint32 AIOGJIHCIMG = 8;
+message McoinExchangeHcoinRsp {
+	uint32 mcoin_cost = 2;
+	uint32 hcoin = 8;
 	int32 retcode = 9;
 }
 
@@ -6372,8 +6372,8 @@ message CDFLBALIIBF {
 }
 
 // CmdId: 4939 
-message MMHDPCKOJMD {
-	repeated FHGBGNAMNAK player_info_list = 5;
+message ScenePlayerInfoNotify {
+	repeated ScenePlayerInfo player_info_list = 5;
 }
 
 enum NCECOKHAOJD {
@@ -8260,20 +8260,21 @@ message PCBPGGOJFBJ {
 }
 
 enum ProtEntityType {
-	ProtEntityType_PROT_ENTITY_NONE = 0;
-	ProtEntityType_PROT_ENTITY_AVATAR = 1;
-	ProtEntityType_PROT_ENTITY_MONSTER = 2;
-	ProtEntityType_PROT_ENTITY_NPC = 3;
-	ProtEntityType_PROT_ENTITY_GADGET = 4;
-	ProtEntityType_PROT_ENTITY_REGION = 5;
-	ProtEntityType_PROT_ENTITY_WEAPON = 6;
-	ProtEntityType_PROT_ENTITY_WEATHER = 7;
-	ProtEntityType_PROT_ENTITY_SCENE = 8;
-	ProtEntityType_PROT_ENTITY_TEAM = 9;
-	ProtEntityType_PROT_ENTITY_MP_LEVEL = 11;
-	ProtEntityType_PROT_ENTITY_PLAY_TEAM_ENTITY = 12;
-	ProtEntityType_PROT_ENTITY_EYE_POINT = 13;
-	ProtEntityType_PROT_ENTITY_MAX = 14;
+	PROT_ENTITY_TYPE_NONE = 0;
+	PROT_ENTITY_TYPE_AVATAR = 1;
+	PROT_ENTITY_TYPE_MONSTER = 2;
+	PROT_ENTITY_TYPE_NPC = 3;
+	PROT_ENTITY_TYPE_GADGET = 4;
+	PROT_ENTITY_TYPE_REGION = 5;
+	PROT_ENTITY_TYPE_WEAPON = 6;
+	PROT_ENTITY_TYPE_WEATHER = 7;
+	PROT_ENTITY_TYPE_SCENE = 8;
+	PROT_ENTITY_TYPE_TEAM = 9;
+	PROT_ENTITY_TYPE_MASSIVE_ENTITY = 10;
+	PROT_ENTITY_TYPE_MP_LEVEL = 11;
+	PROT_ENTITY_TYPE_PLAY_TEAM_ENTITY = 12;
+	PROT_ENTITY_TYPE_EYE_POINT = 13;
+	PROT_ENTITY_TYPE_MAX = 14;
 }
 
 // CmdId: 23407 
@@ -8705,7 +8706,7 @@ message NGLDCLOAPDH {
 message AvatarSkillMaxChargeCountNotify {
 	uint64 avatar_guid = 1;
 	uint32 skill_id = 6;
-	uint32 cond_index_list = 14;
+	uint32 max_charge_count = 14;
 }
 
 // CmdId: 2079 
@@ -8737,7 +8738,7 @@ message FetterData {
 
 // CmdId: 4219 
 message IGMNHCCBFBH {
-	uint32 profile_picture_id = 8;
+	uint32 head_image_id = 8;
 }
 
 // CmdId: 29091 
@@ -8842,8 +8843,8 @@ message AvatarPropNotify {
 }
 
 enum MaterialDeleteReturnType {
-	MaterialDeleteReturnType_MATERIAL_DELETE_RETURN_BAG = 0;
-	MaterialDeleteReturnType_MATERIAL_DELETE_RETURN_SEED = 1;
+	MATERIAL_DELETE_RETURN_BAG = 0;
+	MATERIAL_DELETE_RETURN_SEED = 1;
 }
 
 // CmdId: 25061 
@@ -9661,37 +9662,37 @@ message AMKPLPIBEJN {
 }
 
 // CmdId: - 
-message IPJFBADHKDJ {
+message RegionInfo {
 	string LOOMGINGEON = 37;
-	string MNGGMFJFPBA = 30;
-	string HNIACIHMBLN = 27;
-	string NANPEAOHCGG = 8;
-	string KKNMMHPIGKL = 26;
-	string NFBJPHJKOPA = 36;
+	string user_center_url = 30;
+	string client_silence_version_suffix = 27;
+	string resource_url = 8;
+	string client_version_suffix = 26;
+	string game_biz = 36;
 	string next_resource_url = 34;
-	string ABMPFEOCKGC = 11;
-	string PPIIIAOLPKP = 12;
-	string HOEEEJOLPKN = 29;
-	string AEHIMCJFJHP = 19;
-	string FOHILCMCDFF = 9;
-	string NONKAHJMNOO = 13;
-	string FHJOCIIILNB = 10;
-	ResVersionConfig JDBNPBDGKON = 22;
-	string DIBIFMKGMMI = 20;
-	string FNHBOMDLJDB = 3;
-	string FJEPOOPKDPK = 24;
-	bytes JHAKBLIMJDL = 23;
-	string HHDKCCNDFPE = 31;
-	string IGECNGNPPJJ = 1;
-	string HFONBMAMBCJ = 33;
-	string JMFDHDHFPPB = 32;
+	string bulletin_url = 11;
+	string resource_url_bak = 12;
+	string gateserver_domain_name = 29;
+	string client_data_md5 = 19;
+	string data_url = 9;
+	string data_url_bak = 13;
+	string feedback_url = 10;
+	ResVersionConfig res_version_config = 22;
+	string client_silence_data_md5 = 20;
+	string pay_callback_url = 3;
+	string official_community_url = 24;
+	bytes secret_key = 23;
+	string account_bind_url = 31;
+	string gateserver_ip = 1;
+	string privacy_policy_url = 33;
+	string cdkey_url = 32;
 	string area_type = 7;
 	ResVersionConfig next_res_version_config = 35;
-	string JNIKDNDMNFH = 16;
+	string handbook_url = 16;
 	uint32 client_data_version = 14;
 	uint32 client_silence_data_version = 18;
-	uint32 LMCKHIGJEED = 2;
-	bool PAPEFHMAOHC = 28;
+	uint32 gateserver_port = 2;
+	bool use_gateserver_domain_name = 28;
 }
 
 // CmdId: 618 
@@ -10485,9 +10486,9 @@ message AFPFIKGEEDF {
 }
 
 // CmdId: - 
-message LAMNMAAKILA {
-	string CJNABFLJNLL = 8;
-	string ECCBJHELOHJ = 9;
+message H5ActivityInfo {
+	string prefab_path = 8;
+	string url = 9;
 	uint32 content_close_time = 4;
 	uint32 end_time = 1;
 	uint32 begin_time = 12;
@@ -11133,7 +11134,7 @@ message MPNMBLOCMJG {
 }
 
 // CmdId: 24387 
-message AvatarTeamAllDataNotify {
+message JHJMODGFLOI {
 	repeated uint32 HDDBLCDGOED = 14;
 }
 
@@ -12612,10 +12613,10 @@ message GetPlayerTokenRsp {
 	string ONFFCAPPIAF = 44;
 	string token = 11;
 	StopServerInfo stop_server = 1794;
-	string JHAKBLIMJDL = 15;
+	string secret_key = 15;
 	bytes security_cmd_buffer = 4;
 	string server_rand_key = 1339;
-	string NFBJPHJKOPA = 1420;
+	string game_biz = 1420;
 	string birthday = 1690;
 	string GDDJDCHCPJP = 394;
 	repeated uint32 finish_collection_id_list = 1632;
@@ -16152,7 +16153,7 @@ enum INPOKOICJPL {
 }
 
 // CmdId: - 
-message FHGBGNAMNAK {
+message ScenePlayerInfo {
 	string name = 15;
 	OnlinePlayerInfo online_player_info = 4;
 	bool is_connected = 2;
@@ -16214,9 +16215,9 @@ message ALJCPIMHINH {
 }
 
 enum MpSettingType {
-	MpSettingType_MP_SETTING_NO_ENTER = 0;
-	MpSettingType_MP_SETTING_ENTER_FREELY = 1;
-	MpSettingType_MP_SETTING_ENTER_AFTER_APPLY = 2;
+	MP_SETTING_TYPE_NO_ENTER = 0;
+	MP_SETTING_TYPE_ENTER_FREELY = 1;
+	MP_SETTING_TYPE_ENTER_AFTER_APPLY = 2;
 }
 
 // CmdId: 29695 
@@ -16373,7 +16374,7 @@ message ShopGoods {
 	ItemParam goods_item = 12;
 	uint32 max_level = 8;
 	uint32 BMFLNHAGEFD = 15;
-	uint32 AIOGJIHCIMG = 7;
+	uint32 hcoin = 7;
 	uint32 next_refresh_time = 5;
 	uint32 DFOCIMKCCDJ = 478;
 	uint32 IKKMEEEJHAH = 14;
@@ -16503,28 +16504,28 @@ message EnterSceneWeatherAreaNotify {
 }
 
 enum PlatformType {
-	PlatformType_EDITOR = 0;
-	PlatformType_IOS = 1;
-	PlatformType_ANDROID = 2;
-	PlatformType_PC = 3;
-	PlatformType_PS4 = 4;
-	PlatformType_SERVER = 5;
-	PlatformType_CLOUD_ANDROID = 6;
-	PlatformType_CLOUD_IOS = 7;
-	PlatformType_PS5 = 8;
-	PlatformType_CLOUD_WEB = 9;
-	PlatformType_CLOUD_TV = 10;
-	PlatformType_CLOUD_MAC = 11;
-	PlatformType_CLOUD_PC = 12;
-	PlatformType_CLOUD_THIRD_PARTY_MOBILE = 13;
-	PlatformType_CLOUD_THIRD_PARTY_PC = 14;
-	PlatformType_CLOUD_WEB_ANDROID = 15;
-	PlatformType_CLOUD_WEB_IOS = 16;
-	PlatformType_CLOUD_WEB_PC = 17;
-	PlatformType_CLOUD_WEB_MAC = 18;
-	PlatformType_CLOUD_WEB_TOUCH = 19;
-	PlatformType_CLOUD_WEB_KEYBOARD = 20;
-	PlatformType_XBOX_SCARLETT = 21;
+	PLATFORM_TYPE_EDITOR = 0;
+	PLATFORM_TYPE_IOS = 1;
+	PLATFORM_TYPE_ANDROID = 2;
+	PLATFORM_TYPE_PC = 3;
+	PLATFORM_TYPE_PS4 = 4;
+	PLATFORM_TYPE_SERVER = 5;
+	PLATFORM_TYPE_CLOUD_ANDROID = 6;
+	PLATFORM_TYPE_CLOUD_IOS = 7;
+	PLATFORM_TYPE_PS5 = 8;
+	PLATFORM_TYPE_CLOUD_WEB = 9;
+	PLATFORM_TYPE_CLOUD_TV = 10;
+	PLATFORM_TYPE_CLOUD_MAC = 11;
+	PLATFORM_TYPE_CLOUD_PC = 12;
+	PLATFORM_TYPE_CLOUD_THIRD_PARTY_MOBILE = 13;
+	PLATFORM_TYPE_CLOUD_THIRD_PARTY_PC = 14;
+	PLATFORM_TYPE_CLOUD_WEB_ANDROID = 15;
+	PLATFORM_TYPE_CLOUD_WEB_IOS = 16;
+	PLATFORM_TYPE_CLOUD_WEB_PC = 17;
+	PLATFORM_TYPE_CLOUD_WEB_MAC = 18;
+	PLATFORM_TYPE_CLOUD_WEB_TOUCH = 19;
+	PLATFORM_TYPE_CLOUD_WEB_KEYBOARD = 20;
+	PLATFORM_TYPE_XBOX_SCARLETT = 21;
 }
 
 // CmdId: 24344 
@@ -16875,12 +16876,12 @@ message PlayerLoginRsp {
 	string next_resource_url = 335;
 	string EJKLLNHHJNA = 1747;
 	StopServerInfo FMMGGHDHNJL = 1931;
-	string KKNMMHPIGKL = 1444;
+	string client_version_suffix = 1444;
 	bytes ODFDGEHIOLO = 1090;
-	string NFBJPHJKOPA = 9;
+	string game_biz = 9;
 	string NIMPDPHCAGJ = 1684;
-	ResVersionConfig JDBNPBDGKON = 1065;
-	string HNIACIHMBLN = 434;
+	ResVersionConfig res_version_config = 1065;
+	string client_silence_version_suffix = 434;
 	string GNLMAMIDDNJ = 1856;
 	string country_code = 1894;
 	repeated FeatureBlockInfo feature_block_info_list = 963;
@@ -17595,10 +17596,10 @@ message BOMIFOJJAJA {
 }
 
 // CmdId: 26145 
-message NNHMINHHPLE {
+message CardProductRewardNotify {
 	string product_id = 12;
-	uint32 NEFCJBAICFO = 11;
-	uint32 AIOGJIHCIMG = 10;
+	uint32 remain_days = 11;
+	uint32 hcoin = 10;
 }
 
 // CmdId: - 
@@ -17660,8 +17661,8 @@ message ServerBuffChangeNotify {
 	ServerBuffChangeType server_buff_change_type = 11;
 	bool is_creature_buff = 1;
 	enum ServerBuffChangeType {
-		ServerBuffChangeType_ADD_SERVER_BUFF = 0;
-		ServerBuffChangeType_DEL_SERVER_BUFF = 1;
+		SERVER_BUFF_CHANGE_TYPE_ADD_SERVER_BUFF = 0;
+		SERVER_BUFF_CHANGE_TYPE_DEL_SERVER_BUFF = 1;
 	}
 }
 
@@ -18283,7 +18284,7 @@ message MADKJACBCHE {
 
 // CmdId: 23656 
 message GetAllH5ActivityInfoRsp {
-	repeated LAMNMAAKILA h5_activity_info_list = 13;
+	repeated H5ActivityInfo h5_activity_info_list = 13;
 	int32 retcode = 10;
 	uint32 client_red_dot_timestamp = 2;
 }
@@ -19216,10 +19217,10 @@ message OFBHDCDCLJH {
 // CmdId: 7448 
 message DataResVersionNotify {
 	string EJKLLNHHJNA = 7;
-	string HNIACIHMBLN = 12;
+	string client_silence_version_suffix = 12;
 	string NHDGPDHIPJI = 1;
-	ResVersionConfig JDBNPBDGKON = 8;
-	string KKNMMHPIGKL = 9;
+	ResVersionConfig res_version_config = 8;
+	string client_version_suffix = 9;
 	DataResVersionOpType op_type = 3;
 	uint32 client_silence_data_version = 5;
 	bool is_data_need_relogin = 13;
@@ -20641,7 +20642,7 @@ message AbilityEmbryo {
 }
 
 // CmdId: 26426 
-message FJHFAPOMBMJ {
+message AvatarTeamAllDataNotify {
 	repeated uint64 temp_avatar_guid_list = 1;
 	map<uint32, AvatarTeam> avatar_team_map = 6;
 	repeated uint32 backup_avatar_team_order_list = 11;
@@ -23551,7 +23552,7 @@ message JCDFLOLBJAD {
 // CmdId: - 
 message StopServerInfo {
 	string content_msg = 4;
-	string ECCBJHELOHJ = 3;
+	string url = 3;
 	uint32 stop_begin_time = 1;
 	uint32 stop_end_time = 2;
 }
@@ -29032,10 +29033,10 @@ message NHFIGHKGLLG {
 }
 
 enum MovingPlatformType {
-	MovingPlatformType_MOVING_PLATFORM_NONE = 0;
-	MovingPlatformType_MOVING_PLATFORM_USE_CONFIG = 1;
-	MovingPlatformType_MOVING_PLATFORM_ABILITY = 2;
-	MovingPlatformType_MOVING_PLATFORM_ROUTE = 3;
+	MOVING_PLATFORM_TYPE_NONE = 0;
+	MOVING_PLATFORM_TYPE_USE_CONFIG = 1;
+	MOVING_PLATFORM_TYPE_ABILITY = 2;
+	MOVING_PLATFORM_TYPE_ROUTE = 3;
 }
 
 // CmdId: - 
@@ -29913,13 +29914,13 @@ message DLOOLBOLKGF {
 }
 
 enum GadgetBornType {
-	GadgetBornType_GADGET_BORN_NONE = 0;
-	GadgetBornType_GADGET_BORN_IN_AIR = 1;
-	GadgetBornType_GADGET_BORN_PLAYER = 2;
-	GadgetBornType_GADGET_BORN_MONSTER_HIT = 3;
-	GadgetBornType_GADGET_BORN_MONSTER_DIE = 4;
-	GadgetBornType_GADGET_BORN_GADGET = 5;
-	GadgetBornType_GADGET_BORN_GROUND = 6;
+	GADGET_BORN_TYPE_NONE = 0;
+	GADGET_BORN_TYPE_IN_AIR = 1;
+	GADGET_BORN_TYPE_PLAYER = 2;
+	GADGET_BORN_TYPE_MONSTER_HIT = 3;
+	GADGET_BORN_TYPE_MONSTER_DIE = 4;
+	GADGET_BORN_TYPE_GADGET = 5;
+	GADGET_BORN_TYPE_GROUND = 6;
 }
 
 // CmdId: 20703 
@@ -31766,7 +31767,7 @@ message SceneEntityAiInfo {
 	map<uint32, uint32> skill_cd_map = 6;
 	ServantInfo servant_info = 4;
 	map<uint32, uint32> skill_group_cd_map = 3;
-	bool is_ai_open = 8;
+	bool IFKJPBKLCDP = 8;
 	uint32 cur_tactic = 7;
 }
 
@@ -33232,7 +33233,7 @@ message KBCPGJELEIL {
 	string NIMPDPHCAGJ = 2;
 	string JJMCMIJBKMB = 14;
 	bytes HIKLFCHOBEE = 12;
-	IPJFBADHKDJ region_info = 3;
+	RegionInfo region_info = 3;
 	bytes MEFOMPJHDII = 11;
 	oneof detail {
 		FIHNGJALLDN force_udpate = 4;
@@ -33953,7 +33954,7 @@ message KAFGKNMLGME {
 
 // CmdId: 1495 
 message MGCABKPGPGA {
-	repeated uint32 append_prop_id_list = 7;
+	repeated uint32 FDEBBJHLIDG = 7;
 	uint32 NKHALFFODGL = 2;
 	uint32 DMJAKHDNIDE = 5;
 	uint32 ODBAAHPFAKP = 14;
@@ -34005,7 +34006,7 @@ message ENGIGDONIPJ {
 // CmdId: - 
 message ProfilePicture {
 	uint32 avatar_id = 1;
-	uint32 profile_picture_id = 3;
+	uint32 head_image_id = 3;
 	uint32 costume_id = 2;
 }
 
@@ -34611,9 +34612,9 @@ message BartenderActivityDetailInfo {
 }
 
 // CmdId: 26451 
-message MHEILNLDOHC {
-	uint32 FDGJKLFGCEB = 11;
-	uint32 AIOGJIHCIMG = 1;
+message McoinExchangeHcoinReq {
+	uint32 mcoin_cost = 11;
+	uint32 hcoin = 1;
 }
 
 // CmdId: 3050 
@@ -34899,7 +34900,7 @@ message HFNOACIPDPB {
 
 // CmdId: 25665 
 message SetPlayerProfilePictureReq {
-	uint32 profile_picture_id = 13;
+	uint32 head_image_id = 13;
 }
 
 // CmdId: 5571 

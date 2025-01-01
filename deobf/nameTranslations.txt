@@ -83,7 +83,6 @@ MABJPOLBNPH equip_guid_list
 DLNGEJGEDHP AvatarSkillInfo
 KECOOFCBLNN full_cd_time_list
 NNMJECIAJFI pass_cd_time
-OMNJBMFBIBO cond_index_list
 BOBKEDDHBHH skill_map
 JGIMPJPONFP TrialAvatarInfo
 ACBCMDEDIJC trial_avatar_info
@@ -1973,7 +1972,6 @@ AMPHIBONOMA ExitTransPointRegionNotify
 NPEJPPBMCAA SceneDestroyEntityReq
 JLGJCFCKCJJ ClientTransmitRsp
 DNOBKEPAEIA EnterSceneWeatherAreaNotify
-IIJNICIJFBA ScenePlayerInfoNotify
 JCNHODAGECB WorldPlayerLocationNotify
 FPEMOBPEJBM EndCameraSceneLookNotify
 MBFIANHNHDF PlayerRandomCookRsp
@@ -2067,7 +2065,6 @@ LKEPNHKDION SetEquipLockStateReq
 CFMEFLOPPPB CalcWeaponUpgradeReturnItemsReq
 LCDBJEBFFKL PersistentDungeonSwitchAvatarRsp
 CIAEFHBOADN DelBackupAvatarTeamRsp
-JHJMODGFLOI AvatarTeamAllDataNotify
 BNOEAGCMNBF ReliquaryFilterStateSaveNotify
 BKJGDBOEOMA ItemRenameAvatarReq
 HBFLHPBAOOO ItemRenameAvatarRsp
@@ -2299,7 +2296,6 @@ EPCJKNGABCA room_cost_map
 BJBAHBHMLFF enter_type
 NFJHOPHLNII EnterCustomDungeonType
 NNFKEGJBPJC template_reminder_id
-FDEBBJHLIDG append_prop_id_list
 ALLGMBAMGBF unlock_compound_list
 EODKKPKFLHF compound_que_data_list
 DNJIMHPCKFL CompoundQueueData
@@ -2712,7 +2708,6 @@ PHEFHMJCHHH finished_challenge_cell_num_map
 PDOJOKFILIP RoguelikeSettleCoinInfo
 GDLIEGJOEGI SceneEntityAiInfo
 DACIFPDCHDO cur_tactic
-IFKJPBKLCDP is_ai_open
 GBALDPCILCA EntityClientExtraInfo
 FIPHHOMPHIM skill_anchor_position
 DHKPPAKJIBD client_silence_data_version
