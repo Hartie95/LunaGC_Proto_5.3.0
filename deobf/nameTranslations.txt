@@ -3079,3 +3079,7 @@ NNBPKKNEBIP temp_var_map
 AKPNMHIAEHO WeaponUpgradeReq
 GHNMBEFBCBA cur_append_prop_list
 KKNAEFNNPAF old_append_prop_list
+CGGMGMNMPCP UpdatePlayerShowAvatarListReq
+JBCLODOEOJM show_avatar_id_list
+ILAJDMIGBNJ is_show_constellation_num
+ABNNLENJGEC UpdatePlayerShowAvatarListRsp

@@ -8976,10 +8976,10 @@ message MFPPBNHFHGI {
 }
 
 // CmdId: 22973 
-message CGGMGMNMPCP {
-	repeated uint32 JBCLODOEOJM = 13;
+message UpdatePlayerShowAvatarListReq {
+	repeated uint32 show_avatar_id_list = 13;
 	bool is_show_avatar = 3;
-	bool ILAJDMIGBNJ = 7;
+	bool is_show_constellation_num = 7;
 }
 
 enum ForwardType {
@@ -19593,10 +19593,10 @@ message HCNDNJGAAIC {
 }
 
 // CmdId: 1635 
-message ABNNLENJGEC {
-	repeated uint32 JBCLODOEOJM = 15;
+message UpdatePlayerShowAvatarListRsp {
+	repeated uint32 show_avatar_id_list = 15;
 	int32 retcode = 8;
-	bool ILAJDMIGBNJ = 11;
+	bool is_show_constellation_num = 11;
 	bool is_show_avatar = 7;
 }
 
