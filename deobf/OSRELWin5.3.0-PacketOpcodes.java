@@ -842,7 +842,7 @@ public final class PacketOpcodes {
 	public static final int AvatarExpeditionCallBackRsp = 22224;
 	public static final int BKAGGHOLLNA = 1551;
 	public static final int OKHKBFAKJLE = 8650;
-	public static final int CGGMGMNMPCP = 22973;
+	public static final int UpdatePlayerShowAvatarListReq = 22973;
 	public static final int KDDDNEFLNDI = 3127;
 	public static final int TakeMaterialDeleteReturnRsp = 28354;
 	public static final int OIOCHGMBGIJ = 25886;
@@ -1785,7 +1785,7 @@ public final class PacketOpcodes {
 	public static final int JCEMMPNECDD = 24298;
 	public static final int JEDDHENFCNG = 27654;
 	public static final int HCNDNJGAAIC = 28597;
-	public static final int ABNNLENJGEC = 1635;
+	public static final int UpdatePlayerShowAvatarListRsp = 1635;
 	public static final int JEMKPFLEGPE = 29484;
 	public static final int NDLBLFPMEJJ = 28294;
 	public static final int HKGDBBJILMG = 23213;
