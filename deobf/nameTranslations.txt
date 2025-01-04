@@ -3083,3 +3083,10 @@ CGGMGMNMPCP UpdatePlayerShowAvatarListReq
 JBCLODOEOJM show_avatar_id_list
 ILAJDMIGBNJ is_show_constellation_num
 ABNNLENJGEC UpdatePlayerShowAvatarListRsp
+BCAIBFDHBCK UnlockAvatarTalentRsp
+IPPBOFFDBOB UnlockAvatarTalentReq
+ACCEHKMFCHM item_list
+NFKPPOPHJPH BuyGoodsParam
+BILAOAFMPMN BatchBuyGoodsReq
+IOJHFHGOOEM buy_goods_list
+INILEICCLDJ BatchBuyGoodsRsp
