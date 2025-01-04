@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+// Version: 5.3.50
+// CmdId: 8404
+
+message NpcTalkReq {
+	uint32 npc_entity_id = 15;
+	uint32 entity_id = 3;
+	uint32 talk_id = 8;
+}

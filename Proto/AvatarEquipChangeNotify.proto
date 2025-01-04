@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+// Version: 5.3.50
+// CmdId: 4136
+
+import "SceneWeaponInfo.proto";
+import "SceneReliquaryInfo.proto";
+
+message AvatarEquipChangeNotify {
+	SceneWeaponInfo weapon = 15;
+	SceneReliquaryInfo reliquary = 8;
+	uint64 avatar_guid = 1;
+	uint64 equip_guid = 4;
+	uint32 item_id = 7;
+	uint32 equip_type = 14;
+}
