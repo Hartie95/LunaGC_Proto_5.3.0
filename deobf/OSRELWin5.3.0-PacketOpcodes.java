@@ -2363,7 +2363,7 @@ public final class PacketOpcodes {
 	public static final int EFIFJAPNBCA = 4564;
 	public static final int OAALHMLEALC = 4989;
 	public static final int BGGDPJCFIOP = 23308;
-	public static final int IPPBOFFDBOB = 28932;
+	public static final int UnlockAvatarTalentReq = 28932;
 	public static final int KGFJPOFNIGK = 24629;
 	public static final int HomeSearchBlueprintRsp = 663;
 	public static final int FishEscapeNotify = 23239;
@@ -2666,7 +2666,7 @@ public final class PacketOpcodes {
 	public static final int PHGIIDNFEHL = 8342;
 	public static final int MLKMBPNDBAN = 9736;
 	public static final int CMKBJDHAECL = 2281;
-	public static final int INILEICCLDJ = 28119;
+	public static final int BatchBuyGoodsRsp = 28119;
 	public static final int IKJCCKDIGJO = 9222;
 	public static final int JKAEDKCAPIL = 543;
 	public static final int GCBLGJEHEJC = 688;
@@ -2755,7 +2755,7 @@ public final class PacketOpcodes {
 	public static final int IPAPABOKEJO = 1542;
 	public static final int EFDEEPOPKMA = 3666;
 	public static final int KNEEFLHKCGE = 4159;
-	public static final int BCAIBFDHBCK = 28218;
+	public static final int UnlockAvatarTalentRsp = 28218;
 	public static final int ACMEPFNHGGM = 22700;
 	public static final int BCOMMLNLJBA = 71;
 	public static final int ONMLKGNOLFF = 29305;
@@ -3196,7 +3196,7 @@ public final class PacketOpcodes {
 	public static final int COGAACKKDDA = 3606;
 	public static final int IJEJEHNHCKO = 9129;
 	public static final int HomeGetArrangementInfoReq = 5207;
-	public static final int BILAOAFMPMN = 29849;
+	public static final int BatchBuyGoodsReq = 29849;
 	public static final int NJGAHDFFCMC = 408;
 	public static final int FNEAMOILLEL = 7488;
 	public static final int FNNFCBNMFDB = 29165;
