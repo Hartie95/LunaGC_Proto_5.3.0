@@ -2037,7 +2037,6 @@ MOMMEBGFBIO ClientAIStateNotify
 CCKPJENOGLB ClientRemoveCombatEndModifierNotify
 IAJAELKBNNG TakeAchievementRewardRsp
 LIDGILOJDOL QuestDestroyNpcReq
-GMJMNCHNHFH DropItemRsp
 CEBMDJFKMEM AvatarChangeElementTypeRsp
 NDPLDAPBIJF WeaponPromoteReq
 IAJJAAPCGMM ReliquaryUpgradeReq
@@ -2068,7 +2067,6 @@ CIAEFHBOADN DelBackupAvatarTeamRsp
 BNOEAGCMNBF ReliquaryFilterStateSaveNotify
 BKJGDBOEOMA ItemRenameAvatarReq
 HBFLHPBAOOO ItemRenameAvatarRsp
-JCAEHAGFCIF StoreItemChangeNotify
 OHGOKMCDEPC ReliquaryUpgradeReq
 HIGBGGBODCF WeaponPromoteRsp
 KNLBOABDIDH AvatarCardChangeReq
@@ -2117,7 +2115,6 @@ KNIOCIBPFLC SubmitInferenceWordReq
 JHGGGGGHCBJ SubmitInferenceWordRsp
 CPAKEEDEGBG QuestRenameAvatarReq
 AEPDNIGPENC QuestRenameAvatarRsp
-MMNODDDMMNM ActivityInfoNotify
 IMAOMDNHLAD ActivityTakeWatcherRewardReq
 DEGCEHEKJGB ActivityTakeWatcherRewardRsp
 IOMAGPKLKGM ActivityUpdateWatcherNotify

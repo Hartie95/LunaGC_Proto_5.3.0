@@ -13397,7 +13397,7 @@ message FJFCMMOEHNF {
 }
 
 // CmdId: 4480 
-message DropItemRsp {
+message GMJMNCHNHFH {
 }
 
 // CmdId: 28676 
@@ -17409,7 +17409,7 @@ message SetEquipLockStateRsp {
 }
 
 // CmdId: 26901 
-message MKHDBNLFLPC {
+message DropItemRsp {
 	int32 retcode = 1;
 	StoreType store_type = 5;
 	uint64 guid = 13;
@@ -18727,7 +18727,7 @@ message LLAOCMFMLPP {
 }
 
 // CmdId: 1383 
-message StoreItemChangeNotify {
+message JCAEHAGFCIF {
 	repeated BJGEGDNGGIO ACCEHKMFCHM = 15;
 }
 
@@ -20137,7 +20137,7 @@ message LanV5CardBriefInfo {
 }
 
 // CmdId: 1872 
-message ActivityInfoNotify {
+message MMNODDDMMNM {
 }
 
 // CmdId: 27502 
@@ -29633,8 +29633,8 @@ message PNIEMMPOJKK {
 }
 
 // CmdId: 6975 
-message JDCCFOKAEGA {
-	ActivityInfo DADODDBIPML = 7;
+message ActivityInfoNotify {
+	ActivityInfo activity_info = 7;
 }
 
 // CmdId: - 
