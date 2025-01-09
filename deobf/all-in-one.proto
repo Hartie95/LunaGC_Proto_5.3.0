@@ -6675,7 +6675,7 @@ message IIKLKLPLAMJ {
 }
 
 // CmdId: 29570 
-message HAJPFNNMIPD {
+message StoreItemChangeNotify {
 	repeated Item item_list = 15;
 	StoreType store_type = 1;
 	DGFFPOLCMCP reason = 9;
@@ -25799,7 +25799,7 @@ message MCMNIDADFDO {
 }
 
 // CmdId: 28932 
-message IPPBOFFDBOB {
+message UnlockAvatarTalentReq {
 	uint64 avatar_guid = 5;
 	uint32 talent_id = 2;
 }
@@ -29150,9 +29150,9 @@ message CMKBJDHAECL {
 }
 
 // CmdId: 28119 
-message INILEICCLDJ {
+message BatchBuyGoodsRsp {
 	repeated ShopGoods goods_list = 15;
-	repeated NFKPPOPHJPH IOJHFHGOOEM = 10;
+	repeated BuyGoodsParam buy_goods_list = 10;
 	int32 retcode = 5;
 	uint32 shop_type = 9;
 }
@@ -30127,7 +30127,7 @@ message KNEEFLHKCGE {
 }
 
 // CmdId: 28218 
-message BCAIBFDHBCK {
+message UnlockAvatarTalentRsp {
 	int32 retcode = 8;
 	uint32 talent_id = 15;
 	uint64 avatar_guid = 7;
@@ -34159,7 +34159,7 @@ message NMBEGFBGGAI {
 }
 
 // CmdId: - 
-message NFKPPOPHJPH {
+message BuyGoodsParam {
 	ShopGoods goods = 7;
 	uint32 buy_count = 2;
 }
@@ -34720,8 +34720,8 @@ message HomeGetArrangementInfoReq {
 }
 
 // CmdId: 29849 
-message BILAOAFMPMN {
-	repeated NFKPPOPHJPH IOJHFHGOOEM = 2;
+message BatchBuyGoodsReq {
+	repeated BuyGoodsParam buy_goods_list = 2;
 	uint32 shop_type = 7;
 }
 
