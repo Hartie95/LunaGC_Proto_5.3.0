@@ -1510,7 +1510,7 @@ AHDJILBBLDN TowerDailyRewardProgressChangeNotify
 CBKFKDEEJPM ShapeType
 JKNIPHOIKAN add_obstacles
 IJALDFLGBDG remove_obstacle_ids
-CAMBNNJAJGJ ObstacleModifyNotify
+CAMBNNJAJGJ ToTheMoonObstaclesModifyNotify
 HBFHHDBMFOI entity
 DGPJJHAEAHA WorldPlayerDieNotify
 JDNHPHOLDOO murderer_entity_id
@@ -1818,7 +1818,6 @@ OFANCIHCIGO OrderFinishNotify
 FELOAPOABBG OtherPlayerEnterHomeNotify
 PJEFGOLLKKE PacketHead
 HNFOMBAGNAP PerformOperationNotify
-AAPKBNGOMKB PhotoPosData
 EGIFDILJONF PlantFlowerActivityDetailInfo
 ICAOFEGNFHG PlayerCompoundMaterialBoostRsp
 CADPHOPEEFO PlayerCookRsp
@@ -1855,7 +1854,7 @@ INPEAGHMJMB ReliquaryUpgradeRsp
 MHJCIMILJEI RemotePlayerWidgetNotify
 NMNPEPANLCL RemoveRandTaskInfoNotify
 IGIFHLEGHOI RequestLiveInfoRsp
-BAEAKKMBHIL EvtAvatarUpdateFocusNotify
+BAEAKKMBHIL RogueCellUpdateNotify
 ABDKNHGALIE RogueDiaryActivityDetailInfo
 CMMDODCCOFI RogueDiaryDungeonInfoNotify
 EPBMABADADM RogueDiaryRoomInfo
@@ -2044,7 +2043,6 @@ LIFNFMKIEKB AvatarExpeditionStartReq
 IKFNLHHCEML ReliquaryPromoteReq
 MODCDJDEPOP WeaponAwakenReq
 IPODDDDHCPD AvatarExpeditionCallBackRsp
-LHADJMMNDHD AvatarExpeditionGetRewardRsp
 MAJPGGKEHDC ForgeGetQueueDataReq
 DDGIBGHLALK ForgeStartReq
 JJIIEHIGMDP ForgeStartRsp
@@ -2459,7 +2457,6 @@ HLBACBEEIEF FireworksLaunchParamType
 AMHDOKIPFHE last_use_scheme_id
 IOJODCEAJCM operate_type
 MFMEMOHDEJC OperateType
-LIGAFGMJNFP extra_item_list
 CMCPEEMLAMK dungeon_team_list
 LGELCMAAPEB dungeon_avatar_list
 KPEAIHFHPOP SumoDungeonAvatar
@@ -2518,7 +2515,7 @@ BONBBBEPENK InBattleMechanicusCardInfo
 AKGHNIKINAF challenge_state
 ILMOOECNDJF InBattleMechanicusCardChallengeState
 LHLDBODGIFH wait_begin_time_us
-GJIFAFOGOGH focus_forward
+GJIFAFOGOGH cell_info
 KIAHOKHPFML clear_curse_map
 BKNCBLGCAAJ stage_begin_time
 KINEBJNJDAI stage_state
@@ -3016,8 +3013,8 @@ EBNKBAJPAOP close_time
 MPNHJNBDMHG result
 HPOIKLPEAFF DungeonSettleExhibitionInfo
 LKBCNJLKNJN exhibition_info_list
-JHDCPJHAOLB card_list
-NGJJFONEALC player_info
+JHDCPJHAOLB player_info
+NGJJFONEALC card_list
 ABOEIKLLMJI detail_param
 JPJLJAIKFGN base_point
 IDCGELKDEMO cur_point
@@ -3210,7 +3207,6 @@ OAFCGOIHIFF ProjectorOpType
 GCAHPOHPBFP ProjectorOptionReq
 DOBEFIDPEKG GalleryStartSource
 ANAAGLFIJCA RogueCellInfo
-BAEAKKMBHIL RogueCellUpdateNotify
 HEEACBDEAKE WindFieldDungeonFailReason
 DACGPCLHPIF ServerLogType
 PJAIDNGAACC AStarMethod
@@ -3398,3 +3394,20 @@ JOGNMONCKMP pre_start_end_time
 BJOKPOGPKHB HomeFishFarmingInfo
 BNAFEHIMEPF fishpond_guid
 PIJDHODKEDP HomeUpdateFishFarmingInfoReq
+EDDJHMPNGNE building_id
+ACEHCDBBKLD FoundationReq
+IAJAELKBNNG BlessingGetFriendPicListRsp
+AAGNIHKFFGM friend_pic_data_list
+CIKFJOBNPML BlessingFriendPicData
+FEEMLKKGCBO BlessingRedeemRewardRsp
+FJPNOCCJBEA pic_num_map
+DPALKFJJBIJ EvtAvatarUpdateFocusNotify
+CEJONPPLKJF focus_forward
+GFCFNNEAJNJ is_view
+HOJNNDFLINJ PhotoPosData
+FOBFMBMAILN ObstacleModifyNotify
+HAHGFPFOLGG ToTheMoonObstacleInfo
+FKCCGLCDCJF half_extents
+DPHJNCBOPJN handle_id
+KHIKBHCKBPO obstacle
+OPBHNBHHLOA IrodoriMasterGalleryCgEndNotify
