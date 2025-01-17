@@ -2039,7 +2039,6 @@ IAJAELKBNNG TakeAchievementRewardRsp
 LIDGILOJDOL QuestDestroyNpcReq
 CEBMDJFKMEM AvatarChangeElementTypeRsp
 NDPLDAPBIJF WeaponPromoteReq
-IAJJAAPCGMM ReliquaryUpgradeReq
 LIFNFMKIEKB AvatarExpeditionStartReq
 IKFNLHHCEML ReliquaryPromoteReq
 MODCDJDEPOP WeaponAwakenReq
@@ -2055,12 +2054,9 @@ PACEFLPDEAM TakeMaterialDeleteReturnReq
 GKMKLKPNGOG AvatarGainFlycloakNotify
 CJMNBFJNPLH TakeMaterialDeleteReturnRsp
 KNKLFCLCEKM MaterialDeleteUpdateNotify
-AKJFDDPPHEB McoinExchangeHcoinReq
-OIMAMDIJLME McoinExchangeHcoinRsp
 DNBLEOFBGKC AvatarPromoteGetRewardReq
 AFDBOPENIAH DestroyMaterialReq
 FPENNFFJHBA DestroyMaterialRsp
-LKEPNHKDION SetEquipLockStateReq
 CFMEFLOPPPB CalcWeaponUpgradeReturnItemsReq
 LCDBJEBFFKL PersistentDungeonSwitchAvatarRsp
 CIAEFHBOADN DelBackupAvatarTeamRsp
@@ -2077,7 +2073,6 @@ MEDILDHFDIF old_promote_level
 PJKAFEJIGHJ ForgeQueueManipulateReq
 DGDIKFCIPDA ForgeQueueManipulateRsp
 PCNFGNINKAC BuyResinRsp
-JAHHHNNCAMF SetEquipLockStateRsp
 JFEEBLNGODE ForgeFormulaDataNotify
 JBAEKDFGONK CombineFormulaDataNotify
 AJCGBBODGEB SetIsAutoUnlockSpecificEquipReq
@@ -2389,7 +2384,6 @@ AMOLCNAKACG building_list
 HFLNJMHJIED optional_order_list
 PCHALAMDHKP is_view_formula
 PCLIDJMIOEJ recipe_data_list
-DCLBMHJJNGD CookRecipeData
 OAOCKBHHKCN world_routine_type_list
 OEKLKCBECNJ world_routine_info_list
 HDIHPAJMHEN WorldRoutineInfo
@@ -3087,3 +3081,5 @@ NFKPPOPHJPH BuyGoodsParam
 BILAOAFMPMN BatchBuyGoodsReq
 IOJHFHGOOEM buy_goods_list
 INILEICCLDJ BatchBuyGoodsRsp
+MHEILNLDOHC McoinExchangeHcoinReq
+IFBECGEBBFN McoinExchangeHcoinRsp
