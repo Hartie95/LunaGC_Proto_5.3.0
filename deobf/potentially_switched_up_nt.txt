@@ -1,0 +1,10 @@
+expire_cond_list meet_cond_list
+aster_token aster_credit
+dungeon_punish_over_time obtained_token
+taken_phase_reward_list taken_contribution_reward_list
+factor contribution
+single_bullet_id hit_entity_id
+taken_reward_count cur_dungeon_reward_limit
+total_energy self_energy
+mp_buff_scheme_info single_buff_scheme_info
+passed_dungeon received_reward
