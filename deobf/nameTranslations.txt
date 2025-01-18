@@ -2030,7 +2030,6 @@ DCHCIDBKIHF SetSceneWeatherAreaRsp
 BOEMMNDHCOF ClientAbilityInitBeginNotify
 MOMMEBGFBIO ClientAIStateNotify
 CCKPJENOGLB ClientRemoveCombatEndModifierNotify
-IAJAELKBNNG TakeAchievementRewardRsp
 LIDGILOJDOL QuestDestroyNpcReq
 CEBMDJFKMEM AvatarChangeElementTypeRsp
 NDPLDAPBIJF WeaponPromoteReq
@@ -3170,7 +3169,6 @@ OFJPJEACNCI ToTheMoonQueryPathReq
 NBLIOABCBBC MatchReason
 PMECGEOBJLJ GCGIntentionChangeType
 LNLCIBDOEPD Reason
-GJKOEGKLHJD ChangHpReason
 CAODNMCDBOK OptionType
 KCGHPOKLFKD Type
 EEPBDKDBHAH SvrMsgId
@@ -3201,7 +3199,6 @@ DACGPCLHPIF ServerLogType
 PJAIDNGAACC AStarMethod
 GKNDBGFGIAN RogueEliteCellDifficultyType
 MADKANKLBNK StartRogueEliteCellChallengeReq
-IBBBKPGCCBO LockedPersonallineData
 LFAPLBPHDKA param
 AEBLHJBGENF MsgParam
 FLCKIECLAHG detail
@@ -3216,7 +3213,6 @@ KNGCOEELNAM SyncType
 EPOPNFGNPCK SelectAvatarIndex
 MDGMKJMJPKG MistTrialSelectAvatarAndEnterDungeonReq
 AHMPIPKDGPF SelectAvatarIndex
-HJHHEGNIHOH SceneGalleryVintageHuntingInfo
 POPJDKFPNKK notify
 OCAHPBKNKCL AreaNotify
 JGANNINKAPC RefreshNotify
@@ -3287,22 +3283,13 @@ FPHGLOCJGNI GCGMsgCostRevise
 IDHFNPDGBJB GCGMsgClientPerform
 BAHIGFPIGNC GetUgcBriefInfoRsp
 PNDEIANOGON brief
-LODEPDFHBFP SceneEntityInfo
 GBMJAMJJNJK entity_create_info
-MDKDIAFIOAJ SceneGadgetInfo
 EPCNHGILFME SummerTimeV2DungeonSettleInfo
 CHMPNMFHMGP CrystalLinkDungeonSettleInfo
 ICBGMLIEBKB InstableSprayDungeonSettleInfo
 IDBJPINFJOO TeamChainSettleInfo
 LPCIHFDLKEJ EffigyChallengeV2SettleInfo
 BHDFHFCNNGJ TrialAvatarFirstPassDungeonNotify
-CBBGBNAKAMI MultistagePlayInfo
-JDCCFOKAEGA MultistagePlayInfoNotify
-HFHBHMENNGN CoinCollectStageInfo
-ALBAHBLEDPC CharAmusementInfo
-NLAOEBEIOIP InBattleChessInfo
-GAEEBHEGBFP BrickBreakerStageInfo
-MIIDDFCILOO HideAndSeekStageInfo
 KFNHGHJIJJJ SceneGalleryHideAndSeekInfo
 OJJJBJIPHFH SceneGalleryBounceConjuringInfo
 BCDJMFAPMBG SceneGalleryTreasureSeelieInfo
