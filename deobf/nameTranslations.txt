@@ -703,7 +703,6 @@ NMCPGJFBIBE PlayerSetPauseRsp
 FJMOLFDGIJI DungeonEntryInfoReq
 MHCMONDIKGL scene_point_id_list
 JBNNAPOAEPK WidgetDoBagReq
-LFOGPJDBHHG op_info
 ECPBONKMBFI WidgetCreateLocationInfo
 GKKFNDALCDJ WidgetCreatorInfo
 KDNICOBEBEJ rot
@@ -840,7 +839,6 @@ CGFJFCAMMHH blacklist_uid_list
 MNGPLEFIOOC psn_id
 MNHBLDDGICG player_info_list
 HDMANDEAPIG is_online_id
-PCGNLLAHIHL player_id
 DKNIDDAFHMM GetOnlinePlayerInfoReq
 BGNBMGPCJLK GetOnlinePlayerListRsp
 GCNHFGJPFKO target_player_info
@@ -1105,7 +1103,6 @@ KBBPEMDCAGG HomeSceneArrangementInfo
 EIGANIBNCAD HomeFurnitureData
 NMOGFODGLJB comfort_value
 LCGMAGMABOM is_unlocked
-HomeAvatarRewardEventInfo HomeAvatarRewardEventInfo
 LBFPLNJNJJB HomeAvatarTalkFinishInfo
 JFAKFNKJDOB HomeAvatarTalkFinishInfoNotify
 HEIFKHOFPCH HomeAvatarSummonEventInfo
@@ -1249,7 +1246,6 @@ NGFOPFFAELE local_avatar_alerted_monster_list
 ABIHKJKCANL ParentQuestInferenceDataNotify
 LODEPDFHBFP CreateEntityInfo
 BMNLNGCNJKF client_unique_id
-EPMAJDBFJEI entity_create_info
 MDKDIAFIOAJ CreateGadgetInfo
 CELHHCEOOCE Chest
 CNGLKDKAOPC chest
