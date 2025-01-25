@@ -2278,7 +2278,6 @@ OEKLKCBECNJ world_routine_info_list
 HDIHPAJMHEN WorldRoutineInfo
 DHMMANDOLGI target_weapon_awaken_level
 DOBJHCPLABO FishEscapeReason
-HPMCDGPJHEP is_win
 AGAAIOIEPCB MaterialDeleteReturnType
 LPHEGCAGKMC coin_collect_info
 AGLMJALGFDP play_index
@@ -2560,7 +2559,6 @@ CDJLAJIEBDH finish_clue_count
 IHAMDICMBPE next_position
 PEKMJNCHMND skill_info_list
 HOMCBEDHPKI LanternRiteFireworksReformSkillInfo
-OCEMFOLPBME mark_new_type
 JLCDOKEHGIF MapMarkFromType
 JOOBOAAJLNN MapMarkPointType
 CEINPPKGFGD final_position
@@ -2960,7 +2958,6 @@ ILAJDMIGBNJ is_show_constellation_num
 ABNNLENJGEC UpdatePlayerShowAvatarListRsp
 BCAIBFDHBCK UnlockAvatarTalentRsp
 IPPBOFFDBOB UnlockAvatarTalentReq
-ACCEHKMFCHM item_list
 NFKPPOPHJPH BuyGoodsParam
 BILAOAFMPMN BatchBuyGoodsReq
 IOJHFHGOOEM buy_goods_list
@@ -4440,3 +4437,16 @@ NGIIEOEALPF dynamic_nodes
 NOLGPMPOAHA handle
 KKEAPOGOFMD GachaSimpleInfoNotify
 HOIAOGFJLFA GetActivityShopSheetInfoReq
+NLHAPKMDEAA LanternRiteFireworksChallengeInfo
+EDAFCMAILKM is_full_score
+NFPAGEHAPHN CityReputationExploreInfo
+CEMKEDKJBGE taken_explore_reward_list
+MNPDNOMMDBF explore_percent
+LMMJLCOEOCO hunt_info
+IBBCOPPODHC CityReputationRequestInfo
+NOCLLNCGLFC request_info
+KCEDEJNJCEG CityReputationQuestInfo
+DJNHBEDDJKB quest_info
+IGMOKIBCAGN RequestInfo
+GBBFKMNDBGK request_info_list
+JEIBICKHIGF request_id
