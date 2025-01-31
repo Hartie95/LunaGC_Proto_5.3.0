@@ -4475,3 +4475,6 @@ OBLCJPALJPM seed_pos
 KIPNGEGHCOD area_code
 IHOILANECLJ delta
 NHNBAEHHPNC ClientAIStateNotify
+NJLPHMPNCLI PlatformStopRouteNotify
+HHGNIBPDCMB PlatformStartRouteNotify
+EBLCDOGBLED PlatformChangeRouteNotify
