@@ -27,3 +27,6 @@ robot_finish_num tech_create_robot_id
 gallery_id_list ability_group_id_list
 curr_points max_points
 modifier_owner_id ability_caster_id
+backup_monster_list choosen_monster_list
+round_card_list round_card_list
+reserve_avatar_num tired_type
