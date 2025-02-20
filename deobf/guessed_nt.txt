@@ -17,3 +17,13 @@ talent_item_list drop_item_list
 target_onstage_card_guid source_onstage_card_guid
 game_uid verify_code
 return_item_list output_item_list
+client_md5 client_silence_md5
+prev_round_coin_b prev_round_coin_c
+cell_num coin_b
+cur_team_index next_valid_switch_time
+effect_buff_id cond_buff_id
+associate_word_id base_word_id
+robot_finish_num tech_create_robot_id
+gallery_id_list ability_group_id_list
+curr_points max_points
+modifier_owner_id ability_caster_id
