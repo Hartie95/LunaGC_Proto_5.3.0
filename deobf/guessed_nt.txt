@@ -110,3 +110,4 @@ hard_map_data normal_map_data
 rush_to_pos rush_attack_target_pos
 is_enabled is_in_region
 dungeon_level_info_list world_level_info_list
+add_contribution total_contribution
