@@ -5144,3 +5144,8 @@ OLODPGNKNCP SeaLampContributeItemReq
 HPHGDOICLGL SeaLampContributeItemRsp
 OAJJKAPFNAH add_contribution
 GGGONGCPILM total_contribution
+HBEOKOMFEGI TakeReunionWatcherRewardReq
+OADBOOILBHF TakeReunionWatcherRewardRsp
+IDBLBNBFANC ReunionBriefInfoRsp
+FGOCNGKEHKH is_activate
+EOFAGEAMBHH ReunionActivateNotify
