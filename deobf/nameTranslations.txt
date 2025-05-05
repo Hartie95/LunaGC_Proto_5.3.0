@@ -3094,7 +3094,6 @@ OHLIMLMNEGF challenge_detail
 KNGCOEELNAM SyncType
 EPOPNFGNPCK SelectAvatarIndex
 MDGMKJMJPKG MistTrialSelectAvatarAndEnterDungeonReq
-AHMPIPKDGPF SelectAvatarIndex
 POPJDKFPNKK notify
 OCAHPBKNKCL AreaNotify
 JGANNINKAPC RefreshNotify
@@ -5149,3 +5148,4 @@ OADBOOILBHF TakeReunionWatcherRewardRsp
 IDBLBNBFANC ReunionBriefInfoRsp
 FGOCNGKEHKH is_activate
 EOFAGEAMBHH ReunionActivateNotify
+JLBCNHMEMHO investigation_monster
