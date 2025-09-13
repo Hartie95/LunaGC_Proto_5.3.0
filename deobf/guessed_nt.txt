@@ -112,3 +112,5 @@ is_enabled is_in_region
 dungeon_level_info_list world_level_info_list
 add_contribution total_contribution
 after_note_list before_note_list
+product_play_type add_point
+bait_id rod_id
