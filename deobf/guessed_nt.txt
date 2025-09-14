@@ -114,3 +114,4 @@ add_contribution total_contribution
 after_note_list before_note_list
 product_play_type add_point
 bait_id rod_id
+match_begin_time estimate_match_cost_time
