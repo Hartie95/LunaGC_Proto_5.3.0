@@ -70,8 +70,8 @@ message CNJLPAKHHAD {
 }
 
 // CmdId: 2218 
-message FFBDAPCHNEE {
-	repeated uint32 FNNAEACKHIF = 15;
+message CheckGroupReplacedRsp {
+	repeated uint32 replaced_group_id_list = 15;
 	int32 retcode = 1;
 }
 
@@ -458,7 +458,7 @@ message CustomDungeonRecoverNotify {
 // CmdId: 27915 
 message JHCFJHGAKCM {
 	UgcType ugc_type = 14;
-	oneof detail {
+	oneof info {
 		NKODINHHODO lan_v5_card_info = 10;
 		AOFFNCMEGIC music_info = 13;
 	}
@@ -734,10 +734,10 @@ message NKALCEFPGPJ {
 }
 
 // CmdId: 28474 
-message FHKDHOIHKLN {
-	repeated LBPIDBPAINE settle_info_list = 7;
+message Unk_38_40_FCEDDGJPMLM {
+	repeated Unk_38_40_CLNEPMAAKFB settle_info_list = 7;
 	uint32 level_id = 5;
-	uint32 JOPJLOMJPKJ = 6;
+	uint32 unk_38_40_PKHMPEPHHIH = 6;
 	uint32 score = 14;
 	sfixed32 begin_time = 10;
 	uint32 stage_type = 2;
@@ -758,7 +758,7 @@ message ForgeQueueManipulateRsp {
 
 // CmdId: 27445 
 message Unk_37_OCCBIKFCMGK {
-	repeated uint32 unk_37_unk_37_HEFPCNEGMEH = 4;
+	repeated uint32 unk_37_LDDAEIABIEC = 4;
 	Unk_37_GGJENGOICLH unk_37_CECPEAKGCFO = 12;
 }
 
@@ -969,7 +969,7 @@ message TakeResinCardDailyRewardRsp {
 
 // CmdId: 21388 
 message BLOCPBNBPPN {
-	repeated PKAIOHAEGHL brief_info_list = 8;
+	repeated Unk_46_NLKKNAIONKJ brief_info_list = 8;
 	int32 retcode = 10;
 }
 
@@ -1104,7 +1104,7 @@ message AvatarSkillInfo {
 }
 
 // CmdId: 3702 
-message DEPMKOECEGB {
+message AvatarExpeditionCallBackReq {
 	repeated uint64 avatar_guid = 11;
 }
 
@@ -1123,7 +1123,7 @@ message UseItemRsp {
 }
 
 // CmdId: 26568 
-message MMIMKCNPGFH {
+message HomeLimitedShopGoodsListReq {
 }
 
 // CmdId: - 
@@ -1228,7 +1228,7 @@ message MPHOMCKILPM {
 }
 
 // CmdId: - 
-message ADPCHLPCCGF {
+message Unk_38_40_PPJJNDBJPBE {
 	HomeGroupPlayerInfo player_info = 9;
 	uint32 count = 11;
 }
@@ -1260,7 +1260,7 @@ message LNBLLMHIPLL {
 }
 
 // CmdId: 2134 
-message NCHCLFKCKFH {
+message TakeCityReputationLevelRewardRsp {
 	repeated ItemParam item_list = 4;
 	int32 retcode = 13;
 	uint32 city_id = 3;
@@ -1299,7 +1299,7 @@ message RegionalPlayInfoNotify {
 
 // CmdId: - 
 message SegmentCRCInfo {
-	string cec = 4;
+	string crc = 4;
 	uint32 module = 14;
 	uint32 offset = 7;
 	uint32 size = 15;
@@ -1492,9 +1492,9 @@ message FungusFighterTrainingInfoNotify {
 }
 
 // CmdId: 29915 
-message HHDILNEBIJE {
+message StartBuoyantCombatGalleryReq {
 	uint32 gallery_id = 5;
-	uint32 GNANEBEOOFA = 8;
+	uint32 gallery_level = 8;
 }
 
 // CmdId: 29409 
@@ -1503,8 +1503,8 @@ message WidgetGadgetAllDataNotify {
 }
 
 // CmdId: 21641 
-message JHKLGIFMPOI {
-	repeated uint32 HCPCBOJEDMD = 8;
+message GCGBasicDataNotify {
+	repeated uint32 level_reward_taken_list = 8;
 	uint32 exp = 14;
 	uint32 level = 4;
 }
@@ -1609,7 +1609,7 @@ message NILEPHLJADC {
 }
 
 // CmdId: 27165 
-message KJGIPHNCKAC {
+message EffigyChallengeV2EnterDungeonRsp {
 	uint32 OGAEDDLGCCF = 10;
 	uint32 KDFADFIMAPJ = 7;
 	uint32 level_id = 13;
@@ -1634,7 +1634,7 @@ message HideAndSeekSettleNotify {
 }
 
 // CmdId: 3664 
-message JDPGLPNMMAH {
+message SetLimitOptimizationNotify {
 	bool is_active = 3;
 }
 
@@ -1805,7 +1805,7 @@ message RacingGallerySettleInfo {
 }
 
 // CmdId: 5609 
-message BDBIHPADOPF {
+message ScenePlayOwnerStartInviteRsp {
 	bool is_skip_match = 12;
 	int32 retcode = 3;
 	uint32 play_id = 5;
@@ -1941,8 +1941,8 @@ message AbilityMixinShootFromCamera {
 }
 
 // CmdId: 29767 
-message AHALNCIJMDH {
-	uint32 DPJDIPPKFGK = 1;
+message BuyBattlePassLevelReq {
+	uint32 buy_level = 1;
 }
 
 // CmdId: 29619 
@@ -2076,7 +2076,7 @@ message IPHNFJEIIEI {
 // CmdId: 3017 
 message AMNBEKDEMAM {
 	uint32 music_basic_id = 13;
-	bool NFLDLMABCJB = 15;
+	bool is_save_score = 15;
 	uint64 ugc_guid = 10;
 }
 
@@ -2111,7 +2111,7 @@ message AbilityMetaReInitOverrideMap {
 
 // CmdId: 8456 
 message NICGBMBHODB {
-	bool HDNGGMAMCMD = 12;
+	bool unk_53_HDNGGMAMCMD = 12;
 }
 
 // CmdId: - 
@@ -2254,15 +2254,15 @@ message UgcActivityDetailInfo {
 	bool is_ugc_feature_closed = 7;
 }
 
-enum Unk_37_NPAFIGJICPK {
-	Unk_37_NPAFIGJICPK_NONE = 0;
-	Unk_37_NPAFIGJICPK_STARRED_DUNGEON = 1;
-	Unk_37_NPAFIGJICPK_STARRED_ROOM = 2;
-	Unk_37_NPAFIGJICPK_OWNER = 3;
-	Unk_37_NPAFIGJICPK_HISTORY = 4;
-	Unk_37_NPAFIGJICPK_SEARCH = 5;
-	Unk_37_NPAFIGJICPK_OFFICIAL = 6;
-	Unk_37_NPAFIGJICPK_TEMPLATE = 7;
+enum Unk_37_IJBPEPPLINK {
+	Unk_37_IJBPEPPLINK_NONE = 0;
+	Unk_37_IJBPEPPLINK_STARRED_DUNGEON = 1;
+	Unk_37_IJBPEPPLINK_STARRED_ROOM = 2;
+	Unk_37_IJBPEPPLINK_OWNER = 3;
+	Unk_37_IJBPEPPLINK_HISTORY = 4;
+	Unk_37_IJBPEPPLINK_SEARCH = 5;
+	Unk_37_IJBPEPPLINK_OFFICIAL = 6;
+	Unk_37_IJBPEPPLINK_TEMPLATE = 7;
 }
 
 // CmdId: 6184 
@@ -2332,7 +2332,7 @@ message MOLDKOKMOIA {
 }
 
 // CmdId: 25098 
-message HPEKODGNACJ {
+message HomeGetGroupRecordReq {
 	uint32 group_id = 3;
 }
 
@@ -2395,8 +2395,8 @@ message MCPGPFJALCJ {
 }
 
 // CmdId: 24632 
-message MEKFNGHLHFL {
-	BJGEGDNGGIO DJAENHCMODM = 5;
+message HomeUpdatePictureFrameInfoReq {
+	HomePictureFrameInfo picture_frame_info = 5;
 }
 
 // CmdId: - 
@@ -3097,7 +3097,7 @@ message Unk_46_HIAAIABFGLA {
 }
 
 // CmdId: 27968 
-message GetOnlinePlayerListReq {
+message GetWorldMpInfoReq {
 }
 
 // CmdId: 4397 
@@ -3425,7 +3425,7 @@ message LGDJOFOKAJA {
 
 // CmdId: 60 
 message KIIBBFINHND {
-	uint32 MGNFPKFFGMM = 9;
+	uint32 reminder_id = 9;
 }
 
 // CmdId: 22692 
@@ -3501,8 +3501,8 @@ message PlayerIpRegionNotify {
 }
 
 // CmdId: 8395 
-message OBLDOJENLNB {
-	uint32 CHENDALBHMN = 4;
+message ChangeWorldToSingleModeRsp {
+	uint32 quit_mp_valid_time = 4;
 	int32 retcode = 13;
 }
 
@@ -3514,8 +3514,8 @@ message KACCIBMFEAI {
 }
 
 // CmdId: 26716 
-message NNMJFCPDJMD {
-	map<uint32, uint32> GCICKDALCMJ = 5;
+message DungeonDataNotify {
+	map<uint32, uint32> dungeon_data_map = 5;
 }
 
 // CmdId: - 
@@ -3672,9 +3672,9 @@ message TowerCurLevelRecordChangeNotify {
 }
 
 // CmdId: 26772 
-message DCBDJHCNPJB {
-	repeated uint32 EBEPFOLIGNG = 4;
-	uint32 NNPBMBOFBAO = 11;
+message SpiceActivityFinishMakeSpiceReq {
+	repeated uint32 left_material_id_list = 4;
+	uint32 left_turns = 11;
 	uint32 stage_id = 14;
 	bool is_success = 10;
 }
@@ -3854,7 +3854,7 @@ message PlayerRoutineDataNotify {
 
 // CmdId: 6447 
 message DestroyMaterialReq {
-	repeated MaterilaInfo material_list = 7;
+	repeated MaterialInfo material_list = 7;
 }
 
 // CmdId: 23289 
@@ -3888,7 +3888,7 @@ message EchoShellDetailInfo {
 }
 
 // CmdId: - 
-message OFEIFPKPOCD {
+message Unk_45_AKIIEKLGOCG {
 	repeated uint32 KCDAHGDCPLP = 8;
 	uint32 NLIOKEPPPLD = 4;
 	uint32 JKHDBHDCMFO = 7;
@@ -4091,7 +4091,7 @@ message CLOKCLGCBEP {
 
 // CmdId: 23851 
 message OJFLNEGDGGF {
-	repeated uint32 HDLHDFBDHPM = 7;
+	repeated uint32 cg_list = 7;
 }
 
 // CmdId: 23888 
@@ -4364,7 +4364,7 @@ message MathQuaternion {
 
 // CmdId: 6515 
 message RoguelikeGiveUpRsp {
-	oneof detail {
+	oneof info {
 		RoguelikeDungeonSettleInfo settle_info = 7;
 	}
 	uint32 stage_id = 9;
@@ -4468,7 +4468,7 @@ message ICGOMAENGCH {
 }
 
 // CmdId: 28985 
-message ONONBEDCAGH {
+message SpiceActivityFinishMakeSpiceRsp {
 	uint32 stage_id = 1;
 	int32 retcode = 6;
 	bool is_success = 14;
@@ -4476,7 +4476,7 @@ message ONONBEDCAGH {
 
 // CmdId: 20856 
 message LKGFEDJFEGK {
-	bool NFLDLMABCJB = 3;
+	bool is_save_score = 3;
 	uint32 music_basic_id = 10;
 	uint64 ugc_guid = 9;
 }
@@ -4764,7 +4764,7 @@ message VintageMarketStartStorePlayRsp {
 }
 
 // CmdId: 169 
-message NCHAKEEODPJ {
+message HomeSaveArrangementNoChangeReq {
 	uint32 scene_id = 9;
 }
 
@@ -4779,7 +4779,7 @@ message SlimeCannonDungeonSettleInfo {
 	uint32 level_id = 5;
 	uint32 score = 13;
 	uint32 NIBIKKAKIBL = 15;
-	uint32 JOPJLOMJPKJ = 9;
+	uint32 unk_38_40_PKHMPEPHHIH = 9;
 	bool is_new_record = 12;
 	uint32 use_time = 3;
 	uint32 FGOLINDIAII = 8;
@@ -4798,14 +4798,14 @@ message RoguelikeCardGachaNotify {
 }
 
 // CmdId: 25083 
-message KMEKGPDIKDF {
+message EvtFaceToEntityNotify {
 	ForwardType forward_type = 1;
-	uint32 OPBOGHKHFCN = 13;
+	uint32 face_entity_id = 13;
 	uint32 entity_id = 4;
 }
 
 // CmdId: 29917 
-message OMACAGABLIG {
+message GCGStartChallengeReq {
 	uint32 level_id = 1;
 	uint32 config_id = 12;
 	GCGLevelType level_type = 2;
@@ -4827,7 +4827,7 @@ message AsterMidCampInfo {
 }
 
 // CmdId: 22325 
-message IFNAFCCNBJP {
+message ForgeStartRsp {
 	int32 retcode = 4;
 }
 
@@ -5033,7 +5033,7 @@ enum DDNCNEKKFMF {
 }
 
 // CmdId: 21405 
-message JGIPFOHLPLA {
+message RedeemLegendaryKeyReq {
 }
 
 // CmdId: 6255 
@@ -5214,9 +5214,9 @@ message JBPIENJEMBF {
 message GEBBEDFOPMC {
 	UgcType ugc_type = 6;
 	int32 retcode = 14;
-	oneof APMPBJLOKED {
-		NPEOOPLFOOP lan_v5_card_brief_info = 7;
-		PKAIOHAEGHL music_brief_info = 8;
+	oneof unk_46_BLCIHHKGKAB {
+		Unk_53_NPEOOPLFOOP lan_v5_card_brief_info = 7;
+		Unk_46_NLKKNAIONKJ music_brief_info = 8;
 	}
 }
 
@@ -5300,9 +5300,9 @@ message PLNCJOHHFEN {
 }
 
 // CmdId: 27844 
-message FNMJNFOEHFA {
-	GCGGameBriefData IPEJIKANEJE = 6;
-	bool CNDAEOGHEAN = 12;
+message GCGGameBriefDataNotify {
+	GCGGameBriefData gcg_brief_data = 6;
+	bool is_new_game = 12;
 }
 
 // CmdId: - 
@@ -5339,7 +5339,7 @@ message PlayerInvestigationTargetNotify {
 }
 
 // CmdId: 9502 
-message LCJPAGBOGMM {
+message EchoShellTakeRewardRsp {
 	uint32 reward_id = 13;
 	int32 retcode = 8;
 }
@@ -5443,14 +5443,14 @@ message SetUpLunchBoxWidgetReq {
 }
 
 // CmdId: 4047 
-message NNMEHFHBODE {
+message StartBuoyantCombatGalleryRsp {
 	uint32 gallery_id = 4;
-	uint32 GNANEBEOOFA = 9;
+	uint32 gallery_level = 9;
 	int32 retcode = 5;
 }
 
 // CmdId: 5993 
-message ExecuteGroupTriggerRsp {
+message KPLCCJMOBKI {
 	int32 retcode = 14;
 }
 
@@ -5729,10 +5729,10 @@ message BreakoutPhysicalObjectModifier {
 }
 
 // CmdId: - 
-message LKLBNJEEDLI {
+message Unk_36_KHHEAFGCOMJ {
 	uint32 start_time = 12;
 	bool is_paused = 11;
-	int32 BINKBBNCDII = 4;
+	int32 unk_37_KAMHGILECDD = 4;
 }
 
 // CmdId: 6063 
@@ -5859,7 +5859,7 @@ message DOBGCPMEJED {
 }
 
 // CmdId: 6840 
-message DCEKOILEMHO {
+message GCGDSChangeDeckNameRsp {
 	string name = 13;
 	uint32 deck_id = 5;
 	int32 retcode = 3;
@@ -5892,7 +5892,7 @@ message StatueGadgetInfo {
 }
 
 // CmdId: 207 
-message KBKHMPNAGJA {
+message SaveUgcRsp {
 	bool MLKCEIDEJMM = 4;
 	int32 retcode = 1;
 	UgcType ugc_type = 2;
@@ -6014,8 +6014,8 @@ message BargainOfferPriceRsp {
 }
 
 // CmdId: 22961 
-message IPEDHPKBDHO {
-	repeated BFEIABJCGCC ICALIPMCHNF = 10;
+message CityReputationDataNotify {
+	repeated CityReputationSimpleInfo simple_info_list = 10;
 }
 
 // CmdId: - 
@@ -6112,7 +6112,7 @@ message Unk_53_PPPGKKEBNJO {
 }
 
 // CmdId: 22746 
-message BackMyWorldRsp {
+message OIOODLJLPIG {
 	int32 retcode = 2;
 }
 
@@ -6210,7 +6210,7 @@ message EMMIABNOADN {
 }
 
 // CmdId: - 
-message BFEIABJCGCC {
+message CityReputationSimpleInfo {
 	uint32 level = 12;
 	uint32 city_id = 9;
 }
@@ -6303,8 +6303,8 @@ message KNDBDHNAFNF {
 }
 
 // CmdId: 3152 
-message KMKLKILINNC {
-	bytes IMOMGNNIJKI = 14;
+message RobotPushPlayerDataNotify {
+	bytes bin = 14;
 }
 
 // CmdId: 22266 
@@ -6517,7 +6517,7 @@ message GCGTCTavernInfoNotify {
 }
 
 // CmdId: 8384 
-message ForgeGetQueueDataReq {
+message MAJPGGKEHDC {
 }
 
 // CmdId: 7963 
@@ -6598,7 +6598,7 @@ message NCBKBGNEGOH {
 }
 
 // CmdId: 2781 
-message ELEDFILDNLO {
+message MistTrialDungeonFailNotify {
 	int32 dungeon_id = 2;
 }
 
@@ -6650,8 +6650,8 @@ message SetNameCardReq {
 }
 
 // CmdId: - 
-message LDAFMPEFDMI {
-	repeated JCFJJDHLAFP IHFPMJCABOB = 11;
+message Unk_47_IIKGNGBPCAM {
+	repeated Unk_47_HNENBGPKIMH unk_47_GPGJNIFKMIL = 11;
 	string title = 5;
 }
 
@@ -6839,7 +6839,7 @@ message GAEJCPFLGNG {
 	repeated uint32 entity_id_list = 10;
 	DJOMLPKGCGB pos = 5;
 	DJOMLPKGCGB IHACICNMJDK = 8;
-	uint64 CNEHDEMBOPB = 7;
+	uint64 Unk_33_AIEBGJHBOHL = 7;
 	bool is_failed = 4;
 	int32 rot = 9;
 	uint64 server_game_time = 3;
@@ -7238,7 +7238,7 @@ message GKIKIDJJFIM {
 // CmdId: 6679 
 message JIHMPKHDDGK {
 	repeated uint64 BKFCIBAFOHA = 14;
-	repeated Unk_37_LGADMDJLBFE unk_37_Unk_37_IJBPEPPLINK = 9;
+	repeated Unk_37_LGADMDJLBFE unk_37_JDJPDHIAGBI = 9;
 }
 
 // CmdId: - 
@@ -7605,8 +7605,8 @@ message InBattleMechanicusMonsterInfo {
 }
 
 // CmdId: 27273 
-message IPCNOJGECDO {
-	bool BCILMKHJHFM = 9;
+message TowerAllDataReq {
+	bool is_interact = 9;
 }
 
 // CmdId: 22106 
@@ -8063,7 +8063,7 @@ message NFMNBBPBANP {
 }
 
 // CmdId: 1046 
-message BIOGBCJDINA {
+message ChangeMpTeamAvatarReq {
 	repeated uint64 avatar_guid_list = 1;
 	uint64 cur_avatar_guid = 12;
 }
@@ -8248,8 +8248,8 @@ message DFAILDDIJCL {
 
 // CmdId: - 
 message PBNavMeshPoly {
-	repeated EdgeType AHEKPPOGDHL = 9;
-	repeated int32 GPOJDOLCMDC = 12;
+	repeated EdgeType edge_types = 9;
+	repeated int32 vects = 12;
 	int32 area = 15;
 	enum EdgeType {
 		INNER = 0;
@@ -8382,7 +8382,7 @@ message EPGJOCJCJNA {
 
 // CmdId: 22733 
 message PPDBADEKJHF {
-	repeated uint32 POKLKPHKCGD = 15;
+	repeated uint32 fungus_id_list = 15;
 	uint32 dungeon_id = 8;
 }
 
@@ -8464,44 +8464,44 @@ enum UgcVote {
 
 // CmdId: - 
 message CooperateChallengeStageInfo {
-	repeated JMBJGHLLOAO player_info_list = 6;
-	repeated uint32 DLNGFPOLDEC = 4;
-	repeated EGODHJHGLLH level_info_list = 3;
-	uint32 CFEIIMAECEH = 9;
-	uint32 AMELMGHGHNE = 7;
-	enum DCDBCOJCGAH {
-		DCDBCOJCGAH_NONE = 0;
-		DCDBCOJCGAH_OFFLINE = 1;
-		DCDBCOJCGAH_LOADING = 2;
-		DCDBCOJCGAH_ENTERED = 3;
-		DCDBCOJCGAH_LEFT = 4;
+	repeated Unk_51_EFDCAABCHIC player_info_list = 6;
+	repeated uint32 unk_51_MKLMLECAAPN = 4;
+	repeated Unk_51_JFIPHBGLCBH level_info_list = 3;
+	uint32 unk_51_IJAKGPBEENA = 9;
+	uint32 unk_51_EFKHHELOFKB = 7;
+	enum Unk_51_OHOCMLOOBHL {
+		Unk_51_OHOCMLOOBHL_NONE = 0;
+		Unk_51_OHOCMLOOBHL_OFFLINE = 1;
+		Unk_51_OHOCMLOOBHL_LOADING = 2;
+		Unk_51_OHOCMLOOBHL_ENTERED = 3;
+		Unk_51_OHOCMLOOBHL_LEFT = 4;
 	}
 	// CmdId: - 
-	message JMBJGHLLOAO {
-		repeated uint32 KDLFDKCFAKA = 7;
+	message Unk_51_EFDCAABCHIC {
+		repeated uint32 unk_51_BLOAOKBMFNF = 7;
 		uint32 uid = 4;
 		uint32 DEPECGICLCK = 9;
 		uint32 revive_count = 14;
 		uint32 costume_id = 2;
-		CooperateChallengeStageInfo.DCDBCOJCGAH AJLDMCMBOPL = 12;
+		CooperateChallengeStageInfo.Unk_51_OHOCMLOOBHL unk_51_EECLGMIAFFA = 12;
 		uint32 avatar_id = 8;
 		uint32 avatar_level = 6;
 		bool is_ready = 15;
 	}
 	// CmdId: - 
-	message NNGPADAGMDO {
+	message Unk_51_OHLADLOFHCC {
 		uint32 uid = 15;
 		uint32 DEPECGICLCK = 14;
 	}
 	// CmdId: - 
-	message EGODHJHGLLH {
+	message Unk_51_JFIPHBGLCBH {
 		repeated uint32 KHCMHAAMNCI = 10;
 		repeated uint32 CJOJFKLMDGN = 14;
-		repeated NNGPADAGMDO BOIGGCGIJMP = 1;
+		repeated Unk_51_OHLADLOFHCC unk_51_FKJFHMOOJJO = 1;
 		bool is_gallery_succ = 2;
 		uint32 level_id = 3;
-		uint32 GPGFIOONCDK = 4;
-		uint32 DNJBOMFMGFB = 15;
+		uint32 unk_37_40_GKKMABPCMBH = 4;
+		uint32 unk_51_ADBAPEBFOIB = 15;
 	}
 }
 
@@ -8528,17 +8528,17 @@ message ScenePlayBattleInfoNotify {
 
 // CmdId: 8195 
 message BJJPJKMOGPF {
-	repeated uint32 KEBMOGJCABC = 12;
-	repeated uint32 OPDEGDBBFMF = 1397;
+	repeated uint32 note_list = 12;
+	repeated uint32 button_list = 1397;
 	uint32 ECDAKGFMFKM = 197;
-	uint32 GOMGLGMAEKC = 6;
+	uint32 score_rating = 6;
 	bool JHBAGIEMDAN = 1105;
 	bool PLELGHJLKDN = 1575;
-	bool NFLDLMABCJB = 5;
+	bool is_save_score = 5;
 	float speed = 1439;
 	uint32 score = 8;
 	uint64 ugc_guid = 13;
-	uint32 OMPFGECGKKP = 9;
+	uint32 restart_times = 9;
 	uint32 AEKBLMHHPNI = 10;
 	uint32 APKGHMAFHDM = 1173;
 	uint32 music_basic_id = 1;
@@ -8590,7 +8590,7 @@ message CIMPMBAMKLN {
 }
 
 // CmdId: 7737 
-message PFGJCFDEFKB {
+message UnlockPersonalLineReq {
 	uint32 personal_line_id = 6;
 }
 
@@ -8781,7 +8781,7 @@ message PFDEONOPHKB {
 }
 
 // CmdId: 25715 
-message OMBBPGHLGBP {
+message HomeClearGroupRecordRsp {
 	uint32 group_id = 7;
 	int32 retcode = 3;
 }
@@ -8870,7 +8870,7 @@ message EnterScenePeerNotify {
 // CmdId: 21159 
 message EKFPOHIIMMB {
 	int32 retcode = 8;
-	uint32 BIDKELFHFJH = 15;
+	uint32 fish_pool_id = 15;
 }
 
 // CmdId: - 
@@ -9010,8 +9010,8 @@ message CJMNBFJNPLH {
 }
 
 // CmdId: 25886 
-message OIOCHGMBGIJ {
-	repeated LOPAIAHPANO LMEEHHEMKNH = 4;
+message WinterCampGetRecvItemListRsp {
+	repeated WinterCampRecvItemData recv_item_data_list = 4;
 	int32 retcode = 15;
 }
 
@@ -9371,14 +9371,14 @@ message IPGIOHHBIND {
 }
 
 // CmdId: - 
-message IFDKCMGKKNI {
-	uint32 EGCDKBCDLIE = 15;
-	uint32 HPFDNNMOAJO = 13;
-	uint32 IDKCEALCABP = 7;
-	bool EAIHMOKMIJO = 5;
-	bool JABMAFCCJJI = 14;
-	bool CNKJEGBBHOA = 1;
-	bool OIPNPPPFLNC = 8;
+message Unk_53_IFDKCMGKKNI {
+	uint32 unk_53_EGCDKBCDLIE = 15;
+	uint32 unk_53_HPFDNNMOAJO = 13;
+	uint32 unk_53_IDKCEALCABP = 7;
+	bool unk_53_EAIHMOKMIJO = 5;
+	bool unk_53_JABMAFCCJJI = 14;
+	bool unk_53_CNKJEGBBHOA = 1;
+	bool unk_53_OIPNPPPFLNC = 8;
 }
 
 // CmdId: 2914 
@@ -9496,7 +9496,7 @@ message IGDGEGFPIAM {
 // CmdId: 25785 
 message CLKLFMEFDLD {
 	string ABANJGLEKNG = 2;
-	string LJFDDPGIGIJ = 9;
+	string json_str = 9;
 	uint64 KILGNCGJDKI = 6;
 }
 
@@ -9507,7 +9507,7 @@ message IBFOGKHPMIG {
 }
 
 // CmdId: 8736 
-message LGMFEMFFKDL {
+message HomeGetOnlineStatusReq {
 }
 
 // CmdId: 8656 
@@ -9892,7 +9892,7 @@ enum SealBattleType {
 }
 
 // CmdId: 28509 
-message PONHKLBBCJF {
+message PersonalLineAllDataReq {
 }
 
 // CmdId: - 
@@ -10031,7 +10031,7 @@ message DropItemReq {
 }
 
 // CmdId: 9511 
-message FONLJFFCFGD {
+message GetAllMailNotify {
 	bool is_collected = 12;
 }
 
@@ -10706,8 +10706,8 @@ message HDOMICGNFFN {
 }
 
 // CmdId: 425 
-message MECLDBNHLGI {
-	map<uint32, uint32> PLDKEEBBABF = 13;
+message GalleryBalloonScoreNotify {
+	map<uint32, uint32> uid_score_map = 13;
 	uint32 gallery_id = 1;
 }
 
@@ -10744,8 +10744,8 @@ message BalloonSettleInfo {
 }
 
 // CmdId: 4002 
-message MBBOIHPLPIP {
-	repeated CCCBAGMAOKM ENNPEBKBNOM = 4;
+message BlessingGetAllRecvPicRecordListRsp {
+	repeated BlessingRecvPicRecord recv_pic_record_list = 4;
 	int32 retcode = 8;
 }
 
@@ -10762,9 +10762,9 @@ message KJOLALMENFD {
 }
 
 // CmdId: 28635 
-message PMOBLDLNGEP {
-	repeated LJPBMCGNOKB region_list = 2;
-	bool DIMEIBNOPCF = 15;
+message Unk_38_40_JHGNPGKNKKH {
+	repeated Unk_38_40_MNAHBOJCNBF region_list = 2;
+	bool unk_38_40_COEDILDIHOF = 15;
 }
 
 // CmdId: - 
@@ -10946,11 +10946,11 @@ message VintageHuntingStageData {
 }
 
 // CmdId: 4126 
-message PJJAMJEMGJJ {
+message BattlePassBuySuccNotify {
 	repeated ItemParam item_list = 6;
-	uint32 KKOKDLFOPGE = 4;
+	uint32 product_play_type = 4;
 	uint32 schedule_id = 15;
-	uint32 JEBHNJENDFE = 7;
+	uint32 add_point = 7;
 }
 
 // CmdId: 29833 
@@ -11272,7 +11272,7 @@ message EKBFCEICCLM {
 
 // CmdId: 9219 
 message DGHHCMOKHHP {
-	GABBLIDNKHP detail = 1;
+	GABBLIDNKHP EOCACKHIBNO = 1;
 }
 
 // CmdId: 29565 
@@ -11377,7 +11377,7 @@ message HBDCPHFCLOB {
 }
 
 // CmdId: 24768 
-message PlayerConfirmMatchRsp {
+message NLMFEICNKGJ {
 	int32 retcode = 11;
 	MatchType match_type = 15;
 	uint32 match_id = 2;
@@ -11403,7 +11403,7 @@ message FCLIBPAFCJK {
 }
 
 // CmdId: 26394 
-message OPEDMGEKIKE {
+message GetMapAreaReq {
 }
 
 // CmdId: 29157 
@@ -11586,7 +11586,7 @@ message WinterCampAcceptItemResultInfo {
 
 // CmdId: 25148 
 message PBGDHDHLNJF {
-	CooperateChallengeStageInfo.JMBJGHLLOAO player_info = 2;
+	CooperateChallengeStageInfo.Unk_51_EFDCAABCHIC player_info = 2;
 }
 
 // CmdId: 7790 
@@ -11637,7 +11637,7 @@ message SceneWeaponInfo {
 	uint64 guid = 4;
 	uint32 gadget_id = 2;
 	uint32 entity_id = 1;
-	bool JHPLJPIFMBM = 10;
+	bool unk_42_LBKFMBNFPJK = 10;
 	uint32 item_id = 3;
 	uint32 level = 5;
 	uint32 promote_level = 6;
@@ -11947,7 +11947,7 @@ message EffigyChallengeInfoNotify {
 }
 
 // CmdId: 8598 
-message DHLKGCOJDLA {
+message CrystalLinkRestartDungeonRsp {
 	int32 retcode = 11;
 }
 
@@ -12095,9 +12095,9 @@ message PostEnterSceneRsp {
 }
 
 // CmdId: 7141 
-message NOGAKJGNAAD {
+message ActivityTakeScoreRewardReq {
 	uint32 activity_id = 9;
-	uint32 PFPJHMHOMCI = 4;
+	uint32 reward_config_id = 4;
 }
 
 // CmdId: 2209 
@@ -12367,7 +12367,7 @@ message DKOANDBEMPD {
 }
 
 // CmdId: - 
-message NPEOOPLFOOP {
+message Unk_53_NPEOOPLFOOP {
 	string KIHDPMNAPCB = 6;
 	string creator_nickname = 7;
 	PMFCCGAGDHI social = 2;
@@ -12483,12 +12483,12 @@ message BHJLDEHMBMH {
 }
 
 // CmdId: 20112 
-message BJIFNOGBJPF {
-	uint32 MGNFPKFFGMM = 3;
+message DungeonShowReminderNotify {
+	uint32 reminder_id = 3;
 }
 
 // CmdId: 2463 
-message JIICHBINLAL {
+message MarkTargetInvestigationMonsterNotify {
 	uint32 scene_id = 14;
 	uint32 group_id = 8;
 	uint32 OEIONJIJJID = 4;
@@ -12506,7 +12506,7 @@ message Unk_37_LENNDLOGFIM {
 }
 
 // CmdId: 1818 
-message APLOEPGDCJO {
+message ReunionSettleNotify {
 }
 
 // CmdId: 24037 
@@ -12539,23 +12539,23 @@ message AvatarGainFlycloakNotify {
 
 // CmdId: 22480 
 message JMPCPGBMALG {
-	repeated uint32 OPDEGDBBFMF = 61;
-	repeated uint32 KEBMOGJCABC = 11;
+	repeated uint32 button_list = 61;
+	repeated uint32 note_list = 11;
 	uint32 max_combo = 12;
 	float speed = 926;
 	uint32 AEKBLMHHPNI = 9;
 	uint32 combo = 5;
 	uint32 music_basic_id = 1;
 	uint32 KNLMJMMMOPM = 383;
-	uint32 HBHFMFHKNBO = 4;
+	uint32 correct_hit = 4;
 	bool JHBAGIEMDAN = 1857;
 	bool PLELGHJLKDN = 991;
-	bool NFLDLMABCJB = 14;
+	bool is_save_score = 14;
 	uint32 BCKDGAGCJPD = 1562;
 	uint32 ECDAKGFMFKM = 927;
 	uint32 score = 3;
-	uint32 OMPFGECGKKP = 15;
-	uint32 GOMGLGMAEKC = 2;
+	uint32 restart_times = 15;
+	uint32 score_rating = 2;
 	uint64 ugc_guid = 10;
 }
 
@@ -12588,7 +12588,7 @@ message KHELLHECCDH {
 }
 
 // CmdId: - 
-message UNK_41_45_GGLCAOIFLLP {
+message UNK_43_45_GGLCAOIFLLP {
 	uint32 level_id = 6;
 	ClientPlayType OCAEJPMJMHP = 5;
 }
@@ -12785,7 +12785,7 @@ message PINAIHGOKJO {
 }
 
 // CmdId: 5037 
-message CellInfo {
+message GEHPCEJAMBG {
 	int32 retcode = 2;
 	EnterUgcDungeonType enter_type = 10;
 }
@@ -12845,8 +12845,8 @@ message RemotePlayerWidgetNotify {
 }
 
 // CmdId: 6937 
-message PHOJAOMBECK {
-	repeated uint32 DEOGNCAEFEK = 2;
+message TakeCityReputationExploreRewardReq {
+	repeated uint32 explore_id_list = 2;
 	uint32 city_id = 15;
 }
 
@@ -12978,9 +12978,9 @@ message VintageMarketInfo {
 }
 
 // CmdId: 28603 
-message AHKLFMIEPMB {
-	uint32 BIDKELFHFJH = 3;
-	uint32 AECFGGNGPGN = 8;
+message StartFishingReq {
+	uint32 fish_pool_id = 3;
+	uint32 rod_entity_id = 8;
 }
 
 // CmdId: 28281 
@@ -13022,7 +13022,7 @@ message JNIGJDGICHB {
 }
 
 // CmdId: 6306 
-message MCPAHJACCPF {
+message TakeInvestigationRewardRsp {
 	uint32 id = 7;
 	int32 retcode = 13;
 }
@@ -13033,8 +13033,8 @@ message HomeChooseModuleReq {
 }
 
 // CmdId: 25175 
-message DDANCEHEBFL {
-	repeated uint32 MGBNJHKPEGC = 2;
+message DungeonCandidateTeamInviteRsp {
+	repeated uint32 invalid_player_uids = 2;
 	int32 retcode = 4;
 }
 
@@ -13137,7 +13137,7 @@ message AssociateInferenceWordReq {
 }
 
 // CmdId: - 
-message MaterilaInfo {
+message MaterialInfo {
 	uint32 count = 14;
 	uint64 guid = 9;
 }
@@ -13241,9 +13241,9 @@ enum GadgetMarkUpdateOpType {
 }
 
 // CmdId: 24968 
-message PFFGBEBFAOD {
+message TakeCityReputationExploreRewardRsp {
 	repeated ItemParam item_list = 3;
-	repeated uint32 DEOGNCAEFEK = 5;
+	repeated uint32 explore_id_list = 5;
 	int32 retcode = 15;
 	uint32 city_id = 9;
 }
@@ -13422,7 +13422,7 @@ message NatlanTourDetailInfo {
 
 // CmdId: 26979 
 message PCOCEIFOEDJ {
-	repeated uint32 DEOGNCAEFEK = 9;
+	repeated uint32 explore_id_list = 9;
 	uint32 GEFBMDPCIMD = 10;
 }
 
@@ -13516,9 +13516,9 @@ message GCGMsgCostDice {
 }
 
 // CmdId: 2050 
-message KHNLBDJBEBB {
+message FinishMainCoopReq {
 	uint32 id = 10;
-	uint32 NPCPHDNMOHD = 9;
+	uint32 ending_save_point_id = 9;
 }
 
 // CmdId: 20609 
@@ -13583,7 +13583,7 @@ message GJOJEENAOMH {
 }
 
 // CmdId: 29681 
-message DOAOAOKGIMD {
+message GetMailItemReq {
 	repeated uint32 mail_id_list = 12;
 }
 
@@ -13629,7 +13629,7 @@ message AOOKFDKBLJC {
 // CmdId: 807 
 message JGNMMMLMFOP {
 	uint32 ANJIAJNOHKH = 10;
-	uint32 MGNFPKFFGMM = 4;
+	uint32 reminder_id = 4;
 }
 
 // CmdId: 26423 
@@ -13691,13 +13691,13 @@ message GEGCCMAFCOL {
 }
 
 // CmdId: 21224 
-message KFFOCGBJBHK {
+message FishPoolDataNotify {
 	uint32 entity_id = 5;
 	uint32 today_fish_num = 6;
 }
 
 // CmdId: 22180 
-message HMKFDKHIHBA {
+message PlayerChatNotify {
 	ChatInfo chat_info = 9;
 	uint32 channel_id = 8;
 }
@@ -13721,7 +13721,7 @@ message Investigation {
 }
 
 // CmdId: 21673 
-message PlayerGameTimeByLuaNotify {
+message LJBIIFAMDOJ {
 	uint32 target_uid = 13;
 }
 
@@ -13818,8 +13818,8 @@ message Unk_44_45_KICOEFNDLLA {
 }
 
 // CmdId: 4302 
-message FAPMIBLPLHH {
-	uint32 BIDKELFHFJH = 9;
+message EnterFishingReq {
+	uint32 fish_pool_id = 9;
 }
 
 // CmdId: 5630 
@@ -13849,7 +13849,7 @@ message GetActivityShopSheetInfoReq {
 }
 
 // CmdId: 6511 
-message EKHKCBJKPML {
+message UnmarkEntityInMinMapNotify {
 	uint32 entity_id = 14;
 }
 
@@ -13970,8 +13970,8 @@ message LanternRiteStartFireworksReformRsp {
 }
 
 // CmdId: 20355 
-message EBDBAKIKIEJ {
-	repeated uint32 HCPCBOJEDMD = 2;
+message GCGGrowthLevelRewardNotify {
+	repeated uint32 level_reward_taken_list = 2;
 }
 
 // CmdId: 26493 
@@ -14071,15 +14071,15 @@ message DEHJLALABCL {
 }
 
 // CmdId: - 
-message CCCBAGMAOKM {
+message BlessingRecvPicRecord {
 	string remark_name = 5;
 	ProfilePicture profile_picture = 4;
 	string signature = 11;
 	string nickname = 9;
 	uint32 index = 8;
 	uint32 avatar_id = 12;
-	uint32 BAMHLEACMFF = 2;
-	bool FJHCOPJJOMD = 15;
+	uint32 pic_id = 2;
+	bool is_recv = 15;
 	uint32 uid = 1;
 }
 
@@ -14292,9 +14292,9 @@ message Unk_45_NEMIHGAGHLF {
 }
 
 // CmdId: - 
-message EOOLAHEKFKD {
+message Unk_36_DIJILDLCPLG {
 	bool is_paused = 2;
-	int32 BINKBBNCDII = 11;
+	int32 unk_37_KAMHGILECDD = 11;
 	uint32 start_time = 14;
 }
 
@@ -14540,7 +14540,7 @@ message SceneGallerySorushTrialPhotoMatchInfo {
 }
 
 // CmdId: 4229 
-message JIJEPCALPCE {
+message WidgetDoBagRsp {
 	uint32 material_id = 12;
 	int32 retcode = 3;
 }
@@ -14914,7 +14914,7 @@ message MBAPFLFLIPG {
 
 // CmdId: 7921 
 message EDMFOICKBIA {
-	bool HDNGGMAMCMD = 11;
+	bool unk_53_HDNGGMAMCMD = 11;
 }
 
 // CmdId: 6216 
@@ -15130,7 +15130,7 @@ message Unk_37_MILKDKMJPMJ {
 
 // CmdId: 155 
 message GODLBJAODDF {
-	repeated ADPCHLPCCGF OMMKBFEPJHN = 5;
+	repeated Unk_38_40_PPJJNDBJPBE unk_38_40_EJOMIEODJHM = 5;
 	uint32 rank = 8;
 	uint32 cost_time = 10;
 	bool is_new_record = 15;
@@ -15251,8 +15251,8 @@ message HideAndSeekV4StageInfo {
 
 // CmdId: - 
 message SceneGalleryBoxMatchInfo {
-	repeated Unk_41_45_BJGCNBDFLMI NNHFDLLHLFF = 10;
-	repeated Unk_41_45_BJGCNBDFLMI HFKPEIAGHCI = 4;
+	repeated Unk_41_42_GGFJFPLAGAB NNHFDLLHLFF = 10;
+	repeated Unk_41_42_GGFJFPLAGAB HFKPEIAGHCI = 4;
 }
 
 // CmdId: - 
@@ -15299,7 +15299,7 @@ message InBattleMechanicusSettleNotify {
 
 // CmdId: 6012 
 message GBBHGGHKNLE {
-	IFDKCMGKKNI setting = 9;
+	Unk_53_IFDKCMGKKNI setting = 9;
 }
 
 // CmdId: 23298 
@@ -15324,13 +15324,13 @@ message OIKGCIPIHAI {
 }
 
 // CmdId: 5562 
-message KLMJKPLEPGD {
+message JoinHomeWorldFailNotify {
 	int32 retcode = 1;
 	uint32 target_uid = 2;
 }
 
 // CmdId: 6753 
-message HECEHAEOKJP {
+message SignInInfoReq {
 }
 
 // CmdId: 28818 
@@ -15346,7 +15346,7 @@ message BuoyantCombatGallerySettleInfo {
 	uint32 final_score = 13;
 	uint32 BICGEJFPKDG = 4;
 	uint32 FMJEGDOFCCD = 1;
-	uint32 GNANEBEOOFA = 5;
+	uint32 gallery_level = 5;
 	uint32 kill_monster_count = 14;
 	uint32 gallery_id = 10;
 }
@@ -15388,7 +15388,7 @@ message SceneGalleryBuoyantCombatInfo {
 
 // CmdId: - 
 message DPNFJBJACKD {
-	uint32 JOPJLOMJPKJ = 2;
+	uint32 unk_38_40_PKHMPEPHHIH = 2;
 	uint32 max_score = 12;
 	uint32 level_id = 6;
 	bool is_open = 9;
@@ -15396,7 +15396,7 @@ message DPNFJBJACKD {
 }
 
 // CmdId: 7933 
-message NLOOCGCODJE {
+message CityReputationLevelupNotify {
 	uint32 city_id = 12;
 	uint32 level = 14;
 }
@@ -15611,7 +15611,7 @@ message WindSeedClientNotify {
 message EvtEntityStartDieEndNotify {
 	uint32 die_state_flag = 14;
 	ForwardType forward_type = 9;
-	bool NBKPHHMKHMK = 11;
+	bool immediately = 11;
 	uint32 entity_id = 12;
 }
 
@@ -15704,9 +15704,9 @@ message IDGJAOEMHFD {
 }
 
 // CmdId: 7826 
-message ANNCHJNOINL {
+message Unk_38_40_DJIEKDFHMBI {
 	uint32 server_seq = 11;
-	CNJLLLIMEMB reason = 1;
+	Unk_38_40_CGDFANJKOOO reason = 1;
 	uint32 uid = 12;
 }
 
@@ -15743,8 +15743,8 @@ message QueryCodexMonsterBeKilledNumRsp {
 }
 
 // CmdId: 26299 
-message PECPNAGJCNP {
-	repeated uint32 HPIMPKGGDHB = 8;
+message TakeBattlePassMissionPointReq {
+	repeated uint32 mission_id_list = 8;
 }
 
 // CmdId: - 
@@ -15842,7 +15842,7 @@ message SummerTimeV2BoatSettleNotify {
 }
 
 // CmdId: 7399 
-message CLMEFPCCKCC {
+message GetAllMailReq {
 	bool is_collected = 13;
 }
 
@@ -15912,11 +15912,11 @@ message NBABGINFBBH {
 }
 
 // CmdId: - 
-message HFHNEAJGGPG {
-	repeated OLEEBKJLOIB FJKJCOIBPKM = 12;
-	repeated uint32 JPHHLGAJLDK = 4;
-	repeated IIBCDDOBHBF PFNAMMCEIKD = 3;
-	bool MHGLHDDCCPK = 11;
+message Unk_36_JEIFKDDEDEE {
+	repeated Unk_36_KMNPJIFBGJD unk_36_ADIJKDFNCFA = 12;
+	repeated uint32 unk_36_BNKMHJMPCPJ = 4;
+	repeated Unk_36_DCJBJCDFAAE unk_36_JEAPENKJEGB = 3;
+	bool unk_36_HHHCHKPECLL = 11;
 }
 
 // CmdId: 27126 
@@ -16015,10 +16015,10 @@ message Route {
 }
 
 // CmdId: 5926 
-message OBNDLJGDPHK {
+message GCGOperationReq {
 	GCGOperation op = 15;
-	uint32 AKHPMJALNHB = 14;
-	uint32 NCMIBFPDIDC = 12;
+	uint32 op_seq = 14;
+	uint32 redirect_uid = 12;
 }
 
 // CmdId: - 
@@ -16037,8 +16037,8 @@ message JACAIIINMFF {
 }
 
 // CmdId: 1559 
-message OJHNOHDBFDA {
-	bool FOBDGICBMDJ = 12;
+message DungeonRestartResultNotify {
+	bool is_add_accept = 12;
 }
 
 // CmdId: 565 
@@ -16091,7 +16091,7 @@ message AvatarEnterSceneInfo {
 
 // CmdId: - 
 message EKJKADLOENH {
-	repeated LDAFMPEFDMI data_list = 7;
+	repeated Unk_47_IIKGNGBPCAM data_list = 7;
 }
 
 // CmdId: - 
@@ -16656,7 +16656,7 @@ message TreasureHuntV4LevelInfo {
 }
 
 // CmdId: 7512 
-message OINMKIFAGKJ {
+message SelectRoguelikeDungeonCardRsp {
 	uint32 card_id = 14;
 	int32 retcode = 15;
 }
@@ -16671,7 +16671,7 @@ enum FireworksLaunchParamType {
 }
 
 // CmdId: 1793 
-message PCICAJPOKBL {
+message GetCityReputationInfoReq {
 	uint32 city_id = 11;
 }
 
@@ -16768,8 +16768,8 @@ message PNBDGIBOOED {
 }
 
 // CmdId: 2798 
-message GKDHCPLBLFC {
-	repeated uint32 MAMLJINKBCP = 12;
+message GetPushTipsRewardReq {
+	repeated uint32 push_tips_id_list = 12;
 }
 
 // CmdId: 3663 
@@ -16996,7 +16996,7 @@ message DOOKKBABEAJ {
 
 // CmdId: - 
 message Reliquary {
-	repeated uint32 JLCFLCOKCFM = 5;
+	repeated uint32 append_prop_id_list = 5;
 	uint32 promote_level = 3;
 	uint32 level = 1;
 	uint32 main_prop_id = 4;
@@ -17038,7 +17038,7 @@ message BreakoutAction {
 	int32 speed = 9;
 	uint32 new_index = 6;
 	uint64 client_game_time = 2;
-	uint64 CNEHDEMBOPB = 18;
+	uint64 Unk_33_AIEBGJHBOHL = 18;
 	uint32 extra_ball_index = 16;
 	uint32 element_reaction_buff = 12;
 	uint32 peer_id = 10;
@@ -17351,7 +17351,7 @@ message DragonSpineChapterInfo {
 
 // CmdId: 24315 
 message OCIHFOCBDLB {
-	bool BCILMKHJHFM = 4;
+	bool is_interact = 4;
 }
 
 // CmdId: 20452 
@@ -17563,7 +17563,7 @@ message Unk_37_BBEFELPNOFF {
 
 // CmdId: 3621 
 message Unk_37_HBNNBMAOCAC {
-	repeated uint32 unk_37_unk_37_HEFPCNEGMEH = 8;
+	repeated uint32 unk_37_LDDAEIABIEC = 8;
 	Unk_37_GGJENGOICLH unk_37_CECPEAKGCFO = 9;
 	uint32 unk_37_ECCGNJMBJFM = 1;
 }
@@ -17591,7 +17591,7 @@ message Unk_53_BOMIFOJJAJA {
 	Unk_53_IMNPPOBOCLL unk_53_GEJICILKFIP = 14;
 	Unk_53_NFLBGPOHLHF unk_53_PEMENDCENMD = 5;
 	uint32 skill_id = 2;
-	uint32 KKPDODPNOII = 10;
+	uint32 seq_id = 10;
 }
 
 // CmdId: 26145 
@@ -17636,8 +17636,8 @@ message KMNJKGNGKNM {
 }
 
 // CmdId: 29064 
-message ONJDFJIBJGL {
-	repeated FKHMGHGBNLP MALOHBIKOLA = 7;
+message WinterCampGetFriendWishListRsp {
+	repeated WinterCampFriendWishData wish_data_list = 7;
 	int32 retcode = 14;
 }
 
@@ -17667,8 +17667,8 @@ message ServerBuffChangeNotify {
 
 // CmdId: - 
 message FCLHBLCMIOC {
-	repeated PKAIOHAEGHL HONHANOJHII = 7;
-	repeated PKAIOHAEGHL LOLCLLILAJI = 4;
+	repeated Unk_46_NLKKNAIONKJ HONHANOJHII = 7;
+	repeated Unk_46_NLKKNAIONKJ LOLCLLILAJI = 4;
 }
 
 // CmdId: 5472 
@@ -17830,7 +17830,7 @@ message SeaLampActivityDetailInfo {
 }
 
 // CmdId: 9745 
-message PersonalLineAllDataReq {
+message EKFHHCNJJOC {
 }
 
 // CmdId: - 
@@ -17854,9 +17854,9 @@ message EnterSceneReadyRsp {
 }
 
 // CmdId: 28328 
-message PAEGEECFMCL {
-	uint32 PBOJELKBJGH = 14;
-	uint32 EHPIKEIPFOH = 10;
+message AdjustWorldLevelReq {
+	uint32 expect_world_level = 14;
+	uint32 cur_world_level = 10;
 }
 
 // CmdId: 25816 
@@ -17878,7 +17878,7 @@ message Unk_48_50_ADPHNFGAAKN {
 
 // CmdId: - 
 message PICMJNCKJDG {
-	repeated PKAIOHAEGHL brief_info_list = 6;
+	repeated Unk_46_NLKKNAIONKJ brief_info_list = 6;
 }
 
 // CmdId: - 
@@ -17968,7 +17968,7 @@ message NLNEMNKCNNB {
 // CmdId: 4428 
 message HLPINEOKGIN {
 	uint32 uid = 13;
-	uint32 BAMHLEACMFF = 8;
+	uint32 pic_id = 8;
 }
 
 // CmdId: 2101 
@@ -17988,8 +17988,8 @@ message CoinCollectTeamAvatarInfo {
 }
 
 // CmdId: 29267 
-message CNBJIMGBBLL {
-	repeated uint32 MHADGGBNLJO = 8;
+message BartenderStartLevelRsp {
+	repeated uint32 order_list = 8;
 	int32 retcode = 3;
 	uint32 time = 7;
 	uint32 level_id = 9;
@@ -18010,7 +18010,7 @@ message BirdBallStageInfo {
 }
 
 // CmdId: 20796 
-message JBGKPMMEACP {
+message ServerMessageNotify {
 	uint32 index = 9;
 }
 
@@ -18126,7 +18126,7 @@ message UgcV2DetailInfo {
 }
 
 // CmdId: - 
-message LJPBMCGNOKB {
+message Unk_38_40_MNAHBOJCNBF {
 	Vector pos = 1;
 	uint32 config_id = 15;
 	oneof region_size {
@@ -18261,7 +18261,7 @@ message SceneGalleryJourneyDiceInfo {
 
 // CmdId: 3315 
 message PHOHBMJFGFK {
-	uint32 MGNFPKFFGMM = 9;
+	uint32 reminder_id = 9;
 }
 
 // CmdId: 28442 
@@ -18306,7 +18306,7 @@ enum CustomGalleryScoreBoardType {
 
 // CmdId: 20109 
 message SceneGalleryVintageHuntingSettleNotify {
-	oneof detail {
+	oneof info {
 		VintageHuntingThirdStageSettleInfo third_stage_info = 2;
 		VintageHuntingSecondStageSettleInfo second_stage_info = 8;
 		VintageHuntingFirstStageSettleInfo first_stage_info = 15;
@@ -18342,7 +18342,7 @@ message Unk_44_45_FOMHPCONKDG {
 }
 
 // CmdId: 22676 
-message ODHGLPHOKFB {
+message PlayerApplyEnterHomeResultNotify {
 	string target_nickname = 3;
 	Reason reason = 1;
 	uint32 target_uid = 2;
@@ -18373,15 +18373,15 @@ message APPHDNANBPE {
 
 // CmdId: 26878 
 message MusicGameBookAllDataNotify {
-	repeated NKKAPPEHDPE CEJMJLAGEEN = 3;
-	repeated uint32 MAMLJINKBCP = 1;
-	IFDKCMGKKNI setting = 13;
+	repeated Unk_53_NKKAPPEHDPE unk_53_CEJMJLAGEEN = 3;
+	repeated uint32 push_tips_id_list = 1;
+	Unk_53_IFDKCMGKKNI setting = 13;
 	repeated uint32 unlocked_theme_id_list = 7;
 	repeated uint32 unlocked_region_album_id_list = 4;
 	repeated uint32 favourite_music_id_list = 12;
-	uint32 NEHLPOLKFJN = 8;
+	uint32 unk_53_NEHLPOLKFJN = 8;
 	uint32 PKKNPFCAPDP = 10;
-	uint32 FMPCLJFJKPB = 11;
+	uint32 unk_53_FMPCLJFJKPB = 11;
 }
 
 // CmdId: - 
@@ -18414,7 +18414,7 @@ message ChallengeDataNotify {
 }
 
 // CmdId: 27909 
-message OHPEAJFKNOP {
+message MichiaeMatsuriGainCrystalExpUpdateNotify {
 	uint32 activity_id = 12;
 	uint32 gain_crystal_exp = 1;
 }
@@ -18471,7 +18471,7 @@ message SceneGalleryIslandPartySailInfo {
 
 // CmdId: - 
 message ILDMMDKOGHC {
-	repeated NPEOOPLFOOP brief_info_list = 13;
+	repeated Unk_53_NPEOOPLFOOP brief_info_list = 13;
 }
 
 // CmdId: 29130 
@@ -18544,7 +18544,7 @@ message Unk_53_PPLEAPPJHPO {
 
 // CmdId: - 
 message ALCPKFICILN {
-	repeated NPEOOPLFOOP brief_info_list = 6;
+	repeated Unk_53_NPEOOPLFOOP brief_info_list = 6;
 }
 
 // CmdId: - 
@@ -18644,7 +18644,7 @@ message MassiveEntityElementOpBatchNotify {
 }
 
 // CmdId: 1863 
-message GetWorldMpInfoReq {
+message IFNBKKLCDGF {
 }
 
 // CmdId: 27398 
@@ -18703,7 +18703,7 @@ message ResVersionConfig {
 
 // CmdId: 5379 
 message GCGSettleNotify {
-	CGNBICKJJJA ALJKADLGLAP = 2;
+	Unk_41_42_GAMKJKMONHN unk_41_42_PBMNCGBMKNA = 2;
 	repeated uint32 forbid_finish_challenge_list = 5;
 	repeated uint32 finished_challenge_id_list = 4;
 	repeated ItemParam reward_item_list = 10;
@@ -18726,8 +18726,8 @@ message WidgetWeatherWizardDataNotify {
 }
 
 // CmdId: 1383 
-message JCAEHAGFCIF {
-	repeated BJGEGDNGGIO ACCEHKMFCHM = 15;
+message HomePictureFrameInfoNotify {
+	repeated HomePictureFrameInfo picture_frame_info_list = 15;
 }
 
 // CmdId: 20207 
@@ -18835,8 +18835,8 @@ message CoopReward {
 }
 
 // CmdId: 29544 
-message GGIEGOOGGEP {
-	LOPAIAHPANO BNPGIDLNFPE = 4;
+message WinterCampRecvItemNotify {
+	WinterCampRecvItemData recv_item_data = 4;
 }
 
 // CmdId: - 
@@ -19184,9 +19184,9 @@ message AlchemySimDetailInfo {
 	Unk_45_GGMGKKMOKJH unk_45_IMEKJKOINGM = 2;
 	repeated Unk_45_EKPPJCHGLBM unk_45_BEGONJMGDLE = 3;
 	Unk_45_HOGIDHCEPFM Unk_45_JHBBGKCPIFD = 4;
-	OFEIFPKPOCD basic_info = 8;
+	Unk_45_AKIIEKLGOCG basic_info = 8;
 	Unk_45_NEMIHGAGHLF unk_45_CFDFMDECHDC = 11;
-	Unk_45_MBIONFBMCBH MLHBBIJEPPC = 13;
+	Unk_45_MBIONFBMCBH unk_45_NEDMGAKHLGN = 13;
 	Unk_45_PPGONNKODFB unk_45_PFFHFOBNDJE = 6;
 	Unk_45_IFHPKNNGEHB unk_45_ECPKLMFFMAM = 5;
 }
@@ -19509,7 +19509,7 @@ message GGGKIHLJKOK {
 }
 
 // CmdId: 5745 
-message Unk_41_45_NACAMJCNKPN {
+message Unk_41_42_MHEFHJDOEFH {
 	repeated uint32 reward_day_list = 7;
 }
 
@@ -19538,7 +19538,7 @@ message TriggerCreateGadgetToEquipPartNotify {
 }
 
 // CmdId: - 
-message LOPAIAHPANO {
+message WinterCampRecvItemData {
 	ProfilePicture profile_picture = 6;
 	repeated ItemParam item_list = 8;
 	string nickname = 3;
@@ -19634,7 +19634,7 @@ message HKGDBBJILMG {
 
 // CmdId: - 
 message LFJPNKKIGHG {
-	repeated PKAIOHAEGHL brief_info_list = 6;
+	repeated Unk_46_NLKKNAIONKJ brief_info_list = 6;
 }
 
 // CmdId: 27024 
@@ -20062,10 +20062,10 @@ message MCAPLKOMEIK {
 
 // CmdId: 7895 
 message GCGWeekChallengeInfoNotify {
-	repeated ItemParam OBEDMPNDFKB = 13;
+	repeated ItemParam unk_41_42_DDOIDIDACGK = 13;
 	repeated GCGWeekChallengeInfo challenge_info_list = 15;
 	uint32 next_refresh_time = 1;
-	uint32 EFNDFGABIIB = 9;
+	uint32 unk_41_42_OEPDGDBPNOG = 9;
 	bool is_notify_npc_change = 2;
 }
 
@@ -20149,7 +20149,7 @@ message WorldPlayerLocationNotify {
 message Weapon {
 	map<uint32, uint32> affix_map = 4;
 	uint32 promote_level = 3;
-	bool JHPLJPIFMBM = 5;
+	bool unk_42_LBKFMBNFPJK = 5;
 	uint32 level = 1;
 	uint32 exp = 2;
 }
@@ -20251,7 +20251,7 @@ message GetActivityShopSheetInfoRsp {
 
 // CmdId: 8945 
 message KFFPMMHMEPA {
-	IIBCDDOBHBF progress = 5;
+	Unk_36_DCJBJCDFAAE progress = 5;
 	uint32 gallery_id = 7;
 }
 
@@ -20516,7 +20516,7 @@ message AEEIMKGONII {
 }
 
 // CmdId: - 
-message Unk_41_45_LNHIIINIFOL {
+message Unk_43_45_LNHIIINIFOL {
 	uint32 uid = 4;
 	uint32 avatar_id = 6;
 	bool is_ready = 3;
@@ -20582,16 +20582,16 @@ enum ReunionReportType {
 }
 
 // CmdId: - 
-message OLEEBKJLOIB {
-	repeated uint32 DKKGKEPOFKL = 12;
+message Unk_36_KMNPJIFBGJD {
+	repeated uint32 unk_36_KAOGGMEJPBD = 12;
 	string name = 3;
 	uint32 target_score = 4;
 	oneof detail {
-		IKDGIIOHIFE normal = 1207;
-		LKLBNJEEDLI countdown = 1457;
-		EOOLAHEKFKD timer = 1902;
+		Unk_36_PPBLCBFKEHE normal = 1207;
+		Unk_36_KHHEAFGCOMJ countdown = 1457;
+		Unk_36_DIJILDLCPLG timer = 1902;
 	}
-	uint32 JIDIGOGECCN = 10;
+	uint32 unk_36_HKPLPJIBMOC = 10;
 	CustomGalleryScoreBoardType type = 5;
 }
 
@@ -21172,8 +21172,8 @@ message COJILLLBDFE {
 }
 
 // CmdId: 4642 
-message HODPKBPINEK {
-	BJGEGDNGGIO DJAENHCMODM = 4;
+message HomeUpdatePictureFrameInfoRsp {
+	HomePictureFrameInfo picture_frame_info = 4;
 	int32 retcode = 6;
 }
 
@@ -21339,7 +21339,7 @@ message PlayerLevelRewardUpdateNotify {
 
 // CmdId: 7442 
 message EKDMIAJEHEM {
-	repeated uint32 HDLHDFBDHPM = 6;
+	repeated uint32 cg_list = 6;
 }
 
 // CmdId: 28111 
@@ -21455,7 +21455,7 @@ message ServerTimeNotify {
 message NOGGBNHPAEI {
 	UgcType ugc_type = 10;
 	int32 retcode = 4;
-	oneof detail {
+	oneof info {
 		LFJPNKKIGHG music_info = 3;
 	}
 }
@@ -21481,7 +21481,7 @@ message HomeFishFarmingInfoNotify {
 }
 
 // CmdId: 29113 
-message OLDCMHNPCGP {
+message WidgetCaptureAnimalRsp {
 	Vector pos = 10;
 	uint32 material_id = 6;
 	int32 retcode = 7;
@@ -21523,10 +21523,10 @@ message GetShopmallDataReq {
 }
 
 // CmdId: 7276 
-message CELEJEDPMGF {
+message FinishDeliveryNotify {
 	uint32 day_index = 7;
 	uint32 schedule_id = 8;
-	uint32 NCIPOHEGLDB = 15;
+	uint32 finished_quest_index = 15;
 }
 
 // CmdId: - 
@@ -21700,7 +21700,7 @@ message PMEGJNENONG {
 }
 
 // CmdId: 26343 
-message SetSceneWeatherAreaRsp {
+message DCHCIDBKIHF {
 	int32 retcode = 12;
 }
 
@@ -21774,7 +21774,7 @@ message KLFAAPCCELD {
 
 // CmdId: 8552 
 message HDMAOHMOPMK {
-	uint32 BIDKELFHFJH = 7;
+	uint32 fish_pool_id = 7;
 	int32 retcode = 9;
 }
 
@@ -21801,7 +21801,7 @@ message OIGALEIHJIB {
 }
 
 // CmdId: 9044 
-message NIAOLGOHOGF {
+message GCGStartChallengeByCheckRewardReq {
 	uint32 config_id = 9;
 	uint32 level_id = 14;
 	GCGLevelType level_type = 2;
@@ -21908,7 +21908,7 @@ message FJJDPBPAOON {
 }
 
 // CmdId: 4040 
-message AACIDGFPFCG {
+message AvatarPromoteRsp {
 	uint64 guid = 2;
 	int32 retcode = 7;
 }
@@ -22023,10 +22023,10 @@ message AJIPKOBEAKL {
 }
 
 // CmdId: 24669 
-message IMFOIIFLCJG {
+message SetFriendRemarkNameRsp {
 	string remark_name = 7;
 	uint32 uid = 15;
-	bool BIKOHGOMDHI = 1;
+	bool is_clear_remark = 1;
 	int32 retcode = 11;
 }
 
@@ -22069,7 +22069,7 @@ message BPFCPGOEJPH {
 message Unk_38_40_FKJGGGPIKFJ {
 	uint32 cur_score = 11;
 	uint32 FGOLINDIAII = 5;
-	uint32 JOPJLOMJPKJ = 12;
+	uint32 unk_38_40_PKHMPEPHHIH = 12;
 	uint32 uid = 13;
 	sfixed64 JLOAFJLPLKC = 1;
 	uint32 LGHMAFABEOK = 9;
@@ -22112,10 +22112,10 @@ message MailChangeNotify {
 	repeated MailData mail_list = 15;
 }
 
-enum CNJLLLIMEMB {
-	CNJLLLIMEMB_NONE = 0;
-	CNJLLLIMEMB_BY_KICK = 1;
-	CNJLLLIMEMB_QUIT = 2;
+enum Unk_38_40_CGDFANJKOOO {
+	Unk_38_40_CGDFANJKOOO_NONE = 0;
+	Unk_38_40_CGDFANJKOOO_BY_KICK = 1;
+	Unk_38_40_CGDFANJKOOO_QUIT = 2;
 }
 
 // CmdId: 20843 
@@ -22138,14 +22138,14 @@ message LBHDEGHFPJD {
 }
 
 // CmdId: 1130 
-message EHLEKNMHIOI {
+message SetBattlePassViewedRsp {
 	uint32 schedule_id = 11;
 	int32 retcode = 3;
 }
 
 // CmdId: 2840 
-message EOIIDHFNOMK {
-	uint32 ONLEDNIFMIF = 2;
+message PlayerFishingDataNotify {
+	uint32 last_fish_rod_id = 2;
 }
 
 // CmdId: 29256 
@@ -22318,7 +22318,7 @@ message JAHFPPINGEE {
 }
 
 // CmdId: 25276 
-message HLPKBPACEDC {
+message PlayerOfferingReq {
 	uint32 offering_id = 10;
 }
 
@@ -22328,7 +22328,7 @@ message LanV5CardRecord {
 }
 
 // CmdId: 27830 
-message EPOBKIHAINK {
+message HomeSaveArrangementNoChangeRsp {
 	int32 retcode = 10;
 	uint32 scene_id = 8;
 }
@@ -22397,7 +22397,7 @@ message KFLONNPDCKE {
 // CmdId: 9636 
 message HomeGetGroupRecordRsp {
 	HomeGroupRecord group_record = 1;
-	uint32 LOHIMKOHIKI = 11;
+	uint32 record_type = 11;
 	int32 retcode = 9;
 }
 
@@ -22606,7 +22606,7 @@ message CGEKEHJBGJJ {
 }
 
 // CmdId: 6227 
-message NCCGGCCNEPH {
+message MiracleRingDestroyNotify {
 	uint32 entity_id = 8;
 }
 
@@ -22662,7 +22662,7 @@ message ENKJKCIOGMG {
 
 // CmdId: 27619 
 message BIMDLPENLGK {
-	GalleryStopReason GPGFIOONCDK = 10;
+	GalleryStopReason unk_37_40_GKKMABPCMBH = 10;
 	uint32 gallery_id = 12;
 }
 
@@ -22847,16 +22847,16 @@ message EntityTagChangeNotify {
 }
 
 // CmdId: 20130 
-message MusicGameStartReq {
-	bool is_save_score = 7;
-	uint32 music_basic_id = 9;
+message MusicGameBookStartReq {
+	bool unk_53_PNCLNJNOOHN = 7;
+	uint32 beatmap_id = 9;
 	uint64 ugc_guid = 4;
 }
 
 // CmdId: 9850 
 message NNEMJPPGPAD {
 	repeated Unk_46_MJLOEMLJDJC param_list = 8;
-	bool HDNGGMAMCMD = 4;
+	bool unk_53_HDNGGMAMCMD = 4;
 	UgcType ugc_type = 11;
 }
 
@@ -22878,7 +22878,7 @@ message SlimeCannonLevelInfo {
 	bool is_finish = 10;
 	uint32 use_time = 9;
 	uint32 level_id = 2;
-	uint32 JOPJLOMJPKJ = 5;
+	uint32 unk_38_40_PKHMPEPHHIH = 5;
 	uint32 score = 4;
 	uint32 FGOLINDIAII = 12;
 }
@@ -23192,7 +23192,7 @@ message JGHBBOMHNHG {
 }
 
 // CmdId: 24124 
-message CNCHMANGOLE {
+message TakeReunionFirstGiftRewardRsp {
 	int32 reward_id = 15;
 	int32 retcode = 5;
 }
@@ -23223,9 +23223,9 @@ message RogueAvatarInfo {
 }
 
 // CmdId: 22643 
-message LHEDPCJBDDH {
+message TakeReunionSignInRewardReq {
 	uint32 config_id = 8;
-	uint32 BNOKEJCCKPD = 15;
+	uint32 reward_day = 15;
 }
 
 // CmdId: - 
@@ -23394,7 +23394,7 @@ message KMEDCCOAOHE {
 }
 
 // CmdId: 27308 
-message DLGDMIDNGLL {
+message GetCompoundDataReq {
 }
 
 // CmdId: 27686 
@@ -23575,7 +23575,7 @@ message HICKOBLJEDJ {
 
 // CmdId: 25456 
 message PPLDFKIEJEI {
-	repeated uint32 POKLKPHKCGD = 8;
+	repeated uint32 fungus_id_list = 8;
 	uint32 dungeon_id = 12;
 }
 
@@ -23944,8 +23944,8 @@ message SceneAvatarInfo {
 }
 
 // CmdId: 7578 
-message FHBKEGBDLEI {
-	repeated uint32 MIANKPCHNOM = 13;
+message ActivityGiveFriendGiftRsp {
+	repeated uint32 limit_gift_list = 13;
 	int32 retcode = 8;
 	uint32 schedule_id = 10;
 	uint32 uid = 4;
@@ -24001,20 +24001,20 @@ message KPAOJHEBOJA {
 }
 
 // CmdId: 8687 
-message HFAFEDOOLLJ {
+message EchoNotify {
 	string content = 11;
-	uint32 KKPDODPNOII = 4;
+	uint32 seq_id = 4;
 }
 
 // CmdId: 28670 
-message IDFDMENMHLG {
+message BuyBattlePassLevelRsp {
 	int32 retcode = 9;
-	uint32 DPJDIPPKFGK = 2;
+	uint32 buy_level = 2;
 }
 
 // CmdId: 27440 
-message ALGLHKMAEHJ {
-	repeated uint64 KCCHNIHKJKL = 6;
+message CheckUgcUpdateRsp {
+	repeated uint64 update_ugc_guid_list = 6;
 	int32 retcode = 15;
 	UgcType ugc_type = 4;
 }
@@ -24156,7 +24156,7 @@ message HLLANKNECAH {
 }
 
 // CmdId: 3514 
-message FCLLCDLLOIL {
+message PlayerCancelMatchReq {
 	MatchType match_type = 12;
 }
 
@@ -24372,14 +24372,14 @@ message FBLFLLKDJIK {
 
 // CmdId: - 
 message BallGameStageInfo {
-	repeated Unk_41_45_LNHIIINIFOL unk_41_45_DIOEBLEEIKD = 12;
-	repeated Unk_41_45_OMIBKMNLEEM player_info_list = 2;
+	repeated Unk_43_45_LNHIIINIFOL unk_43_45_DIOEBLEEIKD = 12;
+	repeated Unk_43_45_OMIBKMNLEEM player_info_list = 2;
 	uint32 match_id = 3;
 	uint32 level_id = 6;
 }
 
 // CmdId: 2310 
-message CLCNEMDPPPL {
+message PathfindingEnterSceneRsp {
 	int32 retcode = 15;
 }
 
@@ -24403,7 +24403,7 @@ enum ClientReconnectReason {
 }
 
 // CmdId: 20473 
-message AEKPPPCLHEJ {
+message GetDailyDungeonEntryInfoReq {
 	uint32 scene_id = 6;
 }
 
@@ -24413,7 +24413,7 @@ message WindFieldDetailInfo {
 }
 
 // CmdId: 2848 
-message HOLEGNKGMDD {
+message QuickOpenActivityRsp {
 	uint32 activity_id = 9;
 	int32 retcode = 7;
 }
@@ -24437,7 +24437,7 @@ message HNKMHPIGLKL {
 }
 
 // CmdId: 21167 
-message GHDGCONFKBG {
+message FishChosenNotify {
 	uint32 fish_id = 8;
 }
 
@@ -24616,7 +24616,7 @@ message OGMKLBALGNC {
 }
 
 // CmdId: - 
-message FKHMGHGBNLP {
+message WinterCampFriendWishData {
 	string nickname = 12;
 	ProfilePicture profile_picture = 2;
 	repeated uint32 item_id_list = 6;
@@ -24788,16 +24788,16 @@ message MJEFMELNLBM {
 
 // CmdId: - 
 message UgcMusicBriefInfo {
-	repeated uint32 LDKLPEBNJIM = 412;
-	PLIINLKPMJO social = 107;
-	repeated uint32 CNOFJGPNNGK = 1978;
-	repeated uint32 PDPPMPCHBEF = 1225;
+	repeated uint32 before_note_list = 412;
+	MusicGameSocial social = 107;
+	repeated uint32 beatmap_category_id_list = 1978;
+	repeated uint32 after_note_list = 1225;
 	string creator_nickname = 14;
 	uint32 OMOHOMMILNG = 1;
 	uint32 GECKKCEMALE = 3;
 	uint32 music_id = 11;
 	uint32 PKKNPFCAPDP = 1922;
-	uint32 GABHLFFICNJ = 12;
+	uint32 note_count = 12;
 	uint32 max_score = 9;
 	uint32 NCJEKDBBHCC = 723;
 	uint64 ugc_guid = 13;
@@ -24832,7 +24832,7 @@ message HuntingStartNotify {
 }
 
 // CmdId: - 
-message IKDGIIOHIFE {
+message Unk_36_PPBLCBFKEHE {
 }
 
 // CmdId: 5064 
@@ -24898,7 +24898,7 @@ message OPFGILBAMLH {
 }
 
 // CmdId: 20395 
-message IBFFABAAOHB {
+message WatcherChangeNotify {
 	repeated uint32 IKDNNCHNCIC = 7;
 	repeated uint32 NIPIHAFEBKM = 11;
 }
@@ -24949,8 +24949,8 @@ message CMNPJBABPDA {
 }
 
 // CmdId: 4068 
-message ACBGABCDMGL {
-	uint32 MEBELMEFBBK = 8;
+message FungusCultivateReq {
+	uint32 cultivate_id = 8;
 	uint32 CICMPMGEMAM = 13;
 	uint32 IJIFAAEAEAJ = 15;
 	uint32 PCDPIPOKPNO = 7;
@@ -24969,8 +24969,8 @@ message LuaEnvironmentEffectNotify {
 }
 
 // CmdId: - 
-message JCFJJDHLAFP {
-	map<string, string> KEMCNNPNAMF = 10;
+message Unk_47_HNENBGPKIMH {
+	map<string, string> unk_47_FKBAKKBLGFN = 10;
 }
 
 // CmdId: 9676 
@@ -25223,7 +25223,7 @@ message WorldRoutineInfo {
 }
 
 // CmdId: 27193 
-message NKDNAEMLNLI {
+message TowerBriefDataNotify {
 	uint32 tower_schedule_id = 4;
 	uint32 next_schedule_change_time = 8;
 	uint32 FOPOOKCKPID = 12;
@@ -25241,7 +25241,7 @@ message EFCEJGHPKNM {
 }
 
 // CmdId: 21274 
-message BPLKHMCIPBL {
+message DungeonPlayerDieRsp {
 	int32 retcode = 2;
 }
 
@@ -25341,8 +25341,8 @@ message ParentQuestInferenceDataNotify {
 }
 
 // CmdId: 27252 
-message BIFPCGONPNC {
-	repeated uint32 HPIMPKGGDHB = 7;
+message TakeBattlePassMissionPointRsp {
+	repeated uint32 mission_id_list = 7;
 	int32 retcode = 14;
 }
 
@@ -25376,7 +25376,7 @@ message MJJFKFEKPDN {
 }
 
 // CmdId: 29541 
-message LNEOOKGFFHN {
+message TakeInvestigationTargetRewardRsp {
 	uint32 quest_id = 5;
 	int32 retcode = 4;
 }
@@ -25442,17 +25442,17 @@ message EnterChessDungeonReq {
 
 // CmdId: - 
 message CooperateChallengeDungeonSettleInfo {
-	repeated OIFDPOMFGOC OMMKBFEPJHN = 4;
-	SettleReason NJHKMLCHHKA = 8;
-	uint32 CFEIIMAECEH = 13;
+	repeated Unk_51_OFLLIMELLLH unk_38_40_EJOMIEODJHM = 4;
+	SettleReason unk_51_NDKPGBPDJBI = 8;
+	uint32 unk_51_IJAKGPBEENA = 13;
 	enum SettleReason {
 		SETTLE_REASON_NONE = 0;
 		SETTLE_REASON_SUCC = 1;
 		SETTLE_REASON_PLAYER_NOT_ENOUGH = 2;
 	}
 	// CmdId: - 
-	message OIFDPOMFGOC {
-		repeated uint32 PNPOHOECFHL = 6;
+	message Unk_51_OFLLIMELLLH {
+		repeated uint32 unk_51_HFANAOPHJNK = 6;
 		string online_id = 9;
 		repeated ExhibitionDisplayInfo card_list = 14;
 		string nickname = 7;
@@ -25553,7 +25553,7 @@ message LJLGPMBEGGM {
 }
 
 // CmdId: 1347 
-message JFGHPPIKLMP {
+message FindHilichurlFinishSecondQuestNotify {
 	uint32 day_index = 2;
 }
 
@@ -25664,7 +25664,7 @@ message DKCLKHCFEOC {
 }
 
 // CmdId: 24793 
-message NIPHAPOCOIE {
+message ChangeWidgetBackgroundActiveStateReq {
 	uint32 material_id = 3;
 	bool is_active = 1;
 }
@@ -25744,7 +25744,7 @@ enum AvatarType {
 // CmdId: 23906 
 message OKFEKLPBPNC {
 	repeated ItemParam item_list = 10;
-	repeated uint32 DEOGNCAEFEK = 6;
+	repeated uint32 explore_id_list = 6;
 	uint32 GEFBMDPCIMD = 1;
 	int32 retcode = 13;
 }
@@ -25832,8 +25832,8 @@ message RechargeDiskLevelInfo {
 }
 
 // CmdId: 4547 
-message EKKMNMMEKJD {
-	OLEEBKJLOIB EJKDFNPCFBK = 13;
+message Unk_36_NLMGCGCNKHG {
+	Unk_36_KMNPJIFBGJD unk_36_PBGEHNAGDJL = 13;
 	uint32 gallery_id = 14;
 }
 
@@ -25863,11 +25863,11 @@ enum DJDPBKJAHHI {
 }
 
 // CmdId: 25924 
-message DNFINAICOFN {
+message FishCastRodReq {
 	Vector pos = 5;
-	uint32 BGHDFJNFHKF = 7;
-	uint32 AECFGGNGPGN = 9;
-	uint32 IODPOIKOEPJ = 2;
+	uint32 bait_id = 7;
+	uint32 rod_entity_id = 9;
+	uint32 rod_id = 2;
 }
 
 // CmdId: 23749 
@@ -25986,7 +25986,7 @@ message IJOIBGLKCOO {
 }
 
 // CmdId: 6942 
-message CAAGALDAJOP {
+message ForgeGetQueueDataReq {
 }
 
 // CmdId: 22040 
@@ -26135,7 +26135,7 @@ message FurnitureMakeSlot {
 
 // CmdId: 5701 
 message PGFJLPKMPCG {
-	uint32 MGNFPKFFGMM = 13;
+	uint32 reminder_id = 13;
 	uint32 ANJIAJNOHKH = 9;
 }
 
@@ -26146,7 +26146,7 @@ message CDKIJIAGMOJ {
 }
 
 // CmdId: 473 
-message GKHDKJLOKFB {
+message HomeTransferRsp {
 	int32 retcode = 9;
 }
 
@@ -26227,7 +26227,7 @@ message Unk_37_DEKEKNMCKPB {
 // CmdId: - 
 message SceneGalleryVintageHuntingInfo {
 	uint32 stage_id = 2;
-	oneof detail {
+	oneof info {
 		VintageHuntingFirstStageInfo first_stage_info = 4;
 		VintageHuntingSecondStageInfo second_stage_info = 7;
 		VintageHuntingThirdStageInfo third_stage_info = 12;
@@ -26515,7 +26515,7 @@ message GetInvestigationMonsterReq {
 // CmdId: 26329 
 message BDJPDGNIMAG {
 	string FPHMPJKDAIO = 6;
-	oneof detail {
+	oneof info {
 		HOMJBJLMENC lan_v5_card_info = 537;
 	}
 	uint32 level_id = 11;
@@ -26578,11 +26578,11 @@ message Unk_45_MBIONFBMCBH {
 }
 
 // CmdId: 1601 
-message JOOGOEJJGBI {
+message BlessingAcceptGivePicRsp {
 	uint32 uid = 10;
 	uint32 index = 7;
 	int32 retcode = 2;
-	uint32 BAMHLEACMFF = 4;
+	uint32 pic_id = 4;
 }
 
 // CmdId: 6443 
@@ -26799,7 +26799,7 @@ message PlayerPropChangeReasonNotify {
 }
 
 // CmdId: 24510 
-message KBDLJMAEAKH {
+message DungeonRestartRsp {
 	int32 retcode = 9;
 	uint32 dungeon_id = 5;
 	uint32 point_id = 11;
@@ -26837,7 +26837,7 @@ message GetAllUnlockNameCardReq {
 }
 
 // CmdId: 28839 
-message AGCJNANHLPD {
+message ChangeMpTeamAvatarRsp {
 	repeated uint64 avatar_guid_list = 1;
 	uint64 cur_avatar_guid = 11;
 	int32 retcode = 5;
@@ -27203,8 +27203,8 @@ message EFMJLDIGKNJ {
 }
 
 // CmdId: 27683 
-message MDJCLKIJKCO {
-	repeated uint32 POKLKPHKCGD = 2;
+message EnterFungusFighterPlotDungeonRsp {
+	repeated uint32 fungus_id_list = 2;
 	uint32 dungeon_id = 7;
 	int32 retcode = 9;
 }
@@ -27343,7 +27343,7 @@ message HomeMarkPointFurnitureData {
 }
 
 // CmdId: 5793 
-message NMDOGFNGDNH {
+message MiracleRingTakeRewardRsp {
 	int32 retcode = 8;
 }
 
@@ -27462,7 +27462,7 @@ message EvtEntityRenderersChangedNotify {
 }
 
 // CmdId: 24668 
-message KHAGNLJKOLC {
+message EnterTrialAvatarActivityDungeonRsp {
 	uint32 trial_avatar_index_id = 12;
 	int32 retcode = 11;
 	uint32 activity_id = 4;
@@ -27475,10 +27475,10 @@ message LEGEFFBELEF {
 }
 
 // CmdId: 1079 
-message NPKGAIGFHLD {
+message FleurFairMusicGameSettleReq {
 	uint32 score = 13;
 	uint32 music_basic_id = 2;
-	uint32 HBHFMFHKNBO = 11;
+	uint32 correct_hit = 11;
 	uint32 combo = 12;
 }
 
@@ -27501,7 +27501,7 @@ message MiracleRingDeliverItemReq {
 // CmdId: 24535 
 message EBANCDPDKPK {
 	FriendBrief NHHAKCAJNGI = 6;
-	GKMGCFCAHEM detail = 9;
+	GKMGCFCAHEM EOCACKHIBNO = 9;
 	uint32 level_id = 4;
 	int32 retcode = 5;
 	uint32 schedule_id = 7;
@@ -27652,13 +27652,13 @@ message KOOLGOPAJJL {
 }
 
 // CmdId: 2823 
-message JPOKPEOMNBI {
+message PlayerApplyEnterHomeResultReq {
 	bool is_agreed = 9;
 	uint32 apply_uid = 14;
 }
 
 // CmdId: 29691 
-message AHPBNMKLONG {
+message GCGApplyInviteBattleNotify {
 	int32 retcode = 2;
 	bool is_agree = 3;
 }
@@ -27859,8 +27859,8 @@ message ActivityInfo {
 	repeated uint32 taken_reward_list = 1207;
 	UNK_53_HEPEFCNNHLO unk_53_PNLCFAMOEKG = 289;
 	repeated ActivityPushTipsData activity_push_tips_data_list = 115;
-	UNK_41_45_GGLCAOIFLLP unk_41_45_CHILLPIJDKM = 856;
-	repeated uint64 unk_41_45_BANIIPDFHMI = 1018;
+	UNK_43_45_GGLCAOIFLLP unk_43_45_CHILLPIJDKM = 856;
+	repeated uint64 unk_43_45_BANIIPDFHMI = 1018;
 	repeated uint32 expire_cond_list = 2;
 	repeated uint32 unk_35_DDBJAKPEPLC = 576;
 	map<uint32, uint32> activity_coin_map = 31;
@@ -27996,7 +27996,7 @@ message ActivityInfo {
 		ActivityMultiCharacterDetailInfo activity_multi_character_info = 2002;
 		EffigyChallengeV4DetailInfo effigy_challenge_v4_info = 2016;
 	}
-	uint64 unk_41_45_DAGBDKLGEFI = 215;
+	uint64 unk_43_45_DAGBDKLGEFI = 215;
 	uint32 end_time = 4;
 	uint32 MFEJOIGPMGL = 1521;
 	uint32 activity_id = 12;
@@ -28018,7 +28018,7 @@ message ActivityInfo {
 // CmdId: 8448 
 message Unk_37_CLGOJCOBIJJ {
 	string share_code = 11;
-	Unk_37_NPAFIGJICPK unk_37_KIEKKNKGMIF = 8;
+	Unk_37_IJBPEPPLINK unk_37_KIEKKNKGMIF = 8;
 }
 
 // CmdId: - 
@@ -28060,8 +28060,8 @@ enum GCGDiceSideType {
 }
 
 // CmdId: 4254 
-message KEIOPGKBNAL {
-	repeated uint32 LDGKOIPBNIH = 14;
+message FinishedTalkIdListNotify {
+	repeated uint32 finished_talk_id_list = 14;
 }
 
 // CmdId: 26746 
@@ -28116,7 +28116,7 @@ message BreakoutSyncAction {
 }
 
 // CmdId: - 
-message OKALIKBLBMD {
+message EvtSyncSkillAnchorPosition {
 	Vector skill_anchor_position = 10;
 	uint32 entity_id = 13;
 }
@@ -28365,7 +28365,7 @@ message PlayerReportReq {
 
 // CmdId: 689 
 message ECLDNFGCAME {
-	uint32 BAMHLEACMFF = 1;
+	uint32 pic_id = 1;
 	uint32 uid = 12;
 	int32 retcode = 11;
 }
@@ -28390,10 +28390,10 @@ message PLPPICEPJAH {
 }
 
 // CmdId: 21054 
-message CFIEFPDJBDM {
+message GetWorldMpInfoRsp {
 	int32 retcode = 1;
-	bool AGECNILCHAO = 14;
-	uint32 CHENDALBHMN = 10;
+	bool is_in_mp_mode = 14;
+	uint32 quit_mp_valid_time = 10;
 }
 
 // CmdId: 9784 
@@ -28514,7 +28514,7 @@ message COEMOOHPBCI {
 }
 
 // CmdId: 25590 
-message GetPlayerFriendListReq {
+message DEFBCKHMJHP {
 }
 
 // CmdId: 3115 
@@ -28550,8 +28550,8 @@ message CNLJPJPFKEB {
 }
 
 // CmdId: 22186 
-message FOJICELMFOI {
-	uint32 PFPJHMHOMCI = 10;
+message TakeCoopRewardReq {
+	uint32 reward_config_id = 10;
 }
 
 // CmdId: 22641 
@@ -28753,7 +28753,7 @@ message PKNNDJICNIG {
 message EKJHJPMIIJF {
 	int32 retcode = 8;
 	UgcType ugc_type = 11;
-	oneof detail {
+	oneof info {
 		FCLHBLCMIOC music_info = 3;
 		ALCPKFICILN lan_v5_card = 10;
 	}
@@ -29123,9 +29123,9 @@ message BPELMAJJMGM {
 }
 
 // CmdId: 8342 
-message PHGIIDNFEHL {
+message GetSignInRewardReq {
 	uint32 schedule_id = 1;
-	uint32 BNOKEJCCKPD = 12;
+	uint32 reward_day = 12;
 }
 
 // CmdId: 9736 
@@ -29144,7 +29144,7 @@ message FontainGatherStageInfo {
 }
 
 // CmdId: 2281 
-message CMKBJDHAECL {
+message FishBaitGoneNotify {
 	uint32 uid = 13;
 }
 
@@ -29197,8 +29197,8 @@ message FGOLAMPBFEL {
 }
 
 // CmdId: 20277 
-message IHMLDOJADIK {
-	repeated uint32 ADBAKIPAJPK = 12;
+message BattlePassMissionDelNotify {
+	repeated uint32 del_mission_id_list = 12;
 }
 
 // CmdId: 23396 
@@ -29261,7 +29261,7 @@ message GCGChangeOnstageInfo {
 }
 
 // CmdId: 23364 
-message LDJNGAJHLME {
+message PlayerGetForceQuitBanInfoRsp {
 	int32 retcode = 7;
 	uint32 expire_time = 3;
 	uint32 match_id = 5;
@@ -29451,14 +29451,14 @@ message NAONJPLMAEJ {
 
 // CmdId: - 
 message SceneGalleryInfo {
-	HFHNEAJGGPG ICMFOBBIPJI = 13;
+	Unk_36_JEIFKDDEDEE unk_36_HEHPGNJDOMH = 13;
 	repeated SceneGalleryProgressInfo progress_info_list = 6;
 	EKJKADLOENH BBEAECPCCCE = 75;
 	uint32 pre_start_end_time = 14;
 	GalleryStageType stage = 1;
 	uint32 end_time = 2;
 	uint32 owner_uid = 4;
-	oneof detail {
+	oneof info {
 		SceneGalleryFallInfo fall_info = 5;
 		SceneGalleryBrokenFloorInfo broken_floor_info = 7;
 		SceneGalleryBalloonInfo balloon_info = 8;
@@ -29523,14 +29523,14 @@ message SceneGalleryInfo {
 }
 
 // CmdId: 4330 
-message OFOEOMMBGII {
+message GCGOperationRsp {
 	int32 retcode = 5;
-	uint32 AKHPMJALNHB = 8;
+	uint32 op_seq = 8;
 }
 
 // CmdId: 22233 
-message NLOJHEJIIFK {
-	uint32 OFJCCENGCNJ = 14;
+message WidgetReportReq {
+	uint32 weather_wizard_shield_value = 14;
 	uint32 material_id = 5;
 	bool BMFBECKJNEI = 8;
 	bool FGCFLBFDMCH = 15;
@@ -29549,12 +29549,12 @@ message HCCJPBKDIMM {
 }
 
 // CmdId: - 
-message LBPIDBPAINE {
+message Unk_38_40_CLNEPMAAKFB {
 	uint32 uid = 7;
 	uint32 score = 9;
 	bool is_new_record = 13;
 	uint32 FGOLINDIAII = 15;
-	uint32 JOPJLOMJPKJ = 2;
+	uint32 unk_38_40_PKHMPEPHHIH = 2;
 }
 
 // CmdId: 23488 
@@ -29709,7 +29709,7 @@ message NPKGBBKLFEF {
 }
 
 // CmdId: 3284 
-message MLENIGEEBEG {
+message AsterLargeInfoNotify {
 	AsterLargeDetailInfo info = 6;
 }
 
@@ -29830,7 +29830,7 @@ message OGNJCJBDMBD {
 }
 
 // CmdId: 7888 
-message LIPNEMHIBBF {
+message InvestigationQuestDailyNotify {
 }
 
 // CmdId: 26055 
@@ -29931,7 +29931,7 @@ message IslandPartySailInfoNotify {
 }
 
 // CmdId: 9521 
-message LCKKCEILIOG {
+message GetFriendShowAvatarInfoReq {
 	uint32 uid = 6;
 }
 
@@ -29978,7 +29978,7 @@ message INLOJGPGOIO {
 }
 
 // CmdId: 9426 
-message MHCDKIMMOIC {
+message DailyTaskScoreRewardNotify {
 	uint32 reward_id = 1;
 }
 
@@ -30019,16 +30019,16 @@ message ProudSkillChangeNotify {
 }
 
 // CmdId: 23029 
-message JNONONNFLLL {
+message ActivityTakeScoreRewardRsp {
 	int32 retcode = 6;
-	uint32 PFPJHMHOMCI = 9;
+	uint32 reward_config_id = 9;
 	uint32 activity_id = 13;
 }
 
 // CmdId: - 
-message NKKAPPEHDPE {
-	uint32 music_basic_id = 7;
-	bool AADABPHMDHC = 12;
+message Unk_53_NKKAPPEHDPE {
+	uint32 beatmap_id = 7;
+	bool unk_53_AADABPHMDHC = 12;
 	uint32 max_score = 10;
 }
 
@@ -30097,7 +30097,7 @@ message TakeBackGivingItemRsp {
 }
 
 // CmdId: 3552 
-message BOEMMNDHCOF {
+message GetPlayerFriendListReq {
 }
 
 // CmdId: 24646 
@@ -30197,7 +30197,7 @@ message NICGEPIAEKC {
 }
 
 // CmdId: - 
-message Unk_41_45_OMIBKMNLEEM {
+message Unk_43_45_OMIBKMNLEEM {
 	string nickname = 2;
 	uint32 uid = 12;
 }
@@ -30305,7 +30305,7 @@ message GameplayRecommendationReliquarySetRequest {
 }
 
 // CmdId: 6242 
-message DLLFGDEIEOC {
+message GetHomeExchangeWoodInfoReq {
 }
 
 // CmdId: 27128 
@@ -30572,8 +30572,8 @@ message OKMCGHMFANA {
 }
 
 // CmdId: 3026 
-message OABIGFJDOCG {
-	string LJFDDPGIGIJ = 14;
+message GCGDebugReplayNotify {
+	string json_str = 14;
 }
 
 // CmdId: - 
@@ -30589,9 +30589,9 @@ message ScenePlayBattleSettlePlayerInfo {
 }
 
 // CmdId: 3829 
-message KBHGHNFIGJD {
+message PlayerGameTimeByLuaNotify {
 	uint32 game_time = 14;
-	uint32 IOMPJMIGBKM = 1;
+	uint32 sim_speed = 1;
 	uint32 uid = 11;
 }
 
@@ -30615,11 +30615,11 @@ message QuestRenameAvatarReq {
 }
 
 // CmdId: 23594 
-message MusicGameSettleRsp {
-	repeated uint32 NLBMDOEPPMC = 2;
+message MusicGameBookSettleRsp {
+	repeated uint32 unk_53_NLBMDOEPPMC = 2;
 	uint64 ugc_guid = 7;
 	int32 retcode = 4;
-	uint32 music_basic_id = 3;
+	uint32 beatmap_id = 3;
 	uint32 PKKNPFCAPDP = 1;
 	bool is_stored = 13;
 	bool is_liked = 12;
@@ -30887,9 +30887,9 @@ message FCLIKOAMHJO {
 }
 
 // CmdId: - 
-message BJGEGDNGGIO {
+message HomePictureFrameInfo {
 	uint32 guid = 6;
-	uint32 JFIEANHEEEB = 5;
+	uint32 picture_id = 5;
 }
 
 // CmdId: - 
@@ -30978,7 +30978,7 @@ message AnnounceData {
 	uint32 config_id = 6;
 	uint32 IEMCFIFGJAJ = 15;
 	uint32 begin_time = 12;
-	bool is_center_system_last5_every_minutes = 13;
+	bool is_center_system_last_5_every_minutes = 13;
 	uint32 end_time = 10;
 }
 
@@ -31051,11 +31051,11 @@ message KBLBIBCJPMK {
 }
 
 // CmdId: - 
-message PKAIOHAEGHL {
-	PLIINLKPMJO social = 2;
+message Unk_46_NLKKNAIONKJ {
+	MusicGameSocial social = 2;
 	string creator_nickname = 9;
 	string psn_id = 346;
-	repeated uint32 CNOFJGPNNGK = 1789;
+	repeated uint32 beatmap_category_id_list = 1789;
 	string ADDELLGIEED = 1666;
 	uint32 GECKKCEMALE = 10;
 	bool is_stored = 5;
@@ -31063,7 +31063,7 @@ message PKAIOHAEGHL {
 	bool ECNGLDLKAOI = 1;
 	bool is_psn_platform = 12;
 	uint32 PKKNPFCAPDP = 1388;
-	uint32 GABHLFFICNJ = 4;
+	uint32 note_count = 4;
 	uint32 max_score = 8;
 	uint32 NKHOGEGGKKP = 440;
 	uint32 publish_time = 11;
@@ -31285,8 +31285,8 @@ message OGBKNACPGPO {
 }
 
 // CmdId: 3436 
-message HKOOOIEOFEL {
-	LDAFMPEFDMI data = 4;
+message Unk_47_HAAOCCNOAML {
+	Unk_47_IIKGNGBPCAM data = 4;
 }
 
 // CmdId: - 
@@ -31447,7 +31447,7 @@ message IGJBAGHOONP {
 }
 
 // CmdId: 25928 
-message DPEOGJNPNIH {
+message PlayerEnterDungeonRsp {
 	uint32 dungeon_id = 12;
 	uint32 point_id = 15;
 	int32 retcode = 5;
@@ -31528,7 +31528,7 @@ message MAGADLKFOLC {
 
 // CmdId: 23343 
 message BLANPMCANON {
-	uint32 BAMHLEACMFF = 2;
+	uint32 pic_id = 2;
 	uint32 uid = 1;
 }
 
@@ -31649,8 +31649,8 @@ message IBEONAOCEGA {
 }
 
 // CmdId: 6824 
-message BBGHNFFMINF {
-	RogueDiaryAvatar GCBJDOKBKHM = 3;
+message RogueDiaryReviveAvatarReq {
+	RogueDiaryAvatar revive_avatar = 3;
 }
 
 // CmdId: - 
@@ -31673,7 +31673,7 @@ message CustomDungeonBattleRecordNotify {
 }
 
 // CmdId: 3238 
-message OKLCEBEELMA {
+message GCGDSChangeDeckNameReq {
 	string name = 7;
 	bool CAMGALMHPHD = 13;
 	uint32 deck_id = 15;
@@ -31763,10 +31763,10 @@ message PlayerLocationInfo {
 // CmdId: - 
 message SceneEntityAiInfo {
 	map<uint32, uint32> ai_threat_map = 5;
-	map<uint32, uint32> skill_cd_map = 6;
+	map<uint32, uint32> skill_group_cd_map = 6;
 	ServantInfo servant_info = 4;
-	map<uint32, uint32> skill_group_cd_map = 3;
-	bool IFKJPBKLCDP = 8;
+	map<uint32, uint32> skill_cd_map = 3;
+	bool unk_36_IGINBLKLKCF = 8;
 	uint32 cur_tactic = 7;
 }
 
@@ -31789,7 +31789,7 @@ message PMBBLKNPFCC {
 }
 
 // CmdId: 28790 
-message MHDJBNHLIEE {
+message HomePlantSeedRsp {
 	int32 retcode = 2;
 }
 
@@ -32101,7 +32101,7 @@ message PMAKCJLKECB {
 }
 
 // CmdId: 5894 
-message NJEMPLIAGLB {
+message PlayerApplyEnterMpRsp {
 	uint32 target_uid = 3;
 	uint32 param = 5;
 	int32 retcode = 12;
@@ -32283,10 +32283,10 @@ message CutSceneExtraParam {
 }
 
 // CmdId: 9047 
-message GHFHDJLHOGJ {
+message FinishMainCoopRsp {
 	int32 retcode = 14;
 	uint32 id = 10;
-	uint32 NPCPHDNMOHD = 3;
+	uint32 ending_save_point_id = 3;
 }
 
 // CmdId: - 
@@ -32608,7 +32608,7 @@ message SealBattleProgressNotify {
 }
 
 // CmdId: 5731 
-message OJAPBPBPGMB {
+message ScenePlayBattleInterruptNotify {
 	uint32 play_type = 13;
 	uint32 AFPPBCJEOIK = 3;
 	uint32 play_id = 2;
@@ -32676,8 +32676,8 @@ message CAKONLPBBAC {
 
 // CmdId: - 
 message AiSkillCdInfo {
-	map<uint32, uint32> skill_group_cd_map = 2;
-	map<uint32, uint32> skill_cd_map = 13;
+	map<uint32, uint32> skill_cd_map = 2;
+	map<uint32, uint32> skill_group_cd_map = 13;
 }
 
 // CmdId: 20755 
@@ -32751,7 +32751,7 @@ enum FFFNDFMPIKB {
 
 // CmdId: 24815 
 message AJDGJCHLJGM {
-	IFDKCMGKKNI OHLKLMIDKAP = 14;
+	Unk_53_IFDKCMGKKNI OHLKLMIDKAP = 14;
 	repeated uint32 CLGKCHCEJKF = 13;
 	repeated uint32 EGGGFOAGJCK = 8;
 	uint32 result = 2;
@@ -32818,7 +32818,7 @@ message BKBOKIEMKKH {
 }
 
 // CmdId: 23974 
-message ENIPGPDMAKD {
+message LiveStartNotify {
 	uint32 live_id = 14;
 }
 
@@ -32830,8 +32830,8 @@ enum BKGEJCGIBCJ {
 }
 
 // CmdId: 21602 
-message OHMOCKNNIAL {
-	uint32 JKIMJFGJANH = 3;
+message TowerBuffSelectReq {
+	uint32 tower_buff_id = 3;
 }
 
 // CmdId: - 
@@ -32957,19 +32957,19 @@ message SceneRouteChangeInfo {
 }
 
 // CmdId: 22520 
-message FAOIKCOCKIP {
+message PlayerMatchInfoNotify {
 	repeated uint32 match_param_list = 7;
 	uint32 dungeon_id = 8;
 	uint32 mp_play_id = 14;
 	uint32 host_uid = 11;
-	uint32 NLADGMIBIGM = 6;
+	uint32 match_begin_time = 6;
 	uint32 match_id = 12;
 	MatchType match_type = 10;
-	uint32 LDOHEEBDKMK = 2;
+	uint32 estimate_match_cost_time = 2;
 }
 
 // CmdId: 8796 
-message PPEFBFAOCNF {
+message GetMapMarkTipsReq {
 }
 
 // CmdId: 3024 
@@ -33011,10 +33011,10 @@ message AEKOFJGJACL {
 }
 
 // CmdId: 23588 
-message MusicGameStartRsp {
+message MusicGameBookStartRsp {
 	uint64 ugc_guid = 10;
 	int32 retcode = 2;
-	uint32 music_basic_id = 12;
+	uint32 beatmap_id = 12;
 }
 
 // CmdId: 23733 
@@ -33030,9 +33030,9 @@ message JJMFANINMPP {
 }
 
 // CmdId: 25753 
-message NCFCBGMFMGJ {
+message FungusCultivateRsp {
 	int32 retcode = 5;
-	uint32 MEBELMEFBBK = 7;
+	uint32 cultivate_id = 7;
 	bool is_new_record = 9;
 }
 
@@ -33044,8 +33044,8 @@ enum JKELCBICNMP {
 }
 
 // CmdId: 27722 
-message KLOPFLEHJNG {
-	uint32 PFPJHMHOMCI = 3;
+message TakeCoopRewardRsp {
+	uint32 reward_config_id = 3;
 	int32 retcode = 15;
 }
 
@@ -33220,7 +33220,7 @@ message EGIMLJNHBAF {
 
 // CmdId: - 
 message DFOCJMAHOMM {
-	float shorted_ratio = 5;
+	float shorten_ratio = 5;
 	uint32 hour_time = 15;
 	uint64 avatar_guid = 9;
 	uint32 exp_id = 1;
@@ -33308,8 +33308,8 @@ message PhotoActivityFinishReq {
 }
 
 // CmdId: 25401 
-message JIEEACBOKPE {
-	repeated uint32 ODJAPAGIEFH = 7;
+message ActivityTakeAllScoreRewardRsp {
+	repeated uint32 reward_config_list = 7;
 	int32 retcode = 5;
 	uint32 activity_id = 15;
 }
@@ -33371,7 +33371,7 @@ message BattlePassChangeRewardPlanRsp {
 }
 
 // CmdId: 4778 
-message GetMapAreaReq {
+message JHBBODDAJPG {
 }
 
 // CmdId: - 
@@ -33664,7 +33664,7 @@ message DailyTaskFilterCityRsp {
 }
 
 // CmdId: 5662 
-message OAKIBNFGJAC {
+message DungeonCandidateTeamRefuseNotify {
 	uint32 player_uid = 11;
 }
 
@@ -33706,9 +33706,9 @@ message SeaLampTakePhaseRewardRsp {
 }
 
 // CmdId: 5068 
-message HHDNHDANAND {
+message WidgetUseAttachAbilityGroupChangeNotify {
 	uint32 material_id = 11;
-	bool HOBBKKINBFM = 7;
+	bool is_attach = 7;
 }
 
 // CmdId: - 
@@ -33752,7 +33752,7 @@ message AvatarExpeditionInfo {
 	uint32 exp_id = 2;
 	uint32 start_time = 4;
 	AvatarExpeditionState state = 1;
-	float shorted_ratio = 5;
+	float shorten_ratio = 5;
 }
 
 // CmdId: - 
@@ -33819,7 +33819,7 @@ message PGDMGMFNKGC {
 }
 
 // CmdId: 22199 
-message HBPBALPBENI {
+message ClientBulletCreateNotify {
 	uint32 param = 9;
 }
 
@@ -33929,9 +33929,9 @@ message CJLBEDMPPCF {
 }
 
 // CmdId: 24249 
-message HLMJLGBIOBI {
+message TowerBuffSelectRsp {
 	int32 retcode = 9;
-	uint32 JKIMJFGJANH = 14;
+	uint32 tower_buff_id = 14;
 }
 
 // CmdId: 3032 
@@ -34065,9 +34065,9 @@ message QuickTimeCombatStageInfo {
 }
 
 // CmdId: - 
-message IIBCDDOBHBF {
+message Unk_36_DCJBJCDFAAE {
 	repeated uint32 uid_list = 10;
-	repeated string FJKJCOIBPKM = 14;
+	repeated string unk_36_ADIJKDFNCFA = 14;
 	uint32 BAHIHGFEADD = 15;
 	uint32 FBFGLICLDEJ = 4;
 }
@@ -34138,8 +34138,8 @@ message AKNGJCKDNKC {
 }
 
 // CmdId: - 
-message Unk_41_45_BJGCNBDFLMI {
-	bool unk_41_45_JNAGLEBFDFI = 1;
+message Unk_41_42_GGFJFPLAGAB {
+	bool unk_41_42_DHIKAABOGJJ = 1;
 	bool is_alive = 12;
 	uint32 monster_id = 3;
 	uint32 entity_id = 4;
@@ -34153,7 +34153,7 @@ message ElectroherculesBattleDetailInfo {
 
 // CmdId: 29928 
 message NMBEGFBGGAI {
-	UNK_41_45_GGLCAOIFLLP info = 15;
+	UNK_43_45_GGLCAOIFLLP info = 15;
 	uint32 activity_id = 9;
 }
 
@@ -34212,7 +34212,7 @@ message ODCBDNOFMBD {
 
 // CmdId: 21018 
 message PCFLOGCLIMC {
-	uint32 MGNFPKFFGMM = 12;
+	uint32 reminder_id = 12;
 	bool MPNLHPEPNOP = 5;
 	bool BIDEDBGOANN = 10;
 }
@@ -34356,7 +34356,7 @@ message HomeFurnitureData {
 }
 
 // CmdId: 3562 
-message HKEPFCDDKNH {
+message SceneKickPlayerRsp {
 	uint32 target_uid = 8;
 	int32 retcode = 7;
 }
@@ -34391,13 +34391,13 @@ message HCMCHKGMLIF {
 }
 
 // CmdId: 25510 
-message FGHBILHAENA {
-	IFDKCMGKKNI setting = 1;
+message Unk_53_FGHBILHAENA {
+	Unk_53_IFDKCMGKKNI setting = 1;
 	int32 retcode = 9;
 }
 
 // CmdId: 26786 
-message IHACLFAFDJM {
+message SetSceneWeatherAreaRsp {
 	int32 retcode = 14;
 }
 
@@ -34449,22 +34449,22 @@ message IDAGAADLGDK {
 }
 
 // CmdId: 8302 
-message MusicGameSettleReq {
-	repeated uint32 OPDEGDBBFMF = 151;
-	repeated uint32 KEBMOGJCABC = 3;
+message MusicGameBookSettleReq {
+	repeated uint32 button_list = 151;
+	repeated uint32 note_list = 3;
 	uint32 ECDAKGFMFKM = 1993;
 	uint32 score = 2;
 	float speed = 635;
-	uint32 GOMGLGMAEKC = 6;
+	uint32 score_rating = 6;
 	uint32 APKGHMAFHDM = 185;
-	bool NFLDLMABCJB = 10;
+	bool is_save_score = 10;
 	bool PLELGHJLKDN = 1999;
 	bool JHBAGIEMDAN = 50;
 	uint64 ugc_guid = 1;
-	uint32 music_basic_id = 13;
+	uint32 beatmap_id = 13;
 	float hit_percentage = 14;
 	uint32 BCKDGAGCJPD = 1102;
-	uint32 OMPFGECGKKP = 8;
+	uint32 restart_times = 8;
 	uint32 max_combo = 5;
 }
 
@@ -34776,7 +34776,7 @@ message CPFLKOPDANF {
 }
 
 // CmdId: 23359 
-message AvatarPromoteRsp {
+message CNNKGDENDCM {
 }
 
 // CmdId: 4893 
@@ -34854,7 +34854,7 @@ message LBOJLBGLIEI {
 }
 
 // CmdId: 27799 
-message ALNHNAFLNHN {
+message SceneEntityDrownRsp {
 	int32 retcode = 9;
 	uint32 entity_id = 14;
 }
@@ -35058,11 +35058,11 @@ message BEFMAEFOADD {
 }
 
 // CmdId: - 
-message PLIINLKPMJO {
-	uint32 MMINFFPDPGO = 5;
+message MusicGameSocial {
+	uint32 unk_53_MMINFFPDPGO = 5;
 	uint32 GOELOFEDICM = 4;
 	uint32 FOOJHDMHNGB = 3;
-	uint32 LGEKECALCDG = 13;
+	uint32 unk_53_LGEKECALCDG = 13;
 	uint32 FGDDCAECJHC = 8;
 }
 
@@ -35078,7 +35078,7 @@ message DCFAMEPBHAN {
 }
 
 // CmdId: 5215 
-message ENHGMENONIC {
+message GetReunionMissionInfoReq {
 	uint32 mission_id = 12;
 }
 
@@ -35306,7 +35306,7 @@ message Unk_37_EGEBOGIIBGB {
 
 // CmdId: 23149 
 message MKPCFPAHEFC {
-	oneof detail {
+	oneof info {
 		ILDMMDKOGHC lan_v5_card_info = 7;
 		PICMJNCKJDG music_info = 14;
 	}
@@ -35499,9 +35499,9 @@ message FireworksLaunchSchemeData {
 // CmdId: 4733 
 message Unk_37_JJEMPLMHCNK {
 	repeated Unk_37_EGEBOGIIBGB brief_list = 15;
-	repeated Unk_37_LGADMDJLBFE unk_37_Unk_37_IJBPEPPLINK = 3;
+	repeated Unk_37_LGADMDJLBFE unk_37_JDJPDHIAGBI = 3;
 	int32 retcode = 1;
-	Unk_37_NPAFIGJICPK unk_37_KIEKKNKGMIF = 12;
+	Unk_37_IJBPEPPLINK unk_37_KIEKKNKGMIF = 12;
 }
 
 // CmdId: - 
@@ -35880,9 +35880,9 @@ message NNLCBFBHIOC {
 }
 
 // CmdId: - 
-message CGNBICKJJJA {
-	repeated ItemParam OBEDMPNDFKB = 1;
-	uint32 EFNDFGABIIB = 13;
+message Unk_41_42_GAMKJKMONHN {
+	repeated ItemParam unk_41_42_DDOIDIDACGK = 1;
+	uint32 unk_41_42_OEPDGDBPNOG = 13;
 }
 
 // CmdId: 8588 
@@ -36006,7 +36006,7 @@ message PDDOBDOJIHH {
 }
 
 // CmdId: 23040 
-message DHNAELMAHND {
+message GCGGrowthLevelNotify {
 	uint32 level = 2;
 	uint32 exp = 11;
 }
@@ -36069,8 +36069,8 @@ message GameplayRecommendationElementReliquaryRequest {
 }
 
 // CmdId: 9654 
-message OKFJNMOJBEA {
-	uint32 MHMKPCPIAON = 11;
+message ShowClientTutorialNotify {
+	uint32 tutorial_id = 11;
 }
 
 // CmdId: 7015 
@@ -36106,7 +36106,7 @@ message WinterCampTriathlonSettleNotify {
 // CmdId: - 
 message AttackResult {
 	HitCollision hit_collision = 13;
-	Vector resolve_dir = 14;
+	Vector resolved_dir = 14;
 	AbilityIdentifier ability_identifier = 5;
 	string anim_event_id = 6;
 	AttackHitEffectResult hit_eff_result = 11;
@@ -36225,7 +36225,7 @@ message PlantFlowerActivityDetailInfo {
 }
 
 // CmdId: 27920 
-message ForgeStartRsp {
+message JJIIEHIGMDP {
 	int32 retcode = 3;
 }
 
@@ -36247,8 +36247,8 @@ message PlayerSignatureNotify {
 }
 
 // CmdId: 20538 
-message ABJLEJNCHFH {
-	repeated uint32 MAMLJINKBCP = 10;
+message GetPushTipsRewardRsp {
+	repeated uint32 push_tips_id_list = 10;
 	int32 retcode = 2;
 }
 
@@ -36258,8 +36258,8 @@ message HOMJBJLMENC {
 }
 
 // CmdId: 6508 
-message EGCEOMEEJNO {
-	map<string, string> KEMCNNPNAMF = 8;
+message Unk_48_50_ELBIIAPPCFE {
+	map<string, string> unk_47_FKBAKKBLGFN = 8;
 }
 
 // CmdId: 24864 
@@ -36381,7 +36381,7 @@ message Quest {
 }
 
 // CmdId: 29124 
-message EDLFJEAOJCJ {
+message Unk_41_42_BMDMAGDICHE {
 	int32 retcode = 7;
 	uint32 room_id = 1;
 	uint64 guid = 11;
@@ -36486,8 +36486,8 @@ message IKHEDLICDHO {
 
 // CmdId: 3361 
 message FFAIMFABDFF {
-	repeated uint32 OPDEGDBBFMF = 1730;
-	repeated uint32 KEBMOGJCABC = 2;
+	repeated uint32 button_list = 1730;
+	repeated uint32 note_list = 2;
 	uint32 BCKDGAGCJPD = 951;
 	uint32 max_combo = 8;
 	uint32 KNLMJMMMOPM = 1680;
@@ -36498,12 +36498,12 @@ message FFAIMFABDFF {
 	uint32 score = 7;
 	uint32 AEKBLMHHPNI = 13;
 	uint32 music_basic_id = 4;
-	uint32 HBHFMFHKNBO = 9;
+	uint32 correct_hit = 9;
 	bool JHBAGIEMDAN = 417;
-	bool NFLDLMABCJB = 1;
+	bool is_save_score = 1;
 	bool PLELGHJLKDN = 1520;
-	uint32 GOMGLGMAEKC = 6;
-	uint32 OMPFGECGKKP = 14;
+	uint32 score_rating = 6;
+	uint32 restart_times = 14;
 }
 
 // CmdId: 3579 
